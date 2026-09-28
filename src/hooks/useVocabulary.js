@@ -8,7 +8,7 @@ export function useVocabulary() {
 
   // Load words: merge JSON with localStorage state
   useEffect(() => {
-    fetch('/data/vocabulary.json')
+    fetch('/kotoba-master/data/vocabulary.json')
       .then(r => r.json())
       .then(data => {
         const stored = localStorage.getItem(STORAGE_KEY);
