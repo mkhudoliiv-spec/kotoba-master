@@ -62,4 +62,3 @@ npm install
 npm run dev
 ```
 
-Додаток відкриється на http://localhost:5173/
