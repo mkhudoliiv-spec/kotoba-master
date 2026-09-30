@@ -410,5 +410,77 @@
   {
     "id": "u7_51", "lesson": 7, "kana": "いいえ", "kanji": "いいえ",
     "romaji": "iie", "transcription": "і:е", "translation": "ні"
+  },
+  {
+    "id": "u9_1", "lesson": 9, "kana": "ほん", "kanji": "本",
+    "romaji": "hon", "transcription": "хон", "translation": "книга"
+  },
+  {
+    "id": "u9_2", "lesson": 9, "kana": "じしょ", "kanji": "辞書",
+    "romaji": "jisho", "transcription": "джішьо", "translation": "словник"
+  },
+  {
+    "id": "u9_3", "lesson": 9, "kana": "ざっし", "kanji": "雑誌",
+    "romaji": "zasshi", "transcription": "дзашші", "translation": "журнал"
+  },
+  {
+    "id": "u9_4", "lesson": 9, "kana": "しんぶん", "kanji": "新聞",
+    "romaji": "shinbun", "transcription": "шімбун", "translation": "газета"
+  },
+  {
+    "id": "u9_5", "lesson": 9, "kana": "めいし", "kanji": "名刺",
+    "romaji": "meishi", "transcription": "ме:ші", "translation": "візитна карта"
+  },
+  {
+    "id": "u9_6", "lesson": 9, "kana": "ボールペン", "kanji": "ボールペン",
+    "romaji": "boorupen", "transcription": "бо:рупен", "translation": "кулькова ручка"
+  },
+  {
+    "id": "u9_7", "lesson": 9, "kana": "とけい", "kanji": "時計",
+    "romaji": "tokei", "transcription": "токе:", "translation": "годинник"
+  },
+  {
+    "id": "u9_8", "lesson": 9, "kana": "かばん", "kanji": "鞄",
+    "romaji": "kaban", "transcription": "кабан", "translation": "сумка"
+  },
+  {
+    "id": "u9_9", "lesson": 9, "kana": "ラジオ", "kanji": "ラジオ",
+    "romaji": "rajio", "transcription": "раджіо", "translation": "радіо"
+  },
+  {
+    "id": "u9_10", "lesson": 9, "kana": "カメラ", "kanji": "カメラ",
+    "romaji": "kamera", "transcription": "камера", "translation": "камера"
+  },
+  {
+    "id": "u9_11", "lesson": 9, "kana": "コンピューター", "kanji": "コンピューター",
+    "romaji": "konpyuutaa", "transcription": "компю:та:", "translation": "комп'ютер"
+  },
+  {
+    "id": "u9_12", "lesson": 9, "kana": "くるま", "kanji": "車",
+    "romaji": "kuruma", "transcription": "курума", "translation": "машина"
+  },
+  {
+    "id": "u9_13", "lesson": 9, "kana": "てちょう", "kanji": "手帳",
+    "romaji": "techou", "transcription": "течьо:", "translation": "блокнот"
+  },
+  {
+    "id": "u9_14", "lesson": 9, "kana": "つくえ", "kanji": "机",
+    "romaji": "tsukue", "transcription": "цкуе", "translation": "стіл"
+  },
+  {
+    "id": "u9_15", "lesson": 9, "kana": "いす", "kanji": "椅子",
+    "romaji": "isu", "transcription": "ісу", "translation": "стілець"
+  },
+  {
+    "id": "u9_16", "lesson": 9, "kana": "チョコレート", "kanji": "チョコレート",
+    "romaji": "chokoreeto", "transcription": "чьокоре:то", "translation": "шоколад"
+  },
+  {
+    "id": "u9_17", "lesson": 9, "kana": "コーヒー", "kanji": "コーヒー",
+    "romaji": "koohii", "transcription": "ко:хі:", "translation": "кава"
+  },
+  {
+    "id": "u9_18", "lesson": 9, "kana": "おみやげ", "kanji": "お土産",
+    "romaji": "omiyage", "transcription": "оміяґе", "translation": "сувенір"
   }
 ]
