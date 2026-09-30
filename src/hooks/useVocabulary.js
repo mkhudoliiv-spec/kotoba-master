@@ -2,14 +2,32 @@ import { useState, useEffect, useCallback } from 'react';
 
 const STORAGE_KEY = 'kotoba_master_words';
 
+async function fetchVocabularyData() {
+  const candidatePaths = [
+    '/kotoba-master/data/vocabulary.json',
+    './data/vocabulary.json',
+    '/data/vocabulary.json'
+  ];
+  for (const path of candidatePaths) {
+    try {
+      const res = await fetch(path);
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch {
+      // try next candidate path
+    }
+  }
+  throw new Error('Failed to load vocabulary.json');
+}
+
 export function useVocabulary() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(true);
 
   // Load words: merge JSON with localStorage state
   useEffect(() => {
-    fetch('/kotoba-master/data/vocabulary.json')
-      .then(r => r.json())
+    fetchVocabularyData()
       .then(data => {
         const stored = localStorage.getItem(STORAGE_KEY);
         let storedWords = [];
@@ -80,8 +98,7 @@ export function useVocabulary() {
   const resetAll = useCallback(() => {
     localStorage.removeItem(STORAGE_KEY);
     setLoading(true);
-    fetch('/data/vocabulary.json')
-      .then(r => r.json())
+    fetchVocabularyData()
       .then(data => {
         const enriched = data.map(w => ({ ...w, mastered: false, starred: false }));
         setWords(enriched);
