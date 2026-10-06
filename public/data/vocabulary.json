@@ -482,5 +482,165 @@
   {
     "id": "u9_18", "lesson": 9, "kana": "おみやげ", "kanji": "お土産",
     "romaji": "omiyage", "transcription": "оміяґе", "translation": "сувенір"
+  },
+  {
+    "id": "u10_1", "lesson": 10, "kana": "なん", "kanji": "何",
+    "romaji": "nan", "transcription": "нан", "translation": "що"
+  },
+  {
+    "id": "u10_2", "lesson": 10, "kana": "そう", "kanji": "そう",
+    "romaji": "sou", "transcription": "со:", "translation": "так, дійсно"
+  },
+  {
+    "id": "u10_3", "lesson": 10, "kana": "あのう", "kanji": "あのう",
+    "romaji": "anou", "transcription": "ано:", "translation": "вибачте, ну... (привертання уваги при зверненні)"
+  },
+  {
+    "id": "u10_4", "lesson": 10, "kana": "えっ", "kanji": "えっ",
+    "romaji": "e'", "transcription": "е", "translation": "що... (вираження здивування)"
+  },
+  {
+    "id": "u10_5", "lesson": 10, "kana": "どうぞ", "kanji": "どうぞ",
+    "romaji": "douzo", "transcription": "до:зо", "translation": "будь ласка, прошу"
+  },
+  {
+    "id": "u10_6", "lesson": 10, "kana": "ちがいます", "kanji": "違います",
+    "romaji": "chigaimasu", "transcription": "чіґаімас", "translation": "не так, неправильно"
+  },
+  {
+    "id": "u10_7", "lesson": 10, "kana": "いち", "kanji": "一",
+    "romaji": "ichi", "transcription": "ічі", "translation": "один"
+  },
+  {
+    "id": "u10_8", "lesson": 10, "kana": "ひとつ", "kanji": "一つ",
+    "romaji": "hitotsu", "transcription": "хітоцу", "translation": "один (лічильне слово)"
+  },
+  {
+    "id": "u10_9", "lesson": 10, "kana": "いちがつ", "kanji": "一月",
+    "romaji": "ichigatsu", "transcription": "ічіґацу", "translation": "січень (перший місяць)"
+  },
+  {
+    "id": "u10_10", "lesson": 10, "kana": "に", "kanji": "二",
+    "romaji": "ni", "transcription": "ні", "translation": "два"
+  },
+  {
+    "id": "u10_11", "lesson": 10, "kana": "ふたつ", "kanji": "二つ",
+    "romaji": "futatsu", "transcription": "фтацу", "translation": "два (лічильне слово)"
+  },
+  {
+    "id": "u10_12", "lesson": 10, "kana": "にがつ", "kanji": "二月",
+    "romaji": "nigatsu", "transcription": "ніґацу", "translation": "лютий (другий місяць)"
+  },
+  {
+    "id": "u10_13", "lesson": 10, "kana": "さん", "kanji": "三",
+    "romaji": "san", "transcription": "сан", "translation": "три"
+  },
+  {
+    "id": "u10_14", "lesson": 10, "kana": "みっつ", "kanji": "三つ",
+    "romaji": "mittsu", "transcription": "міццу", "translation": "три (лічильне слово)"
+  },
+  {
+    "id": "u10_15", "lesson": 10, "kana": "さんがつ", "kanji": "三月",
+    "romaji": "sangatsu", "transcription": "санґацу", "translation": "березень (третій місяць)"
+  },
+  {
+    "id": "u11_1", "lesson": 11, "kana": "どちら", "kanji": "どちら",
+    "romaji": "dochira", "transcription": "дочіра", "translation": "котрий, де"
+  },
+  {
+    "id": "u11_2", "lesson": 11, "kana": "きょうしつ", "kanji": "教室",
+    "romaji": "kyoushitsu", "transcription": "кьо:шьцу", "translation": "аудиторія, клас"
+  },
+  {
+    "id": "u11_3", "lesson": 11, "kana": "しょくどう", "kanji": "食堂",
+    "romaji": "shokudou", "transcription": "шьокудо:", "translation": "їдальня"
+  },
+  {
+    "id": "u11_4", "lesson": 11, "kana": "じむしょ", "kanji": "事務所",
+    "romaji": "jimusho", "transcription": "джімушьо", "translation": "офіс"
+  },
+  {
+    "id": "u11_5", "lesson": 11, "kana": "かいぎしつ", "kanji": "会議室",
+    "romaji": "kaigishitsu", "transcription": "кайґішьцу", "translation": "зал для нарад"
+  },
+  {
+    "id": "u11_6", "lesson": 11, "kana": "うけつけ", "kanji": "受付",
+    "romaji": "uketsuke", "transcription": "укецке", "translation": "рецепція"
+  },
+  {
+    "id": "u11_7", "lesson": 11, "kana": "へや", "kanji": "部屋",
+    "romaji": "heya", "transcription": "хея", "translation": "кімната"
+  },
+  {
+    "id": "u11_8", "lesson": 11, "kana": "おてあらい", "kanji": "お手洗い",
+    "romaji": "otearai", "transcription": "отеараі", "translation": "вбиральня"
+  },
+  {
+    "id": "u11_9", "lesson": 11, "kana": "かいだん", "kanji": "階段",
+    "romaji": "kaidan", "transcription": "кайдан", "translation": "сходи"
+  },
+  {
+    "id": "u11_10", "lesson": 11, "kana": "エレベーター", "kanji": "エレベーター",
+    "romaji": "erebeetaa", "transcription": "еребе:та:", "translation": "ліфт"
+  },
+  {
+    "id": "u11_11", "lesson": 11, "kana": "エスカレーター", "kanji": "エスカレーター",
+    "romaji": "esukareetaa", "transcription": "ескаре:та:", "translation": "ескалатор"
+  },
+  {
+    "id": "u11_12", "lesson": 11, "kana": "でんわ", "kanji": "電話",
+    "romaji": "denwa", "transcription": "денва", "translation": "телефон"
+  },
+  {
+    "id": "u11_13", "lesson": 11, "kana": "(お)くに", "kanji": "(お)国",
+    "romaji": "(o)kuni", "transcription": "(о) куні", "translation": "країна"
+  },
+  {
+    "id": "u11_14", "lesson": 11, "kana": "かいしゃ", "kanji": "会社",
+    "romaji": "kaisha", "transcription": "кайшя", "translation": "компанія"
+  },
+  {
+    "id": "u11_15", "lesson": 11, "kana": "うち", "kanji": "家",
+    "romaji": "uchi", "transcription": "учі", "translation": "дім"
+  },
+  {
+    "id": "u11_16", "lesson": 11, "kana": "くつ", "kanji": "靴",
+    "romaji": "kutsu", "transcription": "куцу", "translation": "взуття"
+  },
+  {
+    "id": "u11_17", "lesson": 11, "kana": "よん / し", "kanji": "四",
+    "romaji": "yon / shi", "transcription": "йон / ші", "translation": "чотири"
+  },
+  {
+    "id": "u11_18", "lesson": 11, "kana": "よっつ", "kanji": "四つ",
+    "romaji": "yottsu", "transcription": "йоццу", "translation": "чотири (лічильне слово)"
+  },
+  {
+    "id": "u11_19", "lesson": 11, "kana": "しがつ", "kanji": "四月",
+    "romaji": "shigatsu", "transcription": "шіґацу", "translation": "квітень"
+  },
+  {
+    "id": "u11_20", "lesson": 11, "kana": "ご", "kanji": "五",
+    "romaji": "go", "transcription": "ґо", "translation": "п'ять"
+  },
+  {
+    "id": "u11_21", "lesson": 11, "kana": "いつつ", "kanji": "五つ",
+    "romaji": "itsutsu", "transcription": "іцуцу", "translation": "п'ять (лічильне слово)"
+  },
+  {
+    "id": "u11_22", "lesson": 11, "kana": "ごがつ", "kanji": "五月",
+    "romaji": "gogatsu", "transcription": "ґоґацу", "translation": "травень"
+  },
+  {
+    "id": "u11_23", "lesson": 11, "kana": "ろく", "kanji": "六",
+    "romaji": "roku", "transcription": "року", "translation": "шість"
+  },
+  {
+    "id": "u11_24", "lesson": 11, "kana": "むっつ", "kanji": "六つ",
+    "romaji": "muttsu", "transcription": "муццу", "translation": "шість (лічильне слово)"
+  },
+  {
+    "id": "u11_25", "lesson": 11, "kana": "ろくがつ", "kanji": "六月",
+    "romaji": "rokugatsu", "transcription": "рокуґацу", "translation": "червень"
   }
 ]
