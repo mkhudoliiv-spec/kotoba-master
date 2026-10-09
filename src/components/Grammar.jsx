@@ -175,14 +175,29 @@ export default function Grammar() {
   }, [topics, category, query]);
 
   const open = useCallback((id) => {
+    window.history.pushState({ grammarTopic: id }, '');
     setSelectedId(id);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, []);
 
   const back = useCallback(() => {
-    setSelectedId(null);
+    if (window.history.state && window.history.state.grammarTopic === selectedId) {
+      window.history.back();
+    } else {
+      setSelectedId(null);
+    }
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
+  }, [selectedId]);
+
+  useEffect(() => {
+    const onPop = () => {
+      if (selectedId) {
+        setSelectedId(null);
+      }
+    };
+    window.addEventListener('popstate', onPop);
+    return () => window.removeEventListener('popstate', onPop);
+  }, [selectedId]);
 
   useEffect(() => {
     if (!selectedId) return;

@@ -3,7 +3,7 @@ import { speakJapanese, getDisplayJp, hasKanjiDistinction, shuffle } from '../ut
 import { useTranslation } from '../utils/i18n';
 
 export default function Flashcards({ words, isKanjiMode, onToggleStar, onToggleMastered, showToast }) {
-  const [deck, setDeck] = useState([]);
+  const [deck, setDeck] = useState(words);
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const [frontIsJp, setFrontIsJp] = useState(true);
