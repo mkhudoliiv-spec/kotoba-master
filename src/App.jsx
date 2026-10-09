@@ -21,10 +21,21 @@ const MODES = [
 ];
 
 export default function App() {
-  const { words, loading, addWord, deleteWord, toggleStar, toggleMastered, importWords } = useVocabulary();
+  const { words, loading, addWord, deleteWord, toggleStar, reviewWord, importWords } = useVocabulary();
   const [mode, setMode] = useState('cards');
   const [grammarKey, setGrammarKey] = useState(0);
-  const [lessonFilter, setLessonFilter] = useState('all');
+  // Array of selected lesson keys; empty array = all lessons
+  const [selectedLessons, setSelectedLessons] = useState(() => {
+    try {
+      const saved = JSON.parse(localStorage.getItem('kotoba_selected_lessons'));
+      return Array.isArray(saved) ? saved.map(String) : [];
+    } catch {
+      return [];
+    }
+  });
+  const [quickOpen, setQuickOpen] = useState(false);
+  const [rangeFrom, setRangeFrom] = useState('');
+  const [rangeTo, setRangeTo] = useState('');
   const [starFilter, setStarFilter] = useState(false);
   const [isKanjiMode, setIsKanjiMode] = useState(true);
   const [modalOpen, setModalOpen] = useState(false);
@@ -56,10 +67,28 @@ export default function App() {
     return () => window.removeEventListener('kotoba-import', handler);
   }, [importWords]);
 
+  useEffect(() => {
+    localStorage.setItem('kotoba_selected_lessons', JSON.stringify(selectedLessons));
+  }, [selectedLessons]);
+
+  const toggleLesson = (key) => {
+    setSelectedLessons(prev => prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]);
+  };
+
+  // Drop saved lessons that no longer exist in the vocabulary
+  useEffect(() => {
+    if (loading || words.length === 0) return;
+    const existing = new Set(words.map(w => String(w.lesson)));
+    setSelectedLessons(prev => {
+      const next = prev.filter(k => existing.has(k));
+      return next.length === prev.length ? prev : next;
+    });
+  }, [loading, words]);
+
   const filtered = words.filter(w => {
-    const matchLesson = lessonFilter === 'all'
+    const matchLesson = selectedLessons.length === 0
       ? true
-      : String(w.lesson) === String(lessonFilter);
+      : selectedLessons.includes(String(w.lesson));
     const matchStar = starFilter ? w.starred : true;
     return matchLesson && matchStar;
   });
@@ -77,6 +106,19 @@ export default function App() {
     if (!isNaN(numA) && isNaN(numB)) return -1;
     return a.localeCompare(b);
   });
+
+  const numericKeys = lessonKeys.filter(k => !isNaN(Number(k)));
+
+  const applyRange = () => {
+    if (rangeFrom === '' || rangeTo === '') return;
+    const lo = Math.min(Number(rangeFrom), Number(rangeTo));
+    const hi = Math.max(Number(rangeFrom), Number(rangeTo));
+    setSelectedLessons(numericKeys.filter(k => Number(k) >= lo && Number(k) <= hi));
+  };
+
+  const invertSelection = () => {
+    setSelectedLessons(lessonKeys.filter(k => !selectedLessons.includes(k)));
+  };
 
   const handleAddWord = (newWord) => {
     addWord(newWord);
@@ -149,15 +191,16 @@ export default function App() {
 
       <main className="main">
         {mode !== 'grammar' && (
+        <div className="filter-wrap">
         <div className="filter-bar">
           <div className="filter-bar__lessons" ref={scrollRef}>
             <span className="filter-bar__label">{t('dictThLesson')}:</span>
-            <button className={`lesson-chip ${lessonFilter === 'all' ? 'lesson-chip--active' : ''}`}
-              onClick={() => setLessonFilter('all')}>{t('allLessons', words.length)}</button>
+            <button className={`lesson-chip ${selectedLessons.length === 0 ? 'lesson-chip--active' : ''}`}
+              onClick={() => setSelectedLessons([])}>{t('allLessons', words.length)}</button>
             {lessonKeys.map(key => (
               <button key={key}
-                className={`lesson-chip ${lessonFilter === key ? 'lesson-chip--active' : ''}`}
-                onClick={() => setLessonFilter(key)}>{getLessonLabel(key)}</button>
+                className={`lesson-chip ${selectedLessons.includes(key) ? 'lesson-chip--active' : ''}`}
+                onClick={() => toggleLesson(key)}>{getLessonLabel(key)}</button>
             ))}
           </div>
           <div className="filter-bar__right">
@@ -167,14 +210,39 @@ export default function App() {
               <span className="filter-bar__sep">/</span>
               <strong>{filtered.length}</strong>
             </div>
+            <button className={`filter-bar__tool-btn ${quickOpen ? 'filter-bar__tool-btn--active' : ''}`}
+              onClick={() => setQuickOpen(o => !o)}>{t('quickSelect')}</button>
             <button className={`filter-bar__star-btn ${starFilter ? 'filter-bar__star-btn--active' : ''}`}
               onClick={() => setStarFilter(s => !s)}>{t('starsCount', starredCount)}</button>
           </div>
         </div>
+        {quickOpen && (
+          <div className="quick-select">
+            <div className="quick-select__range">
+              <span>{t('rangeFrom')}</span>
+              <select value={rangeFrom} onChange={e => setRangeFrom(e.target.value)}>
+                <option value="">–</option>
+                {numericKeys.map(k => <option key={k} value={k}>{k}</option>)}
+              </select>
+              <span>{t('rangeTo')}</span>
+              <select value={rangeTo} onChange={e => setRangeTo(e.target.value)}>
+                <option value="">–</option>
+                {numericKeys.map(k => <option key={k} value={k}>{k}</option>)}
+              </select>
+              <button className="btn btn--dark btn--sm" onClick={applyRange}
+                disabled={rangeFrom === '' || rangeTo === ''}>{t('applyRange')}</button>
+            </div>
+            <div className="quick-select__actions">
+              <button className="btn btn--ghost btn--sm" onClick={invertSelection}>{t('invertSel')}</button>
+              <span className="quick-select__count">{t('selectedCount', selectedLessons.length)}</span>
+            </div>
+          </div>
+        )}
+        </div>
         )}
 
         <div className="mode-container">
-          {mode === 'cards' && <Flashcards words={filtered} isKanjiMode={isKanjiMode} onToggleStar={toggleStar} onToggleMastered={toggleMastered} showToast={showToast} />}
+          {mode === 'cards' && <Flashcards words={filtered} isKanjiMode={isKanjiMode} onToggleStar={toggleStar} onReview={reviewWord} showToast={showToast} />}
           {mode === 'quiz' && <Quiz words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
           {mode === 'write' && <WriteMode words={filtered} allWords={words} />}
           {mode === 'match' && <MatchGame words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}

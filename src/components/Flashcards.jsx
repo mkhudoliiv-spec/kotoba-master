@@ -1,29 +1,47 @@
-import { useState, useEffect, useCallback, useRef } from 'react';
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { speakJapanese, getDisplayJp, hasKanjiDistinction, shuffle } from '../utils/helpers';
+import { buildDeck, getSrsCounts } from '../utils/srs';
 import { useTranslation } from '../utils/i18n';
 
-export default function Flashcards({ words, isKanjiMode, onToggleStar, onToggleMastered, showToast }) {
-  const [deck, setDeck] = useState(words);
+const DIRECTIONS = ['jp', 'uk', 'mix'];
+
+function hashStr(s) {
+  let h = 0;
+  const str = String(s);
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) | 0;
+  return Math.abs(h);
+}
+
+function readStored(key, allowed, fallback) {
+  const v = localStorage.getItem(key);
+  return allowed.includes(v) ? v : fallback;
+}
+
+export default function Flashcards({ words, isKanjiMode, onToggleStar, onReview, showToast }) {
+  const [studyMode, setStudyMode] = useState(() => readStored('kotoba_study_mode', ['all', 'smart', 'hard'], 'all'));
+  const [deck, setDeck] = useState(() => buildDeck(words, readStored('kotoba_study_mode', ['all', 'smart', 'hard'], 'all')));
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
-  const [frontIsJp, setFrontIsJp] = useState(true);
+  const [direction, setDirection] = useState(() => readStored('kotoba_card_direction', DIRECTIONS, 'jp'));
   const touchRef = useRef({ startX: 0, startY: 0 });
   const t = useTranslation();
 
   const prevWordsRef = useRef(words);
+  const counts = useMemo(() => getSrsCounts(words), [words]);
 
   useEffect(() => {
     const prevIds = prevWordsRef.current.map(w => w.id).sort().join(',');
     const newIds = words.map(w => w.id).sort().join(',');
     
     if (prevIds !== newIds) {
-      setDeck(words);
+      setDeck(buildDeck(words, studyMode));
       setIndex(0);
       setFlipped(false);
     } else {
       setDeck(prevDeck => prevDeck.map(w => words.find(newW => newW.id === w.id) || w));
     }
     prevWordsRef.current = words;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [words]);
 
   const total = deck.length;
@@ -36,12 +54,47 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onToggleM
     setIndex(prev => (prev + delta + total) % total);
   }, [total]);
 
+  const changeStudyMode = (m) => {
+    localStorage.setItem('kotoba_study_mode', m);
+    setStudyMode(m);
+    setDeck(buildDeck(words, m));
+    setIndex(0);
+    setFlipped(false);
+  };
+
+  const cycleDirection = () => {
+    const next = DIRECTIONS[(DIRECTIONS.indexOf(direction) + 1) % DIRECTIONS.length];
+    localStorage.setItem('kotoba_card_direction', next);
+    setDirection(next);
+  };
+
   const handleShuffle = () => {
-    setDeck(shuffle(words));
+    setDeck(shuffle(deck));
     setIndex(0);
     setFlipped(false);
     showToast(t('shuffledToast'));
   };
+
+  // "Know" / "Don't know": records SRS result. In smart/hard sessions the deck acts as a queue:
+  // known cards leave it, unknown cards come back a few cards later.
+  const answer = (known) => {
+    if (!item) return;
+    onReview(item.id, known);
+    if (studyMode === 'all') { navigate(1); return; }
+    const cur = Math.min(index, total - 1);
+    setFlipped(false);
+    setDeck(prev => {
+      const pos = prev.findIndex(w => w.id === item.id);
+      if (pos === -1) return prev;
+      const rest = prev.filter((_, i) => i !== pos);
+      if (!known) rest.splice(Math.min(pos + 3, rest.length), 0, item);
+      return rest;
+    });
+    const newLen = known ? total - 1 : total;
+    setIndex(cur >= newLen ? 0 : cur);
+  };
+  const answerRef = useRef(answer);
+  answerRef.current = answer;
 
   // Keyboard
   useEffect(() => {
@@ -51,6 +104,8 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onToggleM
       else if (e.code === 'ArrowRight') { e.preventDefault(); navigate(1); }
       else if (e.code === 'ArrowLeft') { e.preventDefault(); navigate(-1); }
       else if (e.code === 'KeyK') { e.preventDefault(); item && speakJapanese(item.kana); }
+      else if (e.code === 'Digit1') { e.preventDefault(); answerRef.current(false); }
+      else if (e.code === 'Digit2') { e.preventDefault(); answerRef.current(true); }
     };
     window.addEventListener('keydown', handler);
     return () => window.removeEventListener('keydown', handler);
@@ -69,28 +124,52 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onToggleM
     }
   };
 
+  const studyTabs = (
+    <div className="study-tabs">
+      <button className={`study-tab ${studyMode === 'all' ? 'study-tab--active' : ''}`}
+        onClick={() => changeStudyMode('all')}>{t('studyAll')}</button>
+      <button className={`study-tab ${studyMode === 'smart' ? 'study-tab--active' : ''}`}
+        onClick={() => changeStudyMode('smart')}>{t('studySmart', counts.smart)}</button>
+      <button className={`study-tab ${studyMode === 'hard' ? 'study-tab--active' : ''}`}
+        onClick={() => changeStudyMode('hard')}>{t('studyHard', counts.hard)}</button>
+    </div>
+  );
+
   if (!item) {
+    let title = t('emptyFilterTitle');
+    let sub = t('emptyFilterSub');
+    if (words.length > 0 && studyMode === 'smart') { title = t('smartDoneTitle'); sub = t('smartDoneSub'); }
+    if (words.length > 0 && studyMode === 'hard') { title = t('hardDoneTitle'); sub = t('hardDoneSub'); }
     return (
-      <div className="card-empty">
-        <p className="card-empty__title">{t('emptyFilterTitle')}</p>
-        <p className="card-empty__sub">{t('emptyFilterSub')}</p>
+      <div className="flashcards">
+        {studyTabs}
+        <div className="card-empty">
+          <p className="card-empty__title">{title}</p>
+          <p className="card-empty__sub">{sub}</p>
+        </div>
       </div>
     );
   }
 
+  const frontIsJp = direction === 'mix'
+    ? (hashStr(item.id) + (item.srs?.reviews || 0)) % 2 === 0
+    : direction === 'jp';
+  const dirLabel = direction === 'jp' ? t('jpFirst') : direction === 'uk' ? t('ukFirst') : t('mixFirst');
+
   const displayJp = getDisplayJp(item, isKanjiMode);
   const kanjiDiff = hasKanjiDistinction(item, isKanjiMode);
-  const pct = Math.round(((index + 1) / total) * 100);
-  const lessonTitle = item.lesson === 'custom' ? 'Власне слово' : `Урок ${item.lesson}`;
+  const pct = Math.round(((Math.min(index, total - 1) + 1) / total) * 100);
 
   return (
     <div className="flashcards">
+      {studyTabs}
+
       {/* Top bar */}
       <div className="flashcards__topbar">
-        <span>{t('wordCounter', index + 1, total)}</span>
+        <span>{t('wordCounter', Math.min(index, total - 1) + 1, total)}</span>
         <div className="flashcards__actions">
-          <button onClick={() => setFrontIsJp(p => !p)} className="flashcards__action-btn">
-            ⇄ {frontIsJp ? t('jpFirst') : t('ukFirst')}
+          <button onClick={cycleDirection} className="flashcards__action-btn">
+            ⇄ {dirLabel}
           </button>
           <span className="flashcards__dot">•</span>
           <button onClick={handleShuffle} className="flashcards__action-btn">
@@ -167,8 +246,8 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onToggleM
 
       {/* Controls */}
       <div className="flashcard-controls">
-        <button onClick={() => { onToggleMastered(item.id, false); navigate(1); }}
-          className="btn btn--warn">
+        <button onClick={() => answer(false)}
+          className="btn btn--warn" title="1">
           {t('repeatAgain')}
         </button>
 
@@ -178,15 +257,16 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onToggleM
           <button onClick={() => navigate(1)} className="btn btn--nav" title={t('next')}>→</button>
         </div>
 
-        <button onClick={() => { onToggleMastered(item.id, true); navigate(1); }}
-          className="btn btn--success">
+        <button onClick={() => answer(true)}
+          className="btn btn--success" title="2">
           {t('iKnowThis')}
         </button>
       </div>
 
       <p className="flashcard-keyboard-hint">
-        {t('kbHint')} <kbd>←</kbd> <kbd>→</kbd> {t('kbArrows')}, <kbd>{t('spacebar')}</kbd> {t('kbFlip')}
+        {t('kbHint')} <kbd>←</kbd> <kbd>→</kbd> {t('kbArrows')}, <kbd>{t('spacebar')}</kbd> {t('kbFlip')}, <kbd>1</kbd> / <kbd>2</kbd> — {t('repeatAgain')} / {t('iKnowThis')}
       </p>
+      <p className="flashcard-srs-info">{t('srsInfo')}</p>
     </div>
   );
 }

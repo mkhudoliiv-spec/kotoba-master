@@ -191,8 +191,57 @@ body {
   background: var(--color-surface); border-radius: var(--radius-xl);
   padding: 1rem; box-shadow: var(--shadow-sm);
   border: 1px solid var(--color-border);
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   display: flex; flex-direction: column; gap: 1rem;
+}
+.filter-wrap { margin-bottom: 1.5rem; }
+.filter-bar__tool-btn {
+  padding: 0.375rem 0.625rem; border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border); font-size: 0.75rem; font-weight: 600;
+  color: var(--color-text-secondary); background: none; cursor: pointer;
+  white-space: nowrap; transition: all var(--transition);
+}
+.filter-bar__tool-btn:hover { color: var(--color-dark); border-color: #94a3b8; }
+.filter-bar__tool-btn--active { background: var(--color-dark); border-color: var(--color-dark); color: #fff; }
+.filter-bar__tool-btn--active:hover { color: #fff; }
+
+.quick-select {
+  margin-top: 0.5rem; padding: 0.75rem 1rem;
+  background: var(--color-surface); border: 1px dashed var(--color-border);
+  border-radius: var(--radius-xl);
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem;
+  font-size: 0.8125rem; color: var(--color-text-secondary);
+  animation: quickIn 180ms ease;
+}
+@keyframes quickIn { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.quick-select__range, .quick-select__actions { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+.quick-select select {
+  padding: 0.3rem 0.5rem; border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border); background: var(--color-bg);
+  font: inherit; color: var(--color-text);
+}
+.quick-select .btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.quick-select__count { font-weight: 600; color: var(--color-text); }
+
+/* ── Study tabs (cards) ── */
+.study-tabs {
+  display: flex; gap: 0.375rem; padding: 0.25rem; margin-bottom: 1rem;
+  background: var(--color-border-light); border-radius: var(--radius-xl);
+  overflow-x: auto;
+}
+.study-tab {
+  flex: 1; white-space: nowrap; padding: 0.5rem 0.75rem;
+  border: none; border-radius: var(--radius-lg); background: none;
+  font: inherit; font-size: 0.75rem; font-weight: 600; cursor: pointer;
+  color: var(--color-text-secondary); transition: all var(--transition);
+}
+.study-tab:hover { color: var(--color-text); }
+.study-tab--active {
+  background: var(--color-surface); color: var(--color-accent);
+  box-shadow: var(--shadow-sm);
+}
+.flashcard-srs-info {
+  text-align: center; font-size: 0.6875rem; color: var(--color-text-muted); margin-top: 0.5rem;
 }
 @media (min-width: 768px) {
   .filter-bar { flex-direction: row; align-items: center; justify-content: space-between; }

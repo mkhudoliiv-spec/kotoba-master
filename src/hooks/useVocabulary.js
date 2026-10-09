@@ -1,4 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
+import { reviewSrs } from '../utils/srs';
 
 const STORAGE_KEY = 'kotoba_master_words';
 
@@ -42,7 +43,7 @@ export function useVocabulary() {
         const mergedWords = data.map(w => {
           if (storedMap.has(w.id)) {
             const storedWord = storedMap.get(w.id);
-            return { ...w, mastered: storedWord.mastered, starred: storedWord.starred };
+            return { ...w, mastered: storedWord.mastered, starred: storedWord.starred, srs: storedWord.srs };
           }
           return { ...w, mastered: false, starred: false };
         });
@@ -81,6 +82,13 @@ export function useVocabulary() {
     setWords(prev => prev.map(w => w.id === id ? { ...w, mastered: value } : w));
   }, []);
 
+  // Flashcard answer: updates mastered flag and spaced-repetition schedule
+  const reviewWord = useCallback((id, known) => {
+    setWords(prev => prev.map(w =>
+      w.id === id ? { ...w, mastered: known, srs: reviewSrs(w, known) } : w
+    ));
+  }, []);
+
   const importWords = useCallback((imported) => {
     setWords(prev => {
       const currentIds = new Set(prev.map(w => w.id));
@@ -106,5 +114,5 @@ export function useVocabulary() {
       .finally(() => setLoading(false));
   }, []);
 
-  return { words, loading, addWord, deleteWord, toggleStar, toggleMastered, importWords, resetAll };
+  return { words, loading, addWord, deleteWord, toggleStar, toggleMastered, reviewWord, importWords, resetAll };
 }
