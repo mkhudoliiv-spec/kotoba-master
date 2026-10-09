@@ -7,6 +7,7 @@ import Quiz from './components/Quiz';
 import WriteMode from './components/WriteMode';
 import MatchGame from './components/MatchGame';
 import Dictionary from './components/Dictionary';
+import Grammar from './components/Grammar';
 import AddWordModal from './components/AddWordModal';
 import Toast from './components/Toast';
 
@@ -16,11 +17,13 @@ const MODES = [
   { id: 'write', label: { uk: 'Письмо', en: 'Write' }, icon: '✏️' },
   { id: 'match', label: { uk: 'Пари', en: 'Match' }, icon: '🧩' },
   { id: 'list', label: { uk: 'Словник', en: 'Dictionary' }, icon: '📖' },
+  { id: 'grammar', label: { uk: 'Граматика', en: 'Grammar' }, icon: '📚' },
 ];
 
 export default function App() {
   const { words, loading, addWord, deleteWord, toggleStar, toggleMastered, importWords } = useVocabulary();
   const [mode, setMode] = useState('cards');
+  const [grammarKey, setGrammarKey] = useState(0);
   const [lessonFilter, setLessonFilter] = useState('all');
   const [starFilter, setStarFilter] = useState(false);
   const [isKanjiMode, setIsKanjiMode] = useState(true);
@@ -45,7 +48,7 @@ export default function App() {
     };
     el.addEventListener('wheel', onWheel, { passive: false });
     return () => el.removeEventListener('wheel', onWheel);
-  }, [loading]);
+  }, [loading, mode]);
 
   useEffect(() => {
     const handler = (e) => importWords(e.detail);
@@ -85,6 +88,12 @@ export default function App() {
     showToast(t('wordDeletedToast'));
   };
 
+  const selectMode = (id) => {
+    // Re-clicking "Граматика" returns to the topic list
+    if (id === 'grammar') setGrammarKey(k => k + 1);
+    setMode(id);
+  };
+
   if (loading) {
     return (
       <div className="loading-screen">
@@ -107,9 +116,8 @@ export default function App() {
             {MODES.map(m => (
               <button key={m.id}
                 className={`header__nav-btn ${mode === m.id ? 'header__nav-btn--active' : ''}`}
-                onClick={() => setMode(m.id)}>
+                onClick={() => selectMode(m.id)}>
                 <span className="header__nav-icon">{m.icon}</span>
-                {t(m.id === 'cards' ? 'Cards' : m.id === 'quiz' ? 'Quiz' : m.id === 'write' ? 'Write' : m.id === 'match' ? 'Match' : 'Dictionary') /* Fallback logic not needed since MODES now has obj labels, but let's use MODES label */}
                 {m.label[localStorage.getItem('kotoba_lang') || 'uk'] || m.label['uk']}
                 {m.id === 'list' && <span className="header__nav-badge">({words.length})</span>}
               </button>
@@ -132,7 +140,7 @@ export default function App() {
         {MODES.map(m => (
           <button key={m.id}
             className={`mobile-nav__btn ${mode === m.id ? 'mobile-nav__btn--active' : ''}`}
-            onClick={() => setMode(m.id)}>
+            onClick={() => selectMode(m.id)}>
             <span className="mobile-nav__icon">{m.icon}</span>
             <span className="mobile-nav__label">{m.label[localStorage.getItem('kotoba_lang') || 'uk'] || m.label['uk']}</span>
           </button>
@@ -140,6 +148,7 @@ export default function App() {
       </div>
 
       <main className="main">
+        {mode !== 'grammar' && (
         <div className="filter-bar">
           <div className="filter-bar__lessons" ref={scrollRef}>
             <span className="filter-bar__label">{t('dictThLesson')}:</span>
@@ -162,12 +171,14 @@ export default function App() {
               onClick={() => setStarFilter(s => !s)}>{t('starsCount', starredCount)}</button>
           </div>
         </div>
+        )}
 
         <div className="mode-container">
           {mode === 'cards' && <Flashcards words={filtered} isKanjiMode={isKanjiMode} onToggleStar={toggleStar} onToggleMastered={toggleMastered} showToast={showToast} />}
           {mode === 'quiz' && <Quiz words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
           {mode === 'write' && <WriteMode words={filtered} allWords={words} />}
           {mode === 'match' && <MatchGame words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
+          {mode === 'grammar' && <Grammar key={grammarKey} />}
           {mode === 'list' && <Dictionary words={filtered} isKanjiMode={isKanjiMode} onToggleStar={toggleStar} onDelete={handleDelete} onOpenAdd={() => setModalOpen(true)} showToast={showToast} />}
         </div>
       </main>

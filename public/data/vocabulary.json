@@ -104,6 +104,38 @@
     "romaji": "nooto", "transcription": "но:то", "translation": "зошит"
   },
   {
+    "id": "u4_9", "lesson": 4, "kana": "コート", "kanji": "コート",
+    "romaji": "kooto", "transcription": "ко:то", "translation": "пальто"
+  },
+  {
+    "id": "u4_10", "lesson": 4, "kana": "シャツ", "kanji": "シャツ",
+    "romaji": "shatsu", "transcription": "шяцу", "translation": "сорочка"
+  },
+  {
+    "id": "u4_11", "lesson": 4, "kana": "スカート", "kanji": "スカート",
+    "romaji": "sukaato", "transcription": "сука:то", "translation": "спідниця"
+  },
+  {
+    "id": "u4_12", "lesson": 4, "kana": "カニ", "kanji": "カニ",
+    "romaji": "kani", "transcription": "кані", "translation": "краб"
+  },
+  {
+    "id": "u4_13", "lesson": 4, "kana": "ネクタイ", "kanji": "ネクタイ",
+    "romaji": "nekutai", "transcription": "некутаі", "translation": "краватка"
+  },
+  {
+    "id": "u4_14", "lesson": 4, "kana": "ネット", "kanji": "ネット",
+    "romaji": "netto", "transcription": "нетто", "translation": "інтернет"
+  },
+  {
+    "id": "u4_15", "lesson": 4, "kana": "カヌー", "kanji": "カヌー",
+    "romaji": "kanuu", "transcription": "кану:", "translation": "каное"
+  },
+  {
+    "id": "u4_16", "lesson": 4, "kana": "ニット", "kanji": "ニット",
+    "romaji": "nitto", "transcription": "нітто", "translation": "в’язання"
+  },
+  {
     "id": "u5_1", "lesson": 5, "kana": "ミルク", "kanji": "ミルク",
     "romaji": "miruku", "transcription": "міруку", "translation": "молоко"
   },
@@ -206,6 +238,10 @@
   {
     "id": "u6_17", "lesson": 6, "kana": "こちらこそよろしくおねがいします", "kanji": "こちらこそ宜しくお願いします",
     "romaji": "kochirakoso yoroshiku onegaishimasu", "transcription": "кочіракосо йорошьку онеґайшімас", "translation": "навзаєм приємно познайомитися"
+  },
+  {
+    "id": "u6_18", "lesson": 6, "kana": "ひと", "kanji": "人",
+    "romaji": "hito", "transcription": "хіто", "translation": "людина"
   },
   {
     "id": "u7_1", "lesson": 7, "kana": "かんこく", "kanji": "韓国",
@@ -642,6 +678,30 @@
   {
     "id": "u11_25", "lesson": 11, "kana": "ろくがつ", "kanji": "六月",
     "romaji": "rokugatsu", "transcription": "рокуґацу", "translation": "червень"
+  },
+  {
+    "id": "u11_26", "lesson": 11, "kana": "ここ", "kanji": "ここ",
+    "romaji": "koko", "transcription": "коко", "translation": "тут"
+  },
+  {
+    "id": "u11_27", "lesson": 11, "kana": "そこ", "kanji": "そこ",
+    "romaji": "soko", "transcription": "соко", "translation": "там"
+  },
+  {
+    "id": "u11_28", "lesson": 11, "kana": "あそこ", "kanji": "あそこ",
+    "romaji": "asoko", "transcription": "асоко", "translation": "он там"
+  },
+  {
+    "id": "u11_29", "lesson": 11, "kana": "こちら", "kanji": "こちら",
+    "romaji": "kochira", "transcription": "кочіра", "translation": "тут, сюди"
+  },
+  {
+    "id": "u11_30", "lesson": 11, "kana": "そちら", "kanji": "そちら",
+    "romaji": "sochira", "transcription": "сочіра", "translation": "там, туди"
+  },
+  {
+    "id": "u11_31", "lesson": 11, "kana": "あちら", "kanji": "あちら",
+    "romaji": "achira", "transcription": "ачіра", "translation": "он там, он туди"
   },
   {
     "id": "u12_1", "lesson": 12, "kana": "がっこう", "kanji": "学校",
