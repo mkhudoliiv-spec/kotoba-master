@@ -642,5 +642,97 @@
   {
     "id": "u11_25", "lesson": 11, "kana": "ろくがつ", "kanji": "六月",
     "romaji": "rokugatsu", "transcription": "рокуґацу", "translation": "червень"
+  },
+  {
+    "id": "u12_1", "lesson": 12, "kana": "がっこう", "kanji": "学校",
+    "romaji": "gakkou", "transcription": "ґакко:", "translation": "школа"
+  },
+  {
+    "id": "u12_2", "lesson": 12, "kana": "デパート", "kanji": "デパート",
+    "romaji": "depaato", "transcription": "депа:то", "translation": "універмаг"
+  },
+  {
+    "id": "u12_3", "lesson": 12, "kana": "スーパー", "kanji": "スーパー",
+    "romaji": "suupaa", "transcription": "су:па:", "translation": "супермаркет"
+  },
+  {
+    "id": "u12_4", "lesson": 12, "kana": "えいがかん", "kanji": "映画館",
+    "romaji": "eigakan", "transcription": "ейґакан", "translation": "кінотеатр"
+  },
+  {
+    "id": "u12_5", "lesson": 12, "kana": "としょかん", "kanji": "図書館",
+    "romaji": "toshokan", "transcription": "тошьокан", "translation": "бібліотека"
+  },
+  {
+    "id": "u12_6", "lesson": 12, "kana": "ゆうびんきょく", "kanji": "郵便局",
+    "romaji": "yuubinkyoku", "transcription": "ю:бінкьоку", "translation": "пошта"
+  },
+  {
+    "id": "u12_7", "lesson": 12, "kana": "きっさてん", "kanji": "喫茶店",
+    "romaji": "kissaten", "transcription": "кіссатен", "translation": "кав'ярня"
+  },
+  {
+    "id": "u12_8", "lesson": 12, "kana": "びじゅつかん", "kanji": "美術館",
+    "romaji": "bijutsukan", "transcription": "біджюцукан", "translation": "арт-музей"
+  },
+  {
+    "id": "u12_9", "lesson": 12, "kana": "ぎんこう", "kanji": "銀行",
+    "romaji": "ginkou", "transcription": "ґінко:", "translation": "банк"
+  },
+  {
+    "id": "u12_10", "lesson": 12, "kana": "だいがく", "kanji": "大学",
+    "romaji": "daigaku", "transcription": "дайґаку", "translation": "університет"
+  },
+  {
+    "id": "u12_11", "lesson": 12, "kana": "いきます", "kanji": "行きます",
+    "romaji": "ikimasu", "transcription": "ікімас", "translation": "іти"
+  },
+  {
+    "id": "u12_12", "lesson": 12, "kana": "かえります", "kanji": "帰ります",
+    "romaji": "kaerimasu", "transcription": "каерімас", "translation": "повертатися"
+  },
+  {
+    "id": "u12_13", "lesson": 12, "kana": "のみます", "kanji": "飲みます",
+    "romaji": "nomimasu", "transcription": "номімас", "translation": "пити"
+  },
+  {
+    "id": "u12_14", "lesson": 12, "kana": "たべます", "kanji": "食べます",
+    "romaji": "tabemasu", "transcription": "табемас", "translation": "їсти"
+  },
+  {
+    "id": "u12_15", "lesson": 12, "kana": "しち", "kanji": "七",
+    "romaji": "shichi", "transcription": "шічі", "translation": "сім"
+  },
+  {
+    "id": "u12_16", "lesson": 12, "kana": "ななつ", "kanji": "七つ",
+    "romaji": "nanatsu", "transcription": "нанацу", "translation": "сім (лічильне слово)"
+  },
+  {
+    "id": "u12_17", "lesson": 12, "kana": "しちがつ", "kanji": "七月",
+    "romaji": "shichigatsu", "transcription": "шічіґацу", "translation": "липень"
+  },
+  {
+    "id": "u12_18", "lesson": 12, "kana": "はち", "kanji": "八",
+    "romaji": "hachi", "transcription": "хачі", "translation": "вісім"
+  },
+  {
+    "id": "u12_19", "lesson": 12, "kana": "やっつ", "kanji": "八つ",
+    "romaji": "yattsu", "transcription": "яццу", "translation": "вісім (лічильне слово)"
+  },
+  {
+    "id": "u12_20", "lesson": 12, "kana": "はちがつ", "kanji": "八月",
+    "romaji": "hachigatsu", "transcription": "хачіґацу", "translation": "серпень"
+  },
+  {
+    "id": "u12_21", "lesson": 12, "kana": "きゅう", "kanji": "九",
+    "romaji": "kyuu", "transcription": "кю:", "translation": "дев'ять"
+  },
+  {
+    "id": "u12_22", "lesson": 12, "kana": "ここのつ", "kanji": "九つ",
+    "romaji": "kokonotsu", "transcription": "коконоцу", "translation": "дев'ять (лічильне слово)"
+  },
+  {
+    "id": "u12_23", "lesson": 12, "kana": "くがつ", "kanji": "九月",
+    "romaji": "kugatsu", "transcription": "куґацу", "translation": "вересень"
   }
 ]
