@@ -52,8 +52,8 @@ export const dictionary = {
 
   // WriteMode
   'correctStr': { uk: 'Вірно:', en: 'Correct:' },
-  'writePromptBadge': { uk: 'Напишіть японською або транскрипцією', en: 'Write in Japanese or Romaji' },
-  'writeInputPlaceholder': { uk: 'Введіть каною, ромадзі або транскрипцією...', en: 'Enter in Kana, Romaji or transcription...' },
+  'writePromptBadge': { uk: 'Напишіть японською', en: 'Write in Japanese' },
+  'writeInputPlaceholder': { uk: 'Введіть каною або канджі...', en: 'Enter in Kana or Kanji...' },
   'hintBtn': { uk: '💡 Підказка', en: '💡 Hint' },
   'checkBtn': { uk: 'Перевірити', en: 'Check' },
   'hintText': { uk: (t, f) => `Підказка: ${t} • Перша літера: ${f}`, en: (t, f) => `Hint: ${t} • First letter: ${f}` },

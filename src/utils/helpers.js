@@ -16,6 +16,40 @@ export function normalizeText(str) {
   return (str || '').toLowerCase().replace(/[\s\-_—–()[\]]/g, '').trim();
 }
 
+/** Punctuation / spacing ignored when comparing Japanese answers */
+const JP_IGNORE_RE = /[\s、。，．,.!?！？・〜~「」『』"'`]/g;
+
+/** Only hiragana, katakana, kanji, ー and 々 are allowed */
+const JP_ONLY_RE = /^[\u3040-\u309F\u30A0-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\u3005]+$/;
+
+/** Normalize Japanese text: full/half-width unify (NFKC) and strip punctuation */
+function normalizeJp(str) {
+  return (str || '').normalize('NFKC').replace(JP_IGNORE_RE, '');
+}
+
+/**
+ * Build accepted variants for an answer like "はいいろ(の)":
+ * with the optional part ("はいいろの") and without it ("はいいろ").
+ */
+function jpVariants(str) {
+  if (!str) return [];
+  const s = str.normalize('NFKC');
+  const withOpt = normalizeJp(s.replace(/[()[\]]/g, ''));
+  const withoutOpt = normalizeJp(s.replace(/\([^)]*\)|\[[^\]]*\]/g, ''));
+  return [withOpt, withoutOpt].filter(Boolean);
+}
+
+/**
+ * Strict check for write mode: the answer must be written in Japanese
+ * (kana / kanji) and match the kana or kanji form exactly.
+ */
+export function checkJapaneseAnswer(input, item) {
+  const val = normalizeJp(input);
+  if (!val || !JP_ONLY_RE.test(val)) return false;
+  const valid = [...jpVariants(item.kana), ...jpVariants(item.kanji)];
+  return valid.includes(val);
+}
+
 /** Shuffle an array (Fisher-Yates) */
 export function shuffle(arr) {
   const a = [...arr];

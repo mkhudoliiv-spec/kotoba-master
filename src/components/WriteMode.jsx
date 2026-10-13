@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { normalizeText, shuffle } from '../utils/helpers';
+import { checkJapaneseAnswer, shuffle } from '../utils/helpers';
 import { useTranslation } from '../utils/i18n';
 
 export default function WriteMode({ words, allWords }) {
@@ -38,15 +38,8 @@ export default function WriteMode({ words, allWords }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const val = normalizeText(input);
-    if (!val) return;
-    const validAnswers = [
-      normalizeText(item.kana),
-      normalizeText(item.kanji),
-      normalizeText(item.transcription),
-      normalizeText(item.romaji)
-    ];
-    const ok = validAnswers.some(ans => ans && (ans === val || val.includes(ans) || ans.includes(val)));
+    if (!input.trim()) return;
+    const ok = checkJapaneseAnswer(input, item);
     if (ok) setCorrect(c => c + 1);
     setFeedback({ ok, item });
   };
