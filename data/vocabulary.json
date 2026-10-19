@@ -2014,5 +2014,419 @@
     "romaji": "hassen",
     "transcription": "хассен",
     "translation": "вісім тисяч"
+  },
+  {
+    "id": "u14_1",
+    "lesson": 14,
+    "kana": "いちじ",
+    "kanji": "1時",
+    "romaji": "ichiji",
+    "transcription": "ічіджі",
+    "translation": "1 година"
+  },
+  {
+    "id": "u14_2",
+    "lesson": 14,
+    "kana": "にじ",
+    "kanji": "2時",
+    "romaji": "niji",
+    "transcription": "ніджі",
+    "translation": "2 години"
+  },
+  {
+    "id": "u14_3",
+    "lesson": 14,
+    "kana": "さんじ",
+    "kanji": "3時",
+    "romaji": "sanji",
+    "transcription": "санджі",
+    "translation": "3 години"
+  },
+  {
+    "id": "u14_4",
+    "lesson": 14,
+    "kana": "よじ",
+    "kanji": "4時",
+    "romaji": "yoji",
+    "transcription": "йоджі",
+    "translation": "4 години"
+  },
+  {
+    "id": "u14_5",
+    "lesson": 14,
+    "kana": "ごじ",
+    "kanji": "5時",
+    "romaji": "goji",
+    "transcription": "ґоджі",
+    "translation": "5 годин"
+  },
+  {
+    "id": "u14_6",
+    "lesson": 14,
+    "kana": "ろくじ",
+    "kanji": "6時",
+    "romaji": "rokuji",
+    "transcription": "рокуджі",
+    "translation": "6 годин"
+  },
+  {
+    "id": "u14_7",
+    "lesson": 14,
+    "kana": "しちじ",
+    "kanji": "7時",
+    "romaji": "shichiji",
+    "transcription": "шічіджі",
+    "translation": "7 годин"
+  },
+  {
+    "id": "u14_8",
+    "lesson": 14,
+    "kana": "はちじ",
+    "kanji": "8時",
+    "romaji": "hachiji",
+    "transcription": "хачіджі",
+    "translation": "8 годин"
+  },
+  {
+    "id": "u14_9",
+    "lesson": 14,
+    "kana": "くじ",
+    "kanji": "9時",
+    "romaji": "kuji",
+    "transcription": "куджі",
+    "translation": "9 годин"
+  },
+  {
+    "id": "u14_10",
+    "lesson": 14,
+    "kana": "じゅうじ",
+    "kanji": "10時",
+    "romaji": "juuji",
+    "transcription": "джю:джі",
+    "translation": "10 годин"
+  },
+  {
+    "id": "u14_11",
+    "lesson": 14,
+    "kana": "じゅういちじ",
+    "kanji": "11時",
+    "romaji": "juuichiji",
+    "transcription": "джю:ічіджі",
+    "translation": "11 годин"
+  },
+  {
+    "id": "u14_12",
+    "lesson": 14,
+    "kana": "じゅうにじ",
+    "kanji": "12時",
+    "romaji": "juuniji",
+    "transcription": "джю:ніджі",
+    "translation": "12 годин"
+  },
+  {
+    "id": "u14_13",
+    "lesson": 14,
+    "kana": "なんじ",
+    "kanji": "何時",
+    "romaji": "nanji",
+    "transcription": "нанджі",
+    "translation": "котра година?"
+  },
+  {
+    "id": "u14_14",
+    "lesson": 14,
+    "kana": "いっぷん",
+    "kanji": "1分",
+    "romaji": "ippun",
+    "transcription": "іппун",
+    "translation": "1 хвилина"
+  },
+  {
+    "id": "u14_15",
+    "lesson": 14,
+    "kana": "にふん",
+    "kanji": "2分",
+    "romaji": "nifun",
+    "transcription": "ніфун",
+    "translation": "2 хвилини"
+  },
+  {
+    "id": "u14_16",
+    "lesson": 14,
+    "kana": "さんぷん",
+    "kanji": "3分",
+    "romaji": "sanpun",
+    "transcription": "санпун",
+    "translation": "3 хвилини"
+  },
+  {
+    "id": "u14_17",
+    "lesson": 14,
+    "kana": "よんぷん / よんふん",
+    "kanji": "4分",
+    "romaji": "yonpun / yonfun",
+    "transcription": "йонпун / йонфун",
+    "translation": "4 хвилини"
+  },
+  {
+    "id": "u14_18",
+    "lesson": 14,
+    "kana": "ごふん",
+    "kanji": "5分",
+    "romaji": "gofun",
+    "transcription": "ґофун",
+    "translation": "5 хвилин"
+  },
+  {
+    "id": "u14_19",
+    "lesson": 14,
+    "kana": "ろっぷん",
+    "kanji": "6分",
+    "romaji": "roppun",
+    "transcription": "роппун",
+    "translation": "6 хвилин"
+  },
+  {
+    "id": "u14_20",
+    "lesson": 14,
+    "kana": "ななふん",
+    "kanji": "7分",
+    "romaji": "nanafun",
+    "transcription": "нанафун",
+    "translation": "7 хвилин"
+  },
+  {
+    "id": "u14_21",
+    "lesson": 14,
+    "kana": "はっぷん / はちふん",
+    "kanji": "8分",
+    "romaji": "happun / hachifun",
+    "transcription": "хаппун / хачіфун",
+    "translation": "8 хвилин"
+  },
+  {
+    "id": "u14_22",
+    "lesson": 14,
+    "kana": "きゅうふん",
+    "kanji": "9分",
+    "romaji": "kyuufun",
+    "transcription": "кю:фун",
+    "translation": "9 хвилин"
+  },
+  {
+    "id": "u14_23",
+    "lesson": 14,
+    "kana": "じゅっぷん",
+    "kanji": "10分",
+    "romaji": "juppun",
+    "transcription": "джюппун",
+    "translation": "10 хвилин"
+  },
+  {
+    "id": "u14_24",
+    "lesson": 14,
+    "kana": "にじゅっぷん",
+    "kanji": "20分",
+    "romaji": "nijuppun",
+    "transcription": "ніджюппун",
+    "translation": "20 хвилин"
+  },
+  {
+    "id": "u14_25",
+    "lesson": 14,
+    "kana": "さんじゅっぷん / はん",
+    "kanji": "30分 / 半",
+    "romaji": "sanjuppun / han",
+    "transcription": "санджюппун / хан",
+    "translation": "30 хвилин / половина"
+  },
+  {
+    "id": "u14_26",
+    "lesson": 14,
+    "kana": "よんじゅっぷん",
+    "kanji": "40分",
+    "romaji": "yonjuppun",
+    "transcription": "йонджюппун",
+    "translation": "40 хвилин"
+  },
+  {
+    "id": "u14_27",
+    "lesson": 14,
+    "kana": "ごじゅっぷん",
+    "kanji": "50分",
+    "romaji": "gojuppun",
+    "transcription": "ґоджюппун",
+    "translation": "50 хвилин"
+  },
+  {
+    "id": "u14_28",
+    "lesson": 14,
+    "kana": "じゅうごふん",
+    "kanji": "15分",
+    "romaji": "juugofun",
+    "transcription": "джю:ґофун",
+    "translation": "15 хвилин"
+  },
+  {
+    "id": "u14_29",
+    "lesson": 14,
+    "kana": "にじゅうごふん",
+    "kanji": "25分",
+    "romaji": "nijuugofun",
+    "transcription": "ніджю:ґофун",
+    "translation": "25 хвилин"
+  },
+  {
+    "id": "u14_30",
+    "lesson": 14,
+    "kana": "さんじゅうごふん",
+    "kanji": "35分",
+    "romaji": "sanjuugofun",
+    "transcription": "санджю:ґофун",
+    "translation": "35 хвилин"
+  },
+  {
+    "id": "u14_31",
+    "lesson": 14,
+    "kana": "よんじゅうごふん",
+    "kanji": "45分",
+    "romaji": "yonjuugofun",
+    "transcription": "йонджю:ґофун",
+    "translation": "45 хвилин"
+  },
+  {
+    "id": "u14_32",
+    "lesson": 14,
+    "kana": "ごじゅうごふん",
+    "kanji": "55分",
+    "romaji": "gojuugofun",
+    "transcription": "ґоджю:ґофун",
+    "translation": "55 хвилин"
+  },
+  {
+    "id": "u14_33",
+    "lesson": 14,
+    "kana": "なんぷん",
+    "kanji": "何分",
+    "romaji": "nanpun",
+    "transcription": "нанпун",
+    "translation": "скільки хвилин?"
+  },
+  {
+    "id": "u14_34",
+    "lesson": 14,
+    "kana": "ごぜん",
+    "kanji": "午前",
+    "romaji": "gozen",
+    "transcription": "ґодзен",
+    "translation": "перед полуднем (a.m.)"
+  },
+  {
+    "id": "u14_35",
+    "lesson": 14,
+    "kana": "ごご",
+    "kanji": "午後",
+    "romaji": "gogo",
+    "transcription": "ґоґо",
+    "translation": "після полудня (p.m.)"
+  },
+  {
+    "id": "u14_36",
+    "lesson": 14,
+    "kana": "あさ",
+    "kanji": "朝",
+    "romaji": "asa",
+    "transcription": "аса",
+    "translation": "ранок"
+  },
+  {
+    "id": "u14_37",
+    "lesson": 14,
+    "kana": "ひる",
+    "kanji": "昼",
+    "romaji": "hiru",
+    "transcription": "хіру",
+    "translation": "день"
+  },
+  {
+    "id": "u14_38",
+    "lesson": 14,
+    "kana": "ばん",
+    "kanji": "晩",
+    "romaji": "ban",
+    "transcription": "бан",
+    "translation": "вечір"
+  },
+  {
+    "id": "u14_39",
+    "lesson": 14,
+    "kana": "よる",
+    "kanji": "夜",
+    "romaji": "yoru",
+    "transcription": "йору",
+    "translation": "ніч"
+  },
+  {
+    "id": "u14_40",
+    "lesson": 14,
+    "kana": "とき",
+    "kanji": "時",
+    "romaji": "toki",
+    "transcription": "токі",
+    "translation": "коли (момент/період часу)"
+  },
+  {
+    "id": "u14_41",
+    "lesson": 14,
+    "kana": "じかん",
+    "kanji": "時間",
+    "romaji": "jikan",
+    "transcription": "джікан",
+    "translation": "година (як одиниця виміру часу)"
+  },
+  {
+    "id": "u14_42",
+    "lesson": 14,
+    "kana": "ふん",
+    "kanji": "分",
+    "romaji": "fun",
+    "transcription": "фун",
+    "translation": "хвилина"
+  },
+  {
+    "id": "u14_43",
+    "lesson": 14,
+    "kana": "たぶん",
+    "kanji": "多分",
+    "romaji": "tabun",
+    "transcription": "табун",
+    "translation": "мабуть, певно"
+  },
+  {
+    "id": "u14_44",
+    "lesson": 14,
+    "kana": "ご",
+    "kanji": "午",
+    "romaji": "go",
+    "transcription": "ґо",
+    "translation": "полудень, обідня година"
+  },
+  {
+    "id": "u14_45",
+    "lesson": 14,
+    "kana": "ごろ",
+    "kanji": "ごろ",
+    "romaji": "goro",
+    "transcription": "ґоро",
+    "translation": "приблизно, біля (про години)"
+  },
+  {
+    "id": "u14_46",
+    "lesson": 14,
+    "kana": "はん",
+    "kanji": "半",
+    "romaji": "han",
+    "transcription": "хан",
+    "translation": "половина (о 30 хв)"
   }
 ]
