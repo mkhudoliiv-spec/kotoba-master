@@ -19,8 +19,8 @@ export function normalizeText(str) {
 /** Punctuation / spacing ignored when comparing Japanese answers */
 const JP_IGNORE_RE = /[\s、。，．,.!?！？・〜~「」『』"'`]/g;
 
-/** Only hiragana, katakana, kanji, ー and 々 are allowed */
-const JP_ONLY_RE = /^[\u3040-\u309F\u30A0-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\u3005]+$/;
+/** Only hiragana, katakana, kanji, digits (0-9 / ０-９), ー and 々 are allowed */
+const JP_ONLY_RE = /^[\u3040-\u309F\u30A0-\u30FF\u3400-\u4DBF\u4E00-\u9FFF\u30050-9\uFF10-\uFF19]+$/;
 
 /** Normalize Japanese text: full/half-width unify (NFKC) and strip punctuation */
 function normalizeJp(str) {
@@ -28,20 +28,23 @@ function normalizeJp(str) {
 }
 
 /**
- * Build accepted variants for an answer like "はいいろ(の)":
- * with the optional part ("はいいろの") and without it ("はいいろ").
+ * Build accepted variants for an answer like "よんぷん / よんふん" or "はいいろ(の)":
+ * handles alternatives separated by slashes and optional parts in parentheses.
  */
 function jpVariants(str) {
   if (!str) return [];
-  const s = str.normalize('NFKC');
-  const withOpt = normalizeJp(s.replace(/[()[\]]/g, ''));
-  const withoutOpt = normalizeJp(s.replace(/\([^)]*\)|\[[^\]]*\]/g, ''));
-  return [withOpt, withoutOpt].filter(Boolean);
+  const parts = str.split(/[/／]/);
+  return parts.flatMap(part => {
+    const s = part.normalize('NFKC');
+    const withOpt = normalizeJp(s.replace(/[()[\]]/g, ''));
+    const withoutOpt = normalizeJp(s.replace(/\([^)]*\)|\[[^\]]*\]/g, ''));
+    return [withOpt, withoutOpt];
+  }).filter(Boolean);
 }
 
 /**
  * Strict check for write mode: the answer must be written in Japanese
- * (kana / kanji) and match the kana or kanji form exactly.
+ * (kana / kanji / digits) and match the kana or kanji form.
  */
 export function checkJapaneseAnswer(input, item) {
   const val = normalizeJp(input);
@@ -96,6 +99,7 @@ export const LESSON_LABELS = {
   '11': 'Місця & Числа 4–6',
   '12': 'Місця & Числа 7–9',
   '13': 'Дні тижня, час & Числа',
+  '14': 'Години, хвилини & Час',
   'custom': 'Власні слова',
 };
 
