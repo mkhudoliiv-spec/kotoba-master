@@ -2428,5 +2428,302 @@
     "romaji": "han",
     "transcription": "хан",
     "translation": "половина (о 30 хв)"
+  },
+  {
+    "id": "u15_1",
+    "lesson": 15,
+    "kana": "いくら",
+    "kanji": "いくら",
+    "romaji": "ikura",
+    "transcription": "ікура",
+    "translation": "скільки"
+  },
+  {
+    "id": "u15_2",
+    "lesson": 15,
+    "kana": "えん",
+    "kanji": "円",
+    "romaji": "en",
+    "transcription": "ен",
+    "translation": "єна"
+  },
+  {
+    "id": "u15_3",
+    "lesson": 15,
+    "kana": "ひゃく",
+    "kanji": "百",
+    "romaji": "hyaku",
+    "transcription": "хяку",
+    "translation": "100 (сто)"
+  },
+  {
+    "id": "u15_4",
+    "lesson": 15,
+    "kana": "にひゃく",
+    "kanji": "二百",
+    "romaji": "nihyaku",
+    "transcription": "ніхяку",
+    "translation": "200 (двісті)"
+  },
+  {
+    "id": "u15_5",
+    "lesson": 15,
+    "kana": "さんびゃく",
+    "kanji": "三百",
+    "romaji": "sanbyaku",
+    "transcription": "санбяку",
+    "translation": "300 (триста)"
+  },
+  {
+    "id": "u15_6",
+    "lesson": 15,
+    "kana": "よんひゃく",
+    "kanji": "四百",
+    "romaji": "yonhyaku",
+    "transcription": "йонхяку",
+    "translation": "400 (чотириста)"
+  },
+  {
+    "id": "u15_7",
+    "lesson": 15,
+    "kana": "ごひゃく",
+    "kanji": "五百",
+    "romaji": "gohyaku",
+    "transcription": "ґохяку",
+    "translation": "500 (п'ятсот)"
+  },
+  {
+    "id": "u15_8",
+    "lesson": 15,
+    "kana": "ろっぴゃく",
+    "kanji": "六百",
+    "romaji": "roppyaku",
+    "transcription": "роппяку",
+    "translation": "600 (шістсот)"
+  },
+  {
+    "id": "u15_9",
+    "lesson": 15,
+    "kana": "ななひゃく",
+    "kanji": "七百",
+    "romaji": "nanahyaku",
+    "transcription": "нанахяку",
+    "translation": "700 (сімсот)"
+  },
+  {
+    "id": "u15_10",
+    "lesson": 15,
+    "kana": "はっぴゃく",
+    "kanji": "八百",
+    "romaji": "happyaku",
+    "transcription": "хаппяку",
+    "translation": "800 (вісімсот)"
+  },
+  {
+    "id": "u15_11",
+    "lesson": 15,
+    "kana": "きゅうひゃく",
+    "kanji": "九百",
+    "romaji": "kyuuhyaku",
+    "transcription": "кю:хяку",
+    "translation": "900 (дев'ятсот)"
+  },
+  {
+    "id": "u15_12",
+    "lesson": 15,
+    "kana": "せん",
+    "kanji": "千",
+    "romaji": "sen",
+    "transcription": "сен",
+    "translation": "1000 (тисяча)"
+  },
+  {
+    "id": "u15_13",
+    "lesson": 15,
+    "kana": "にせん",
+    "kanji": "二千",
+    "romaji": "nisen",
+    "transcription": "нісен",
+    "translation": "2000 (дві тисячі)"
+  },
+  {
+    "id": "u15_14",
+    "lesson": 15,
+    "kana": "さんぜん",
+    "kanji": "三千",
+    "romaji": "sanzen",
+    "transcription": "сандзен",
+    "translation": "3000 (три тисячі)"
+  },
+  {
+    "id": "u15_15",
+    "lesson": 15,
+    "kana": "よんせん",
+    "kanji": "四千",
+    "romaji": "yonsen",
+    "transcription": "йонсен",
+    "translation": "4000 (чотири тисячі)"
+  },
+  {
+    "id": "u15_16",
+    "lesson": 15,
+    "kana": "ごせん",
+    "kanji": "五千",
+    "romaji": "gosen",
+    "transcription": "ґосен",
+    "translation": "5000 (п'ять тисяч)"
+  },
+  {
+    "id": "u15_17",
+    "lesson": 15,
+    "kana": "ろくせん",
+    "kanji": "六千",
+    "romaji": "rokusen",
+    "transcription": "рокусен",
+    "translation": "6000 (шість тисяч)"
+  },
+  {
+    "id": "u15_18",
+    "lesson": 15,
+    "kana": "ななせん",
+    "kanji": "七千",
+    "romaji": "nanasen",
+    "transcription": "нанасен",
+    "translation": "7000 (сім тисяч)"
+  },
+  {
+    "id": "u15_19",
+    "lesson": 15,
+    "kana": "はっせん",
+    "kanji": "八千",
+    "romaji": "hassen",
+    "transcription": "хассен",
+    "translation": "8000 (вісім тисяч)"
+  },
+  {
+    "id": "u15_20",
+    "lesson": 15,
+    "kana": "きゅうせん",
+    "kanji": "九千",
+    "romaji": "kyuusen",
+    "transcription": "кю:сен",
+    "translation": "9000 (дев'ять тисяч)"
+  },
+  {
+    "id": "u15_21",
+    "lesson": 15,
+    "kana": "まん",
+    "kanji": "万",
+    "romaji": "man",
+    "transcription": "ман",
+    "translation": "10 000 (десять тисяч)"
+  },
+  {
+    "id": "u15_22",
+    "lesson": 15,
+    "kana": "いちまん",
+    "kanji": "一万",
+    "romaji": "ichiman",
+    "transcription": "ічіман",
+    "translation": "10 000 (десять тисяч)"
+  },
+  {
+    "id": "u15_23",
+    "lesson": 15,
+    "kana": "にまん",
+    "kanji": "二万",
+    "romaji": "niman",
+    "transcription": "німан",
+    "translation": "20 000 (двадцять тисяч)"
+  },
+  {
+    "id": "u15_24",
+    "lesson": 15,
+    "kana": "さんまん",
+    "kanji": "三万",
+    "romaji": "sanman",
+    "transcription": "санман",
+    "translation": "30 000 (тридцять тисяч)"
+  },
+  {
+    "id": "u15_25",
+    "lesson": 15,
+    "kana": "よんまん",
+    "kanji": "四万",
+    "romaji": "yonman",
+    "transcription": "йонман",
+    "translation": "40 000 (сорок тисяч)"
+  },
+  {
+    "id": "u15_26",
+    "lesson": 15,
+    "kana": "ごまん",
+    "kanji": "五万",
+    "romaji": "goman",
+    "transcription": "ґоман",
+    "translation": "50 000 (п'ятдесят тисяч)"
+  },
+  {
+    "id": "u15_27",
+    "lesson": 15,
+    "kana": "ろくまん",
+    "kanji": "六万",
+    "romaji": "rokuman",
+    "transcription": "рокуман",
+    "translation": "60 000 (шістдесят тисяч)"
+  },
+  {
+    "id": "u15_28",
+    "lesson": 15,
+    "kana": "ななまん",
+    "kanji": "七万",
+    "romaji": "nanaman",
+    "transcription": "нанаман",
+    "translation": "70 000 (сімдесят тисяч)"
+  },
+  {
+    "id": "u15_29",
+    "lesson": 15,
+    "kana": "はちまん",
+    "kanji": "八万",
+    "romaji": "hachiman",
+    "transcription": "хачіман",
+    "translation": "80 000 (вісімдесят тисяч)"
+  },
+  {
+    "id": "u15_30",
+    "lesson": 15,
+    "kana": "きゅうまん",
+    "kanji": "九万",
+    "romaji": "kyuuman",
+    "transcription": "кю:ман",
+    "translation": "90 000 (дев'яносто тисяч)"
+  },
+  {
+    "id": "u15_31",
+    "lesson": 15,
+    "kana": "きっぷ",
+    "kanji": "切符",
+    "romaji": "kippu",
+    "transcription": "кіппу",
+    "translation": "квиток"
+  },
+  {
+    "id": "u15_32",
+    "lesson": 15,
+    "kana": "バッグ",
+    "kanji": "バッグ",
+    "romaji": "baggu",
+    "transcription": "баґґу",
+    "translation": "сумка (bag)"
+  },
+  {
+    "id": "u15_33",
+    "lesson": 15,
+    "kana": "バス",
+    "kanji": "バス",
+    "romaji": "basu",
+    "transcription": "басу",
+    "translation": "автобус"
   }
 ]
