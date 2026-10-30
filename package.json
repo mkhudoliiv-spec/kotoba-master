@@ -8,6 +8,7 @@
     "build": "vite build",
     "lint": "oxlint",
     "preview": "vite preview",
+    "fetch:jlpt": "node scripts/fetch-jlpt-data.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

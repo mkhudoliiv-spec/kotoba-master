@@ -194,7 +194,7 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onReview,
           {/* FRONT */}
           <div className="flashcard-face flashcard-face--front">
             <div className="flashcard-face__top">
-              <span className="flashcard__badge">{item.lesson === 'custom' ? t('customWord') : t('lessonTitle', item.lesson)}</span>
+              <span className="flashcard__badge">{item.badge || (item.lesson === 'custom' ? t('customWord') : t('lessonTitle', item.lesson))}</span>
               <div className="flashcard__top-btns">
                 <button onClick={(e) => { e.stopPropagation(); speakJapanese(item.kana); }}
                   className="icon-btn" title={t('pronunciation')}>🔊</button>

@@ -49,6 +49,7 @@ export const dictionary = {
   'quizResult': { uk: 'Ваш результат у поточному наборі слів:', en: 'Your score for the current set:' },
   'playAgain': { uk: 'Пройти ще раз', en: 'Take again' },
   'restart': { uk: '↻ Перезапустити', en: '↻ Restart' },
+  'restartBtn': { uk: '↻ Заново', en: '↻ Restart' },
 
   // WriteMode
   'correctStr': { uk: 'Вірно:', en: 'Correct:' },

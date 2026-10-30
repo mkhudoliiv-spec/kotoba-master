@@ -5,7 +5,7 @@ import { speakJapanese } from '../utils/helpers';
 const READ_KEY = 'kotoba_grammar_read';
 
 /** Render text with **highlight** markup and \n line breaks */
-function Rich({ text, className = '' }) {
+export function Rich({ text, className = '' }) {
   if (!text) return null;
   const parts = String(text).split(/\*\*(.+?)\*\*/g);
   return (
@@ -39,7 +39,7 @@ function useReadTopics() {
 
 /* ── Blocks ── */
 
-function Block({ block }) {
+export function Block({ block }) {
   switch (block.type) {
     case 'heading':
       return <h3 className="g-block-heading">{block.text}</h3>;

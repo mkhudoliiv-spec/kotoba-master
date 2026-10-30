@@ -1,0 +1,2273 @@
+{
+  "levels": [
+    {
+      "id": "N5",
+      "title": "Початковий",
+      "description": "Базові канджі, числа, час, родина та найуживаніші слова.",
+      "totalKanji": 80
+    }
+  ],
+  "kanji": [
+    {
+      "id": "jlpt_k_56fd",
+      "kanji": "国",
+      "level": "N5",
+      "index": 41,
+      "totalInLevel": 80,
+      "strokes": 8,
+      "difficulty": 3,
+      "meaningUk": "Країна",
+      "onYomi": [
+        "こく - koku"
+      ],
+      "kunYomi": [
+        "くに - kuni"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 国 стоїть окремо або з окуріґаною: 国 — くに (країна; батьківщина).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 中国 — ちゅうごく (Китай), 外国 — がいこく (закордон; іноземна країна).",
+        "exceptions": "У деяких сполуках こく озвончується в ごく: 中国 — ちゅうごく (Китай)."
+      },
+      "vocabulary": [
+        {
+          "word": "中国",
+          "kana": "ちゅうごく",
+          "romaji": "chuugoku",
+          "meaningUk": "Китай",
+          "type": "On"
+        },
+        {
+          "word": "外国",
+          "kana": "がいこく",
+          "romaji": "gaikoku",
+          "meaningUk": "закордон; іноземна країна",
+          "type": "On"
+        },
+        {
+          "word": "外国人",
+          "kana": "がいこくじん",
+          "romaji": "gaikokujin",
+          "meaningUk": "іноземець",
+          "type": "On"
+        },
+        {
+          "word": "国",
+          "kana": "くに",
+          "romaji": "kuni",
+          "meaningUk": "країна; батьківщина",
+          "type": "Kun"
+        },
+        {
+          "word": "国際",
+          "kana": "こくさい",
+          "romaji": "kokusai",
+          "meaningUk": "міжнародний",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_672c",
+      "kanji": "本",
+      "level": "N5",
+      "index": 42,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Книга; основа; справжній",
+      "onYomi": [
+        "ほん - hon"
+      ],
+      "kunYomi": [
+        "もと - moto"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 本 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 日本 — にほん (Японія), 本屋 — ほんや (книгарня).",
+        "exceptions": "Як лічильний суфікс довгих предметів ほん змінюється: 一本 — いっぽん, 三本 — さんぼん, 六本 — ろっぽん. 日本 читається にほん або にっぽん."
+      },
+      "vocabulary": [
+        {
+          "word": "日本",
+          "kana": "にほん",
+          "romaji": "nihon",
+          "meaningUk": "Японія",
+          "type": "On"
+        },
+        {
+          "word": "本屋",
+          "kana": "ほんや",
+          "romaji": "hon'ya",
+          "meaningUk": "книгарня",
+          "type": "On"
+        },
+        {
+          "word": "本",
+          "kana": "ほん",
+          "romaji": "hon",
+          "meaningUk": "книга",
+          "type": "On"
+        },
+        {
+          "word": "本棚",
+          "kana": "ほんだな",
+          "romaji": "hondana",
+          "meaningUk": "книжкова полиця",
+          "type": "On"
+        },
+        {
+          "word": "本当",
+          "kana": "ほんとう",
+          "romaji": "hontou",
+          "meaningUk": "правда; справжній",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_9577",
+      "kanji": "長",
+      "level": "N5",
+      "index": 43,
+      "totalInLevel": 80,
+      "strokes": 8,
+      "difficulty": 3,
+      "meaningUk": "Довгий; керівник",
+      "onYomi": [
+        "ちょう - chou"
+      ],
+      "kunYomi": [
+        "なが(い) - naga(i)",
+        "おさ - osa"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 長 стоїть окремо або з окуріґаною: 長い — ながい (довгий).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 課長 — かちょう (начальник відділу), 社長 — しゃちょう (директор компанії).",
+        "exceptions": "On-yomi ちょう у сполуках часто означає «голова, керівник»: 社長, 校長, 部長."
+      },
+      "vocabulary": [
+        {
+          "word": "長い",
+          "kana": "ながい",
+          "romaji": "nagai",
+          "meaningUk": "довгий",
+          "type": "Kun"
+        },
+        {
+          "word": "課長",
+          "kana": "かちょう",
+          "romaji": "kachou",
+          "meaningUk": "начальник відділу",
+          "type": "On"
+        },
+        {
+          "word": "社長",
+          "kana": "しゃちょう",
+          "romaji": "shachou",
+          "meaningUk": "директор компанії",
+          "type": "On"
+        },
+        {
+          "word": "校長",
+          "kana": "こうちょう",
+          "romaji": "kouchou",
+          "meaningUk": "директор школи",
+          "type": "On"
+        },
+        {
+          "word": "部長",
+          "kana": "ぶちょう",
+          "romaji": "buchou",
+          "meaningUk": "керівник департаменту",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_51fa",
+      "kanji": "出",
+      "level": "N5",
+      "index": 44,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Виходити; виймати",
+      "onYomi": [
+        "しゅつ - shutsu"
+      ],
+      "kunYomi": [
+        "で(る) - de(ru)",
+        "だ(す) - da(su)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 出 стоїть окремо або з окуріґаною: 出す — だす (виймати; подавати; надсилати), 出かける — でかける (виходити (з дому), вирушати).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 出席 — しゅっせき (присутність (на заняттях, зборах)).",
+        "exceptions": "Перед к/с/т/п しゅつ скорочується до しゅっ: 出席 — しゅっせき, 出発 — しゅっぱつ (відправлення)."
+      },
+      "vocabulary": [
+        {
+          "word": "出す",
+          "kana": "だす",
+          "romaji": "dasu",
+          "meaningUk": "виймати; подавати; надсилати",
+          "type": "Kun"
+        },
+        {
+          "word": "出かける",
+          "kana": "でかける",
+          "romaji": "dekakeru",
+          "meaningUk": "виходити (з дому), вирушати",
+          "type": "Kun"
+        },
+        {
+          "word": "出口",
+          "kana": "でぐち",
+          "romaji": "deguchi",
+          "meaningUk": "вихід",
+          "type": "Kun"
+        },
+        {
+          "word": "出る",
+          "kana": "でる",
+          "romaji": "deru",
+          "meaningUk": "виходити; з'являтися",
+          "type": "Kun"
+        },
+        {
+          "word": "出席",
+          "kana": "しゅっせき",
+          "romaji": "shusseki",
+          "meaningUk": "присутність (на заняттях, зборах)",
+          "type": "On"
+        },
+        {
+          "word": "思い出す",
+          "kana": "おもいだす",
+          "romaji": "omoidasu",
+          "meaningUk": "пригадувати",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_884c",
+      "kanji": "行",
+      "level": "N5",
+      "index": 45,
+      "totalInLevel": 80,
+      "strokes": 6,
+      "difficulty": 2,
+      "meaningUk": "Іти; здійснювати",
+      "onYomi": [
+        "こう - kou",
+        "ぎょう - gyou"
+      ],
+      "kunYomi": [
+        "い(く) - i(ku)",
+        "ゆ(く) - yu(ku)",
+        "おこな(う) - okona(u)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 行 стоїть окремо або з окуріґаною: 行く — いく (іти; їхати), 行う — おこなう (проводити, здійснювати).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 銀行 — ぎんこう (банк), 飛行機 — ひこうき (літак).",
+        "exceptions": "行く — неправильне дієслово: те-форма 行って — いって, минулий час 行った — いった. Читання ゆく — книжне."
+      },
+      "vocabulary": [
+        {
+          "word": "行く",
+          "kana": "いく",
+          "romaji": "iku",
+          "meaningUk": "іти; їхати",
+          "type": "Kun"
+        },
+        {
+          "word": "銀行",
+          "kana": "ぎんこう",
+          "romaji": "ginkou",
+          "meaningUk": "банк",
+          "type": "On"
+        },
+        {
+          "word": "飛行機",
+          "kana": "ひこうき",
+          "romaji": "hikouki",
+          "meaningUk": "літак",
+          "type": "On"
+        },
+        {
+          "word": "旅行",
+          "kana": "りょこう",
+          "romaji": "ryokou",
+          "meaningUk": "подорож",
+          "type": "On"
+        },
+        {
+          "word": "行う",
+          "kana": "おこなう",
+          "romaji": "okonau",
+          "meaningUk": "проводити, здійснювати",
+          "type": "Kun"
+        },
+        {
+          "word": "飛行場",
+          "kana": "ひこうじょう",
+          "romaji": "hikoujou",
+          "meaningUk": "аеродром",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_898b",
+      "kanji": "見",
+      "level": "N5",
+      "index": 46,
+      "totalInLevel": 80,
+      "strokes": 7,
+      "difficulty": 3,
+      "meaningUk": "Бачити; дивитися",
+      "onYomi": [
+        "けん - ken"
+      ],
+      "kunYomi": [
+        "み(る) - mi(ru)",
+        "み(える) - mi(eru)",
+        "み(せる) - mi(seru)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 見 стоїть окремо або з окуріґаною: 見せる — みせる (показувати), 見る — みる (дивитися; бачити).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 意見 — いけん (думка).",
+        "exceptions": "見る — дієслово ru-групи: 見ます, 見て. Не плутайте 見る (дивитися) і 見える (бути видимим, виднітися)."
+      },
+      "vocabulary": [
+        {
+          "word": "見せる",
+          "kana": "みせる",
+          "romaji": "miseru",
+          "meaningUk": "показувати",
+          "type": "Kun"
+        },
+        {
+          "word": "見る",
+          "kana": "みる",
+          "romaji": "miru",
+          "meaningUk": "дивитися; бачити",
+          "type": "Kun"
+        },
+        {
+          "word": "意見",
+          "kana": "いけん",
+          "romaji": "iken",
+          "meaningUk": "думка",
+          "type": "On"
+        },
+        {
+          "word": "見える",
+          "kana": "みえる",
+          "romaji": "mieru",
+          "meaningUk": "бути видимим, виднітися",
+          "type": "Kun"
+        },
+        {
+          "word": "見つける",
+          "kana": "みつける",
+          "romaji": "mitsukeru",
+          "meaningUk": "знаходити",
+          "type": "Kun"
+        },
+        {
+          "word": "お見舞い",
+          "kana": "おみまい",
+          "romaji": "omimai",
+          "meaningUk": "відвідини хворого",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5f8c",
+      "kanji": "後",
+      "level": "N5",
+      "index": 47,
+      "totalInLevel": 80,
+      "strokes": 9,
+      "difficulty": 4,
+      "meaningUk": "Після; позаду",
+      "onYomi": [
+        "ご - go",
+        "こう - kou"
+      ],
+      "kunYomi": [
+        "あと - ato",
+        "うし(ろ) - ushi(ro)",
+        "のち - nochi"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 後 стоїть окремо або з окуріґаною: 明後日 — あさって (післязавтра), 後 — あと (потім; після).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 午後 — ごご (після полудня (p.m.)), 最後 — さいご (останній; кінець).",
+        "exceptions": "明後日 — あさって (післязавтра) — особливе читання всього слова. Часове «після» — 後で — あとで, просторове «позаду» — 後ろ — うしろ."
+      },
+      "vocabulary": [
+        {
+          "word": "明後日",
+          "kana": "あさって",
+          "romaji": "asatte",
+          "meaningUk": "післязавтра",
+          "type": "Kun"
+        },
+        {
+          "word": "後",
+          "kana": "あと",
+          "romaji": "ato",
+          "meaningUk": "потім; після",
+          "type": "Kun"
+        },
+        {
+          "word": "後ろ",
+          "kana": "うしろ",
+          "romaji": "ushiro",
+          "meaningUk": "позаду; задня частина",
+          "type": "Kun"
+        },
+        {
+          "word": "午後",
+          "kana": "ごご",
+          "romaji": "gogo",
+          "meaningUk": "після полудня (p.m.)",
+          "type": "On"
+        },
+        {
+          "word": "最後",
+          "kana": "さいご",
+          "romaji": "saigo",
+          "meaningUk": "останній; кінець",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_524d",
+      "kanji": "前",
+      "level": "N5",
+      "index": 48,
+      "totalInLevel": 80,
+      "strokes": 9,
+      "difficulty": 4,
+      "meaningUk": "Перед; раніше",
+      "onYomi": [
+        "ぜん - zen"
+      ],
+      "kunYomi": [
+        "まえ - mae"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 前 стоїть окремо або з окуріґаною: 駅前 — えきまえ (привокзальна площа; біля вокзалу), 名前 — なまえ (ім'я).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 午前 — ごぜん (до полудня (a.m.)).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "駅前",
+          "kana": "えきまえ",
+          "romaji": "ekimae",
+          "meaningUk": "привокзальна площа; біля вокзалу",
+          "type": "Kun"
+        },
+        {
+          "word": "午前",
+          "kana": "ごぜん",
+          "romaji": "gozen",
+          "meaningUk": "до полудня (a.m.)",
+          "type": "On"
+        },
+        {
+          "word": "名前",
+          "kana": "なまえ",
+          "romaji": "namae",
+          "meaningUk": "ім'я",
+          "type": "Kun"
+        },
+        {
+          "word": "前",
+          "kana": "まえ",
+          "romaji": "mae",
+          "meaningUk": "перед; раніше",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_9593",
+      "kanji": "間",
+      "level": "N5",
+      "index": 49,
+      "totalInLevel": 80,
+      "strokes": 12,
+      "difficulty": 5,
+      "meaningUk": "Проміжок; між",
+      "onYomi": [
+        "かん - kan",
+        "けん - ken"
+      ],
+      "kunYomi": [
+        "あいだ - aida",
+        "ま - ma",
+        "あい - ai"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 間 стоїть окремо або з окуріґаною: 間違える — まちがえる (помилятися), 昼間 — ひるま (денний час).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 時間 — じかん (час (тривалість); година), 週間 — しゅうかん (тиждень (тривалість)).",
+        "exceptions": "Після числа: 一時間 — いちじかん (одна година), 一週間 — いっしゅうかん (один тиждень). Kun ま звучить у 間違える і 昼間, あいだ — окреме слово."
+      },
+      "vocabulary": [
+        {
+          "word": "時間",
+          "kana": "じかん",
+          "romaji": "jikan",
+          "meaningUk": "час (тривалість); година",
+          "type": "On"
+        },
+        {
+          "word": "週間",
+          "kana": "しゅうかん",
+          "romaji": "shuukan",
+          "meaningUk": "тиждень (тривалість)",
+          "type": "On"
+        },
+        {
+          "word": "間違える",
+          "kana": "まちがえる",
+          "romaji": "machigaeru",
+          "meaningUk": "помилятися",
+          "type": "Kun"
+        },
+        {
+          "word": "昼間",
+          "kana": "ひるま",
+          "romaji": "hiruma",
+          "meaningUk": "денний час",
+          "type": "Kun"
+        },
+        {
+          "word": "間",
+          "kana": "あいだ",
+          "romaji": "aida",
+          "meaningUk": "між; протягом",
+          "type": "Kun"
+        },
+        {
+          "word": "この間",
+          "kana": "このあいだ",
+          "romaji": "konoaida",
+          "meaningUk": "нещодавно, днями",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_6771",
+      "kanji": "東",
+      "level": "N5",
+      "index": 50,
+      "totalInLevel": 80,
+      "strokes": 8,
+      "difficulty": 3,
+      "meaningUk": "Схід",
+      "onYomi": [
+        "とう - tou"
+      ],
+      "kunYomi": [
+        "ひがし - higashi"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 東 стоїть окремо або з окуріґаною: 東口 — ひがしぐち (східний вихід), 東 — ひがし (схід).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 東京 — とうきょう (Токіо).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "東京",
+          "kana": "とうきょう",
+          "romaji": "toukyou",
+          "meaningUk": "Токіо",
+          "type": "On"
+        },
+        {
+          "word": "東口",
+          "kana": "ひがしぐち",
+          "romaji": "higashiguchi",
+          "meaningUk": "східний вихід",
+          "type": "Kun"
+        },
+        {
+          "word": "東",
+          "kana": "ひがし",
+          "romaji": "higashi",
+          "meaningUk": "схід",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_4eca",
+      "kanji": "今",
+      "level": "N5",
+      "index": 51,
+      "totalInLevel": 80,
+      "strokes": 4,
+      "difficulty": 1,
+      "meaningUk": "Тепер; зараз",
+      "onYomi": [
+        "こん - kon",
+        "きん - kin"
+      ],
+      "kunYomi": [
+        "いま - ima"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 今 стоїть окремо або з окуріґаною: 今 — いま (зараз), 今日 — きょう (сьогодні).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 今月 — こんげつ (цей місяць), 今週 — こんしゅう (цей тиждень).",
+        "exceptions": "Особливі читання: 今日 — きょう, 今朝 — けさ, 今年 — ことし. А 今月 — こんげつ і 今週 — こんしゅう читаються регулярно через on-yomi こん."
+      },
+      "vocabulary": [
+        {
+          "word": "今",
+          "kana": "いま",
+          "romaji": "ima",
+          "meaningUk": "зараз",
+          "type": "Kun"
+        },
+        {
+          "word": "今日",
+          "kana": "きょう",
+          "romaji": "kyou",
+          "meaningUk": "сьогодні",
+          "type": "Kun"
+        },
+        {
+          "word": "今朝",
+          "kana": "けさ",
+          "romaji": "kesa",
+          "meaningUk": "сьогодні вранці",
+          "type": "Kun"
+        },
+        {
+          "word": "今年",
+          "kana": "ことし",
+          "romaji": "kotoshi",
+          "meaningUk": "цей рік",
+          "type": "Kun"
+        },
+        {
+          "word": "今月",
+          "kana": "こんげつ",
+          "romaji": "kongetsu",
+          "meaningUk": "цей місяць",
+          "type": "On"
+        },
+        {
+          "word": "今週",
+          "kana": "こんしゅう",
+          "romaji": "konshuu",
+          "meaningUk": "цей тиждень",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5165",
+      "kanji": "入",
+      "level": "N5",
+      "index": 52,
+      "totalInLevel": 80,
+      "strokes": 2,
+      "difficulty": 1,
+      "meaningUk": "Входити; вкладати",
+      "onYomi": [
+        "にゅう - nyuu"
+      ],
+      "kunYomi": [
+        "い(る) - i(ru)",
+        "い(れる) - i(reru)",
+        "はい(る) - hai(ru)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 入 стоїть окремо або з окуріґаною: 入口 — いりぐち (вхід), 入れる — いれる (класти всередину, вкладати).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 入学 — にゅうがく (вступ до навчального закладу), 輸入 — ゆにゅう (імпорт).",
+        "exceptions": "入る читається はいる, але 入口 — いりぐち і 入れる — いれる беруть kun い. 入る — дієслово u-групи, хоч і закінчується на -іру: 入ります, 入って."
+      },
+      "vocabulary": [
+        {
+          "word": "入口",
+          "kana": "いりぐち",
+          "romaji": "iriguchi",
+          "meaningUk": "вхід",
+          "type": "Kun"
+        },
+        {
+          "word": "入れる",
+          "kana": "いれる",
+          "romaji": "ireru",
+          "meaningUk": "класти всередину, вкладати",
+          "type": "Kun"
+        },
+        {
+          "word": "入る",
+          "kana": "はいる",
+          "romaji": "hairu",
+          "meaningUk": "входити; вміщатися",
+          "type": "Kun"
+        },
+        {
+          "word": "入学",
+          "kana": "にゅうがく",
+          "romaji": "nyuugaku",
+          "meaningUk": "вступ до навчального закладу",
+          "type": "On"
+        },
+        {
+          "word": "押し入れ",
+          "kana": "おしいれ",
+          "romaji": "oshiire",
+          "meaningUk": "вбудована шафа",
+          "type": "Kun"
+        },
+        {
+          "word": "輸入",
+          "kana": "ゆにゅう",
+          "romaji": "yunyuu",
+          "meaningUk": "імпорт",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_9ad8",
+      "kanji": "高",
+      "level": "N5",
+      "index": 53,
+      "totalInLevel": 80,
+      "strokes": 10,
+      "difficulty": 4,
+      "meaningUk": "Високий; дорогий",
+      "onYomi": [
+        "こう - kou"
+      ],
+      "kunYomi": [
+        "たか(い) - taka(i)",
+        "たか - taka"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 高 стоїть окремо або з окуріґаною: 高い — たかい (високий; дорогий).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 高校 — こうこう (старша школа), 高校生 — こうこうせい (старшокласник).",
+        "exceptions": "高い означає і «високий», і «дорогий»: この本は高いです — ця книжка дорога."
+      },
+      "vocabulary": [
+        {
+          "word": "高校",
+          "kana": "こうこう",
+          "romaji": "koukou",
+          "meaningUk": "старша школа",
+          "type": "On"
+        },
+        {
+          "word": "高い",
+          "kana": "たかい",
+          "romaji": "takai",
+          "meaningUk": "високий; дорогий",
+          "type": "Kun"
+        },
+        {
+          "word": "高校生",
+          "kana": "こうこうせい",
+          "romaji": "koukousei",
+          "meaningUk": "старшокласник",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5916",
+      "kanji": "外",
+      "level": "N5",
+      "index": 54,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Зовні; інший",
+      "onYomi": [
+        "がい - gai",
+        "げ - ge"
+      ],
+      "kunYomi": [
+        "そと - soto",
+        "ほか - hoka",
+        "はず(す) - hazu(su)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 外 стоїть окремо або з окуріґаною: 外 — そと (надворі; зовні).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 外国 — がいこく (закордон; іноземна країна), 外国人 — がいこくじん (іноземець).",
+        "exceptions": "Як окреме слово 外 має два читання: そと — «надворі, зовні» та ほか — «інший, крім». ほか частіше пишуть хіраґаною."
+      },
+      "vocabulary": [
+        {
+          "word": "外国",
+          "kana": "がいこく",
+          "romaji": "gaikoku",
+          "meaningUk": "закордон; іноземна країна",
+          "type": "On"
+        },
+        {
+          "word": "外国人",
+          "kana": "がいこくじん",
+          "romaji": "gaikokujin",
+          "meaningUk": "іноземець",
+          "type": "On"
+        },
+        {
+          "word": "外",
+          "kana": "そと",
+          "romaji": "soto",
+          "meaningUk": "надворі; зовні",
+          "type": "Kun"
+        },
+        {
+          "word": "郊外",
+          "kana": "こうがい",
+          "romaji": "kougai",
+          "meaningUk": "передмістя",
+          "type": "On"
+        },
+        {
+          "word": "以外",
+          "kana": "いがい",
+          "romaji": "igai",
+          "meaningUk": "крім, окрім",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_4e0b",
+      "kanji": "下",
+      "level": "N5",
+      "index": 55,
+      "totalInLevel": 80,
+      "strokes": 3,
+      "difficulty": 1,
+      "meaningUk": "Низ; під",
+      "onYomi": [
+        "か - ka",
+        "げ - ge"
+      ],
+      "kunYomi": [
+        "した - shita",
+        "しも - shimo",
+        "さ(げる) - sa(geru)",
+        "くだ(さる) - kuda(saru)",
+        "お(りる) - o(riru)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 下 стоїть окремо або з окуріґаною: 下さい — ください (будь ласка, дайте / зробіть), 靴下 — くつした (шкарпетки).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 地下鉄 — ちかてつ (метро), 廊下 — ろうか (коридор).",
+        "exceptions": "下手 — へた (невправний) — особливе читання, антонім до 上手 — じょうず. 下さい після те-форми зазвичай пишуть хіраґаною: 見てください."
+      },
+      "vocabulary": [
+        {
+          "word": "下さい",
+          "kana": "ください",
+          "romaji": "kudasai",
+          "meaningUk": "будь ласка, дайте / зробіть",
+          "type": "Kun"
+        },
+        {
+          "word": "靴下",
+          "kana": "くつした",
+          "romaji": "kutsushita",
+          "meaningUk": "шкарпетки",
+          "type": "Kun"
+        },
+        {
+          "word": "下",
+          "kana": "した",
+          "romaji": "shita",
+          "meaningUk": "низ; під",
+          "type": "Kun"
+        },
+        {
+          "word": "地下鉄",
+          "kana": "ちかてつ",
+          "romaji": "chikatetsu",
+          "meaningUk": "метро",
+          "type": "On"
+        },
+        {
+          "word": "下手",
+          "kana": "へた",
+          "romaji": "heta",
+          "meaningUk": "невправний",
+          "type": "Kun"
+        },
+        {
+          "word": "廊下",
+          "kana": "ろうか",
+          "romaji": "rouka",
+          "meaningUk": "коридор",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_6765",
+      "kanji": "来",
+      "level": "N5",
+      "index": 56,
+      "totalInLevel": 80,
+      "strokes": 7,
+      "difficulty": 3,
+      "meaningUk": "Приходити; наступний",
+      "onYomi": [
+        "らい - rai"
+      ],
+      "kunYomi": [
+        "く(る) - ku(ru)",
+        "き(ます) - ki(masu)",
+        "こ(ない) - ko(nai)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 来 стоїть окремо або з окуріґаною: 来る — くる (приходити).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): さ来年 — さらいねん (позанаступний рік), 来月 — らいげつ (наступний місяць).",
+        "exceptions": "来る — неправильне дієслово, читання основи змінюється: 来ます — きます, 来ない — こない, 来て — きて."
+      },
+      "vocabulary": [
+        {
+          "word": "来る",
+          "kana": "くる",
+          "romaji": "kuru",
+          "meaningUk": "приходити",
+          "type": "Kun"
+        },
+        {
+          "word": "さ来年",
+          "kana": "さらいねん",
+          "romaji": "sarainen",
+          "meaningUk": "позанаступний рік",
+          "type": "On"
+        },
+        {
+          "word": "来月",
+          "kana": "らいげつ",
+          "romaji": "raigetsu",
+          "meaningUk": "наступний місяць",
+          "type": "On"
+        },
+        {
+          "word": "来週",
+          "kana": "らいしゅう",
+          "romaji": "raishuu",
+          "meaningUk": "наступний тиждень",
+          "type": "On"
+        },
+        {
+          "word": "来年",
+          "kana": "らいねん",
+          "romaji": "rainen",
+          "meaningUk": "наступний рік",
+          "type": "On"
+        },
+        {
+          "word": "再来月",
+          "kana": "さらいげつ",
+          "romaji": "saraigetsu",
+          "meaningUk": "позанаступний місяць",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_6c17",
+      "kanji": "気",
+      "level": "N5",
+      "index": 57,
+      "totalInLevel": 80,
+      "strokes": 6,
+      "difficulty": 2,
+      "meaningUk": "Дух; настрій; повітря",
+      "onYomi": [
+        "き - ki",
+        "け - ke"
+      ],
+      "kunYomi": [],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 気 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 元気 — げんき (здоровий; бадьорий), 天気 — てんき (погода).",
+        "exceptions": "Багато виразів із 気 — сталі звороти: 気をつける — きをつける (бути обережним), 気に入る — きにいる (подобатися)."
+      },
+      "vocabulary": [
+        {
+          "word": "元気",
+          "kana": "げんき",
+          "romaji": "genki",
+          "meaningUk": "здоровий; бадьорий",
+          "type": "On"
+        },
+        {
+          "word": "天気",
+          "kana": "てんき",
+          "romaji": "tenki",
+          "meaningUk": "погода",
+          "type": "On"
+        },
+        {
+          "word": "電気",
+          "kana": "でんき",
+          "romaji": "denki",
+          "meaningUk": "електрика; світло",
+          "type": "On"
+        },
+        {
+          "word": "病気",
+          "kana": "びょうき",
+          "romaji": "byouki",
+          "meaningUk": "хвороба",
+          "type": "On"
+        },
+        {
+          "word": "気",
+          "kana": "き",
+          "romaji": "ki",
+          "meaningUk": "дух; настрій",
+          "type": "On"
+        },
+        {
+          "word": "気分",
+          "kana": "きぶん",
+          "romaji": "kibun",
+          "meaningUk": "самопочуття; настрій",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_8a71",
+      "kanji": "話",
+      "level": "N5",
+      "index": 58,
+      "totalInLevel": 80,
+      "strokes": 13,
+      "difficulty": 5,
+      "meaningUk": "Розмова; розповідь",
+      "onYomi": [
+        "わ - wa"
+      ],
+      "kunYomi": [
+        "はな(す) - hana(su)",
+        "はなし - hanashi"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 話 стоїть окремо або з окуріґаною: 話 — はなし (розмова; історія), 話す — はなす (говорити, розмовляти).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 電話 — でんわ (телефон), 会話 — かいわ (розмова, діалог).",
+        "exceptions": "Іменник 話 — はなし пишеться без окуріґани, дієслово — 話す — はなす."
+      },
+      "vocabulary": [
+        {
+          "word": "電話",
+          "kana": "でんわ",
+          "romaji": "denwa",
+          "meaningUk": "телефон",
+          "type": "On"
+        },
+        {
+          "word": "話",
+          "kana": "はなし",
+          "romaji": "hanashi",
+          "meaningUk": "розмова; історія",
+          "type": "Kun"
+        },
+        {
+          "word": "話す",
+          "kana": "はなす",
+          "romaji": "hanasu",
+          "meaningUk": "говорити, розмовляти",
+          "type": "Kun"
+        },
+        {
+          "word": "会話",
+          "kana": "かいわ",
+          "romaji": "kaiwa",
+          "meaningUk": "розмова, діалог",
+          "type": "On"
+        },
+        {
+          "word": "世話",
+          "kana": "せわ",
+          "romaji": "sewa",
+          "meaningUk": "турбота, догляд",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5317",
+      "kanji": "北",
+      "level": "N5",
+      "index": 59,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Північ",
+      "onYomi": [
+        "ほく - hoku"
+      ],
+      "kunYomi": [
+        "きた - kita"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 北 стоїть окремо або з окуріґаною: 北口 — きたぐち (північний вихід), 北 — きた (північ).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 北海道 — ほっかいどう (Хоккайдо).",
+        "exceptions": "Перед к ほく скорочується: 北海道 — ほっかいどう."
+      },
+      "vocabulary": [
+        {
+          "word": "北海道",
+          "kana": "ほっかいどう",
+          "romaji": "hokkaidou",
+          "meaningUk": "Хоккайдо",
+          "type": "On"
+        },
+        {
+          "word": "北口",
+          "kana": "きたぐち",
+          "romaji": "kitaguchi",
+          "meaningUk": "північний вихід",
+          "type": "Kun"
+        },
+        {
+          "word": "北",
+          "kana": "きた",
+          "romaji": "kita",
+          "meaningUk": "північ",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5348",
+      "kanji": "午",
+      "level": "N5",
+      "index": 60,
+      "totalInLevel": 80,
+      "strokes": 4,
+      "difficulty": 1,
+      "meaningUk": "Полудень",
+      "onYomi": [
+        "ご - go"
+      ],
+      "kunYomi": [
+        "うま - uma"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 午 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 正午 — しょうご (полудень (12:00)), 午後 — ごご (після полудня (p.m.)).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "正午",
+          "kana": "しょうご",
+          "romaji": "shougo",
+          "meaningUk": "полудень (12:00)",
+          "type": "On"
+        },
+        {
+          "word": "午後",
+          "kana": "ごご",
+          "romaji": "gogo",
+          "meaningUk": "після полудня (p.m.)",
+          "type": "On"
+        },
+        {
+          "word": "午前",
+          "kana": "ごぜん",
+          "romaji": "gozen",
+          "meaningUk": "до полудня (a.m.)",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_66f8",
+      "kanji": "書",
+      "level": "N5",
+      "index": 61,
+      "totalInLevel": 80,
+      "strokes": 10,
+      "difficulty": 4,
+      "meaningUk": "Писати",
+      "onYomi": [
+        "しょ - sho"
+      ],
+      "kunYomi": [
+        "か(く) - ka(ku)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 書 стоїть окремо або з окуріґаною: 書く — かく (писати), 葉書 — はがき (листівка).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 辞書 — じしょ (словник), 図書館 — としょかん (бібліотека).",
+        "exceptions": "У 葉書 — はがき (листівка) か озвончується в が."
+      },
+      "vocabulary": [
+        {
+          "word": "書く",
+          "kana": "かく",
+          "romaji": "kaku",
+          "meaningUk": "писати",
+          "type": "Kun"
+        },
+        {
+          "word": "辞書",
+          "kana": "じしょ",
+          "romaji": "jisho",
+          "meaningUk": "словник",
+          "type": "On"
+        },
+        {
+          "word": "図書館",
+          "kana": "としょかん",
+          "romaji": "toshokan",
+          "meaningUk": "бібліотека",
+          "type": "On"
+        },
+        {
+          "word": "葉書",
+          "kana": "はがき",
+          "romaji": "hagaki",
+          "meaningUk": "листівка",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_540d",
+      "kanji": "名",
+      "level": "N5",
+      "index": 62,
+      "totalInLevel": 80,
+      "strokes": 6,
+      "difficulty": 2,
+      "meaningUk": "Ім'я; відомий",
+      "onYomi": [
+        "めい - mei",
+        "みょう - myou"
+      ],
+      "kunYomi": [
+        "な - na"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 名 стоїть окремо або з окуріґаною: 片仮名 — かたかな (катакана), 名前 — なまえ (ім'я).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 有名 — ゆうめい (відомий).",
+        "exceptions": "У 名前, 片仮名 і 平仮名 читання な — це kun. Назви абеток зазвичай пишуть каною: カタカナ, ひらがな."
+      },
+      "vocabulary": [
+        {
+          "word": "片仮名",
+          "kana": "かたかな",
+          "romaji": "katakana",
+          "meaningUk": "катакана",
+          "type": "Kun"
+        },
+        {
+          "word": "名前",
+          "kana": "なまえ",
+          "romaji": "namae",
+          "meaningUk": "ім'я",
+          "type": "Kun"
+        },
+        {
+          "word": "平仮名",
+          "kana": "ひらがな",
+          "romaji": "hiragana",
+          "meaningUk": "хіраґана",
+          "type": "Kun"
+        },
+        {
+          "word": "有名",
+          "kana": "ゆうめい",
+          "romaji": "yuumei",
+          "meaningUk": "відомий",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_534a",
+      "kanji": "半",
+      "level": "N5",
+      "index": 63,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Половина",
+      "onYomi": [
+        "はん - han"
+      ],
+      "kunYomi": [
+        "なか(ば) - naka(ba)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 半 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 半年 — はんとし (пів року), 半 — はん (половина; пів (二時半 — пів на третю)).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "半年",
+          "kana": "はんとし",
+          "romaji": "hantoshi",
+          "meaningUk": "пів року",
+          "type": "On"
+        },
+        {
+          "word": "半",
+          "kana": "はん",
+          "romaji": "han",
+          "meaningUk": "половина; пів (二時半 — пів на третю)",
+          "type": "On"
+        },
+        {
+          "word": "半分",
+          "kana": "はんぶん",
+          "romaji": "hanbun",
+          "meaningUk": "половина",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_897f",
+      "kanji": "西",
+      "level": "N5",
+      "index": 64,
+      "totalInLevel": 80,
+      "strokes": 6,
+      "difficulty": 2,
+      "meaningUk": "Захід",
+      "onYomi": [
+        "せい - sei",
+        "さい - sai"
+      ],
+      "kunYomi": [
+        "にし - nishi"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 西 стоїть окремо або з окуріґаною: 西口 — にしぐち (західний вихід), 西 — にし (захід).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 西洋 — せいよう (Захід (західні країни)).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "西口",
+          "kana": "にしぐち",
+          "romaji": "nishiguchi",
+          "meaningUk": "західний вихід",
+          "type": "Kun"
+        },
+        {
+          "word": "西",
+          "kana": "にし",
+          "romaji": "nishi",
+          "meaningUk": "захід",
+          "type": "Kun"
+        },
+        {
+          "word": "西洋",
+          "kana": "せいよう",
+          "romaji": "seiyou",
+          "meaningUk": "Захід (західні країни)",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_96fb",
+      "kanji": "電",
+      "level": "N5",
+      "index": 65,
+      "totalInLevel": 80,
+      "strokes": 13,
+      "difficulty": 5,
+      "meaningUk": "Електрика",
+      "onYomi": [
+        "でん - den"
+      ],
+      "kunYomi": [],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 電 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 電気 — でんき (електрика; світло), 電車 — でんしゃ (електричка, потяг).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "電気",
+          "kana": "でんき",
+          "romaji": "denki",
+          "meaningUk": "електрика; світло",
+          "type": "On"
+        },
+        {
+          "word": "電車",
+          "kana": "でんしゃ",
+          "romaji": "densha",
+          "meaningUk": "електричка, потяг",
+          "type": "On"
+        },
+        {
+          "word": "電話",
+          "kana": "でんわ",
+          "romaji": "denwa",
+          "meaningUk": "телефон",
+          "type": "On"
+        },
+        {
+          "word": "電灯",
+          "kana": "でんとう",
+          "romaji": "dentou",
+          "meaningUk": "електрична лампа",
+          "type": "On"
+        },
+        {
+          "word": "電報",
+          "kana": "でんぽう",
+          "romaji": "denpou",
+          "meaningUk": "телеграма",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_6821",
+      "kanji": "校",
+      "level": "N5",
+      "index": 66,
+      "totalInLevel": 80,
+      "strokes": 10,
+      "difficulty": 4,
+      "meaningUk": "Школа",
+      "onYomi": [
+        "こう - kou"
+      ],
+      "kunYomi": [],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 校 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 学校 — がっこう (школа), 中学校 — ちゅうがっこう (середня школа).",
+        "exceptions": "У 学校 — がっこう がく скорочується до がっ."
+      },
+      "vocabulary": [
+        {
+          "word": "学校",
+          "kana": "がっこう",
+          "romaji": "gakkou",
+          "meaningUk": "школа",
+          "type": "On"
+        },
+        {
+          "word": "中学校",
+          "kana": "ちゅうがっこう",
+          "romaji": "chuugakkou",
+          "meaningUk": "середня школа",
+          "type": "On"
+        },
+        {
+          "word": "小学校",
+          "kana": "しょうがっこう",
+          "romaji": "shougakkou",
+          "meaningUk": "початкова школа",
+          "type": "On"
+        },
+        {
+          "word": "校長",
+          "kana": "こうちょう",
+          "romaji": "kouchou",
+          "meaningUk": "директор школи",
+          "type": "On"
+        },
+        {
+          "word": "高校生",
+          "kana": "こうこうせい",
+          "romaji": "koukousei",
+          "meaningUk": "старшокласник",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_8a9e",
+      "kanji": "語",
+      "level": "N5",
+      "index": 67,
+      "totalInLevel": 80,
+      "strokes": 14,
+      "difficulty": 5,
+      "meaningUk": "Слово; мова",
+      "onYomi": [
+        "ご - go"
+      ],
+      "kunYomi": [
+        "かた(る) - kata(ru)",
+        "かた(らう) - kata(rau)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 語 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 日本語 — にほんご (японська мова), 単語 — たんご (слово (лексична одиниця)).",
+        "exceptions": "Суфікс 語 утворює назви мов: 日本語 — にほんご, 英語 — えいご."
+      },
+      "vocabulary": [
+        {
+          "word": "日本語",
+          "kana": "にほんご",
+          "romaji": "nihongo",
+          "meaningUk": "японська мова",
+          "type": "On"
+        },
+        {
+          "word": "単語",
+          "kana": "たんご",
+          "romaji": "tango",
+          "meaningUk": "слово (лексична одиниця)",
+          "type": "On"
+        },
+        {
+          "word": "英語",
+          "kana": "えいご",
+          "romaji": "eigo",
+          "meaningUk": "англійська мова",
+          "type": "On"
+        },
+        {
+          "word": "語",
+          "kana": "ご",
+          "romaji": "go",
+          "meaningUk": "мова; слово",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_805e",
+      "kanji": "聞",
+      "level": "N5",
+      "index": 68,
+      "totalInLevel": 80,
+      "strokes": 14,
+      "difficulty": 5,
+      "meaningUk": "Чути; питати",
+      "onYomi": [
+        "ぶん - bun",
+        "もん - mon"
+      ],
+      "kunYomi": [
+        "き(く) - ki(ku)",
+        "き(こえる) - ki(koeru)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 聞 стоїть окремо або з окуріґаною: 聞く — きく (слухати; чути; питати), 聞こえる — きこえる (бути чутним).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 新聞 — しんぶん (газета), 新聞社 — しんぶんしゃ (редакція газети).",
+        "exceptions": "聞く має два значення: «слухати» і «питати»: 先生に聞く — спитати вчителя."
+      },
+      "vocabulary": [
+        {
+          "word": "聞く",
+          "kana": "きく",
+          "romaji": "kiku",
+          "meaningUk": "слухати; чути; питати",
+          "type": "Kun"
+        },
+        {
+          "word": "新聞",
+          "kana": "しんぶん",
+          "romaji": "shinbun",
+          "meaningUk": "газета",
+          "type": "On"
+        },
+        {
+          "word": "聞こえる",
+          "kana": "きこえる",
+          "romaji": "kikoeru",
+          "meaningUk": "бути чутним",
+          "type": "Kun"
+        },
+        {
+          "word": "新聞社",
+          "kana": "しんぶんしゃ",
+          "romaji": "shinbunsha",
+          "meaningUk": "редакція газети",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_98df",
+      "kanji": "食",
+      "level": "N5",
+      "index": 69,
+      "totalInLevel": 80,
+      "strokes": 9,
+      "difficulty": 4,
+      "meaningUk": "Їсти; їжа",
+      "onYomi": [
+        "しょく - shoku"
+      ],
+      "kunYomi": [
+        "た(べる) - ta(beru)",
+        "く(う) - ku(u)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 食 стоїть окремо або з окуріґаною: 食べ物 — たべもの (їжа), 食べる — たべる (їсти).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 食堂 — しょくどう (їдальня), 食料品 — しょくりょうひん (продукти харчування).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "食堂",
+          "kana": "しょくどう",
+          "romaji": "shokudou",
+          "meaningUk": "їдальня",
+          "type": "On"
+        },
+        {
+          "word": "食べ物",
+          "kana": "たべもの",
+          "romaji": "tabemono",
+          "meaningUk": "їжа",
+          "type": "Kun"
+        },
+        {
+          "word": "食べる",
+          "kana": "たべる",
+          "romaji": "taberu",
+          "meaningUk": "їсти",
+          "type": "Kun"
+        },
+        {
+          "word": "食料品",
+          "kana": "しょくりょうひん",
+          "romaji": "shokuryouhin",
+          "meaningUk": "продукти харчування",
+          "type": "On"
+        },
+        {
+          "word": "食事",
+          "kana": "しょくじ",
+          "romaji": "shokuji",
+          "meaningUk": "їжа, трапеза",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_8eca",
+      "kanji": "車",
+      "level": "N5",
+      "index": 70,
+      "totalInLevel": 80,
+      "strokes": 7,
+      "difficulty": 3,
+      "meaningUk": "Машина; колесо",
+      "onYomi": [
+        "しゃ - sha"
+      ],
+      "kunYomi": [
+        "くるま - kuruma"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 車 стоїть окремо або з окуріґаною: 車 — くるま (автомобіль).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 自転車 — じてんしゃ (велосипед), 自動車 — じどうしゃ (автомобіль).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "車",
+          "kana": "くるま",
+          "romaji": "kuruma",
+          "meaningUk": "автомобіль",
+          "type": "Kun"
+        },
+        {
+          "word": "自転車",
+          "kana": "じてんしゃ",
+          "romaji": "jitensha",
+          "meaningUk": "велосипед",
+          "type": "On"
+        },
+        {
+          "word": "自動車",
+          "kana": "じどうしゃ",
+          "romaji": "jidousha",
+          "meaningUk": "автомобіль",
+          "type": "On"
+        },
+        {
+          "word": "電車",
+          "kana": "でんしゃ",
+          "romaji": "densha",
+          "meaningUk": "електричка, потяг",
+          "type": "On"
+        },
+        {
+          "word": "駐車場",
+          "kana": "ちゅうしゃじょう",
+          "romaji": "chuushajou",
+          "meaningUk": "автостоянка",
+          "type": "On"
+        },
+        {
+          "word": "汽車",
+          "kana": "きしゃ",
+          "romaji": "kisha",
+          "meaningUk": "потяг (паровий)",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_4f55",
+      "kanji": "何",
+      "level": "N5",
+      "index": 71,
+      "totalInLevel": 80,
+      "strokes": 7,
+      "difficulty": 3,
+      "meaningUk": "Що",
+      "onYomi": [
+        "か - ka"
+      ],
+      "kunYomi": [
+        "なに - nani",
+        "なん - nan"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 何 стоїть окремо або з окуріґаною: 何 — なに (що), 何時 — なんじ (котра година).",
+        "onExplanation": "On-yomi — у словах з кількох канджі (джюкуґо).",
+        "exceptions": "なに чи なん: перед т, д, н і лічильними суфіксами — なん (何ですか, 何時, 何人), в інших випадках — なに (何を食べますか)."
+      },
+      "vocabulary": [
+        {
+          "word": "何",
+          "kana": "なに",
+          "romaji": "nani",
+          "meaningUk": "що",
+          "type": "Kun"
+        },
+        {
+          "word": "何時",
+          "kana": "なんじ",
+          "romaji": "nanji",
+          "meaningUk": "котра година",
+          "type": "Kun"
+        },
+        {
+          "word": "何人",
+          "kana": "なんにん",
+          "romaji": "nannin",
+          "meaningUk": "скільки людей",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5357",
+      "kanji": "南",
+      "level": "N5",
+      "index": 72,
+      "totalInLevel": 80,
+      "strokes": 9,
+      "difficulty": 4,
+      "meaningUk": "Південь",
+      "onYomi": [
+        "なん - nan"
+      ],
+      "kunYomi": [
+        "みなみ - minami"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 南 стоїть окремо або з окуріґаною: 南口 — みなみぐち (південний вихід), 南 — みなみ (південь).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 南米 — なんべい (Південна Америка).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "南口",
+          "kana": "みなみぐち",
+          "romaji": "minamiguchi",
+          "meaningUk": "південний вихід",
+          "type": "Kun"
+        },
+        {
+          "word": "南米",
+          "kana": "なんべい",
+          "romaji": "nanbei",
+          "meaningUk": "Південна Америка",
+          "type": "On"
+        },
+        {
+          "word": "南",
+          "kana": "みなみ",
+          "romaji": "minami",
+          "meaningUk": "південь",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_6bce",
+      "kanji": "毎",
+      "level": "N5",
+      "index": 73,
+      "totalInLevel": 80,
+      "strokes": 6,
+      "difficulty": 2,
+      "meaningUk": "Кожен",
+      "onYomi": [
+        "まい - mai"
+      ],
+      "kunYomi": [],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 毎 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 毎月 — まいつき (щомісяця), 毎年 — まいとし (щороку).",
+        "exceptions": "毎月 і 毎年 мають по два читання: まいつき / まいげつ, まいとし / まいねん — обидва правильні."
+      },
+      "vocabulary": [
+        {
+          "word": "毎月",
+          "kana": "まいつき",
+          "romaji": "maitsuki",
+          "meaningUk": "щомісяця",
+          "type": "On"
+        },
+        {
+          "word": "毎年",
+          "kana": "まいとし",
+          "romaji": "maitoshi",
+          "meaningUk": "щороку",
+          "type": "On"
+        },
+        {
+          "word": "毎朝",
+          "kana": "まいあさ",
+          "romaji": "maiasa",
+          "meaningUk": "щоранку",
+          "type": "On"
+        },
+        {
+          "word": "毎週",
+          "kana": "まいしゅう",
+          "romaji": "maishuu",
+          "meaningUk": "щотижня",
+          "type": "On"
+        },
+        {
+          "word": "毎日",
+          "kana": "まいにち",
+          "romaji": "mainichi",
+          "meaningUk": "щодня",
+          "type": "On"
+        },
+        {
+          "word": "毎晩",
+          "kana": "まいばん",
+          "romaji": "maiban",
+          "meaningUk": "щовечора",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_767d",
+      "kanji": "白",
+      "level": "N5",
+      "index": 74,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Білий",
+      "onYomi": [
+        "はく - haku",
+        "びゃく - byaku"
+      ],
+      "kunYomi": [
+        "しろ - shiro",
+        "しら - shira",
+        "しろ(い) - shiro(i)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 白 стоїть окремо або з окуріґаною: 面白い — おもしろい (цікавий), 白 — しろ (білий колір).",
+        "onExplanation": "On-yomi — у словах з кількох канджі (джюкуґо).",
+        "exceptions": "У 面白い — おもしろい (цікавий) 白 читається kun しろ, хоча слово складається з двох канджі."
+      },
+      "vocabulary": [
+        {
+          "word": "面白い",
+          "kana": "おもしろい",
+          "romaji": "omoshiroi",
+          "meaningUk": "цікавий",
+          "type": "Kun"
+        },
+        {
+          "word": "白",
+          "kana": "しろ",
+          "romaji": "shiro",
+          "meaningUk": "білий колір",
+          "type": "Kun"
+        },
+        {
+          "word": "白い",
+          "kana": "しろい",
+          "romaji": "shiroi",
+          "meaningUk": "білий",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5929",
+      "kanji": "天",
+      "level": "N5",
+      "index": 75,
+      "totalInLevel": 80,
+      "strokes": 4,
+      "difficulty": 1,
+      "meaningUk": "Небо",
+      "onYomi": [
+        "てん - ten"
+      ],
+      "kunYomi": [
+        "あめ - ame",
+        "あま - ama"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 天 стоїть окремо або з окуріґаною (хіраґаною після канджі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 天ぷら — てんぷら (темпура), 天気 — てんき (погода).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "天ぷら",
+          "kana": "てんぷら",
+          "romaji": "tenpura",
+          "meaningUk": "темпура",
+          "type": "On"
+        },
+        {
+          "word": "天気",
+          "kana": "てんき",
+          "romaji": "tenki",
+          "meaningUk": "погода",
+          "type": "On"
+        },
+        {
+          "word": "天気予報",
+          "kana": "てんきよほう",
+          "romaji": "tenkiyohou",
+          "meaningUk": "прогноз погоди",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_6bcd",
+      "kanji": "母",
+      "level": "N5",
+      "index": 76,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Мати",
+      "onYomi": [
+        "ぼ - bo"
+      ],
+      "kunYomi": [
+        "はは - haha"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 母 стоїть окремо або з окуріґаною: お母さん — おかあさん (мама (чужа; звертання)), 母 — はは ((моя) мати).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 祖母 — そぼ ((моя) бабуся).",
+        "exceptions": "お母さん — おかあさん — особливе читання. Про власну матір кажуть 母 — はは, про чужу і при звертанні — お母さん."
+      },
+      "vocabulary": [
+        {
+          "word": "お母さん",
+          "kana": "おかあさん",
+          "romaji": "okaasan",
+          "meaningUk": "мама (чужа; звертання)",
+          "type": "Kun"
+        },
+        {
+          "word": "母",
+          "kana": "はは",
+          "romaji": "haha",
+          "meaningUk": "(моя) мати",
+          "type": "Kun"
+        },
+        {
+          "word": "祖母",
+          "kana": "そぼ",
+          "romaji": "sobo",
+          "meaningUk": "(моя) бабуся",
+          "type": "On"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_53f3",
+      "kanji": "右",
+      "level": "N5",
+      "index": 77,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Право; правий",
+      "onYomi": [
+        "う - u",
+        "ゆう - yuu"
+      ],
+      "kunYomi": [
+        "みぎ - migi"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 右 стоїть окремо або з окуріґаною: 右手 — みぎて (права рука), 右 — みぎ (праворуч; правий бік).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 左右 — さゆう (ліворуч і праворуч).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "右手",
+          "kana": "みぎて",
+          "romaji": "migite",
+          "meaningUk": "права рука",
+          "type": "Kun"
+        },
+        {
+          "word": "左右",
+          "kana": "さゆう",
+          "romaji": "sayuu",
+          "meaningUk": "ліворуч і праворуч",
+          "type": "On"
+        },
+        {
+          "word": "右",
+          "kana": "みぎ",
+          "romaji": "migi",
+          "meaningUk": "праворуч; правий бік",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_8aad",
+      "kanji": "読",
+      "level": "N5",
+      "index": 78,
+      "totalInLevel": 80,
+      "strokes": 14,
+      "difficulty": 5,
+      "meaningUk": "Читати",
+      "onYomi": [
+        "どく - doku",
+        "とく - toku",
+        "とう - tou"
+      ],
+      "kunYomi": [
+        "よ(む) - yo(mu)"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 読 стоїть окремо або з окуріґаною: 読み方 — よみかた (спосіб читання (як читається)), 読む — よむ (читати).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 読書 — どくしょ (читання книжок).",
+        "exceptions": "読む — u-дієслово: 読みます, 読んで, 読んだ."
+      },
+      "vocabulary": [
+        {
+          "word": "読書",
+          "kana": "どくしょ",
+          "romaji": "dokusho",
+          "meaningUk": "читання книжок",
+          "type": "On"
+        },
+        {
+          "word": "読み方",
+          "kana": "よみかた",
+          "romaji": "yomikata",
+          "meaningUk": "спосіб читання (як читається)",
+          "type": "Kun"
+        },
+        {
+          "word": "読む",
+          "kana": "よむ",
+          "romaji": "yomu",
+          "meaningUk": "читати",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_53cb",
+      "kanji": "友",
+      "level": "N5",
+      "index": 79,
+      "totalInLevel": 80,
+      "strokes": 4,
+      "difficulty": 1,
+      "meaningUk": "Друг",
+      "onYomi": [
+        "ゆう - yuu"
+      ],
+      "kunYomi": [
+        "とも - tomo"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 友 стоїть окремо або з окуріґаною: 友達 — ともだち (друг; друзі).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 友人 — ゆうじん (друг (офіційно)).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "友人",
+          "kana": "ゆうじん",
+          "romaji": "yuujin",
+          "meaningUk": "друг (офіційно)",
+          "type": "On"
+        },
+        {
+          "word": "友達",
+          "kana": "ともだち",
+          "romaji": "tomodachi",
+          "meaningUk": "друг; друзі",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    },
+    {
+      "id": "jlpt_k_5de6",
+      "kanji": "左",
+      "level": "N5",
+      "index": 80,
+      "totalInLevel": 80,
+      "strokes": 5,
+      "difficulty": 2,
+      "meaningUk": "Ліво; лівий",
+      "onYomi": [
+        "さ - sa"
+      ],
+      "kunYomi": [
+        "ひだり - hidari"
+      ],
+      "radicals": [],
+      "readingLogic": {
+        "kunExplanation": "Kun-yomi — коли 左 стоїть окремо або з окуріґаною: 左手 — ひだりて (ліва рука), 左 — ひだり (ліворуч; лівий бік).",
+        "onExplanation": "On-yomi — переважно у словах з кількох канджі (джюкуґо): 左右 — さゆう (ліворуч і праворуч).",
+        "exceptions": ""
+      },
+      "vocabulary": [
+        {
+          "word": "左手",
+          "kana": "ひだりて",
+          "romaji": "hidarite",
+          "meaningUk": "ліва рука",
+          "type": "Kun"
+        },
+        {
+          "word": "左右",
+          "kana": "さゆう",
+          "romaji": "sayuu",
+          "meaningUk": "ліворуч і праворуч",
+          "type": "On"
+        },
+        {
+          "word": "左",
+          "kana": "ひだり",
+          "romaji": "hidari",
+          "meaningUk": "ліворуч; лівий бік",
+          "type": "Kun"
+        }
+      ],
+      "source": "kanji-data"
+    }
+  ],
+  "words": []
+}

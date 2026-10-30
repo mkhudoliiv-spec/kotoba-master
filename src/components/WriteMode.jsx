@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { checkJapaneseAnswer, shuffle } from '../utils/helpers';
 import { useTranslation } from '../utils/i18n';
 
-export default function WriteMode({ words, allWords }) {
+export default function WriteMode({ words, allWords, onAnswer }) {
   const [queue, setQueue] = useState([]);
   const [qIndex, setQIndex] = useState(0);
   const [correct, setCorrect] = useState(0);
@@ -41,6 +41,7 @@ export default function WriteMode({ words, allWords }) {
     if (!input.trim()) return;
     const ok = checkJapaneseAnswer(input, item);
     if (ok) setCorrect(c => c + 1);
+    onAnswer?.(item.id, ok);
     setFeedback({ ok, item });
   };
 

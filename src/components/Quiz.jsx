@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { speakJapanese, getDisplayJp, shuffle } from '../utils/helpers';
 import { useTranslation } from '../utils/i18n';
 
-export default function Quiz({ words, allWords, isKanjiMode }) {
+export default function Quiz({ words, allWords, isKanjiMode, onAnswer }) {
   const [questions, setQuestions] = useState([]);
   const [qIndex, setQIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -45,6 +45,7 @@ export default function Quiz({ words, allWords, isKanjiMode }) {
   const handleAnswer = (opt, idx) => {
     if (answered) return;
     setSelectedIdx(idx);
+    onAnswer?.(q.id, opt.id === q.id);
     if (opt.id === q.id) {
       setAnswered('correct');
       setScore(s => s + 1);
