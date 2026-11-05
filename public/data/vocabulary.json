@@ -303,7 +303,7 @@
     "kanji": "ニット",
     "romaji": "nitto",
     "transcription": "нітто",
-    "translation": "в’язання"
+    "translation": "трикотаж, в’язаний одяг"
   },
   {
     "id": "u5_1",
@@ -662,7 +662,7 @@
     "kana": "かんこくご",
     "kanji": "韓国語",
     "romaji": "kankokugo",
-    "transcription": "канкоку го",
+    "transcription": "канкоку ґо",
     "translation": "корейська мова"
   },
   {
@@ -707,7 +707,7 @@
     "kana": "にほんご",
     "kanji": "日本語",
     "romaji": "nihongo",
-    "transcription": "ніхон го",
+    "transcription": "ніхон ґо",
     "translation": "японська мова"
   },
   {
@@ -788,7 +788,7 @@
     "kana": "きゅう / く",
     "kanji": "九",
     "romaji": "kyuu / ku",
-    "transcription": "кю:",
+    "transcription": "кю: / ку",
     "translation": "дев'ять (9)"
   },
   {
@@ -1050,7 +1050,7 @@
     "kanji": "名刺",
     "romaji": "meishi",
     "transcription": "ме:ші",
-    "translation": "візитна карта"
+    "translation": "візитна картка, візитівка"
   },
   {
     "id": "u9_6",
@@ -1095,7 +1095,7 @@
     "kanji": "カメラ",
     "romaji": "kamera",
     "transcription": "камера",
-    "translation": "камера"
+    "translation": "фотоапарат, камера"
   },
   {
     "id": "u9_11",
@@ -1131,7 +1131,7 @@
     "kanji": "机",
     "romaji": "tsukue",
     "transcription": "цкуе",
-    "translation": "стіл"
+    "translation": "письмовий стіл, парта"
   },
   {
     "id": "u9_15",
@@ -1653,7 +1653,7 @@
     "kanji": "美術館",
     "romaji": "bijutsukan",
     "transcription": "біджюцукан",
-    "translation": "арт-музей"
+    "translation": "художній музей"
   },
   {
     "id": "u12_9",
@@ -2382,7 +2382,7 @@
     "kanji": "時間",
     "romaji": "jikan",
     "transcription": "джікан",
-    "translation": "година (як одиниця виміру часу)"
+    "translation": "час; година (тривалість)"
   },
   {
     "id": "u14_42",
@@ -2725,5 +2725,770 @@
     "romaji": "basu",
     "transcription": "басу",
     "translation": "автобус"
+  },
+  {
+    "id": "u17_1",
+    "lesson": 17,
+    "kana": "いちご",
+    "kanji": "苺",
+    "romaji": "ichigo",
+    "transcription": "ічіґо",
+    "translation": "полуниця"
+  },
+  {
+    "id": "u17_2",
+    "lesson": 17,
+    "kana": "もも",
+    "kanji": "桃",
+    "romaji": "momo",
+    "transcription": "момо",
+    "translation": "персик"
+  },
+  {
+    "id": "u17_3",
+    "lesson": 17,
+    "kana": "みかん",
+    "kanji": "蜜柑",
+    "romaji": "mikan",
+    "transcription": "мікан",
+    "translation": "мандарин"
+  },
+  {
+    "id": "u17_4",
+    "lesson": 17,
+    "kana": "りんご",
+    "kanji": "林檎",
+    "romaji": "ringo",
+    "transcription": "рінґо",
+    "translation": "яблуко"
+  },
+  {
+    "id": "u17_5",
+    "lesson": 17,
+    "kana": "ぶどう",
+    "kanji": "葡萄",
+    "romaji": "budou",
+    "transcription": "будо:",
+    "translation": "виноград"
+  },
+  {
+    "id": "u17_6",
+    "lesson": 17,
+    "kana": "すいか",
+    "kanji": "西瓜",
+    "romaji": "suika",
+    "transcription": "суйка",
+    "translation": "кавун"
+  },
+  {
+    "id": "u17_7",
+    "lesson": 17,
+    "kana": "なす",
+    "kanji": "茄子",
+    "romaji": "nasu",
+    "transcription": "насу",
+    "translation": "баклажан"
+  },
+  {
+    "id": "u17_8",
+    "lesson": 17,
+    "kana": "きゅうり",
+    "kanji": "胡瓜",
+    "romaji": "kyuuri",
+    "transcription": "кю:рі",
+    "translation": "огірок"
+  },
+  {
+    "id": "u17_9",
+    "lesson": 17,
+    "kana": "まめ",
+    "kanji": "豆",
+    "romaji": "mame",
+    "transcription": "маме",
+    "translation": "боби / горох"
+  },
+  {
+    "id": "u17_10",
+    "lesson": 17,
+    "kana": "せんえん",
+    "kanji": "千円",
+    "romaji": "sen en",
+    "transcription": "сенен",
+    "translation": "тисяча єн"
+  },
+  {
+    "id": "u17_11",
+    "lesson": 17,
+    "kana": "まるい",
+    "kanji": "円い",
+    "romaji": "marui",
+    "transcription": "маруй",
+    "translation": "круглий"
+  },
+  {
+    "id": "u17_12",
+    "lesson": 17,
+    "kana": "えんまんな",
+    "kanji": "円満な",
+    "romaji": "enman na",
+    "transcription": "енманна",
+    "translation": "мирний, гармонійний"
+  },
+  {
+    "id": "u17_13",
+    "lesson": 17,
+    "kana": "たかい",
+    "kanji": "高い",
+    "romaji": "takai",
+    "transcription": "такай",
+    "translation": "дорогий; високий"
+  },
+  {
+    "id": "u17_14",
+    "lesson": 17,
+    "kana": "こうかな",
+    "kanji": "高価な",
+    "romaji": "kouka na",
+    "transcription": "ко:кана",
+    "translation": "коштовний"
+  },
+  {
+    "id": "u17_15",
+    "lesson": 17,
+    "kana": "こうこう",
+    "kanji": "高校",
+    "romaji": "koukou",
+    "transcription": "ко:ко:",
+    "translation": "старша школа"
+  },
+  {
+    "id": "u17_16",
+    "lesson": 17,
+    "kana": "やすい",
+    "kanji": "安い",
+    "romaji": "yasui",
+    "transcription": "ясуй",
+    "translation": "дешевий"
+  },
+  {
+    "id": "u17_17",
+    "lesson": 17,
+    "kana": "あんぜんな",
+    "kanji": "安全な",
+    "romaji": "anzen na",
+    "transcription": "андзенна",
+    "translation": "безпечний"
+  },
+  {
+    "id": "u17_18",
+    "lesson": 17,
+    "kana": "ふあんな",
+    "kanji": "不安な",
+    "romaji": "fuan na",
+    "transcription": "фуанна",
+    "translation": "тривожний"
+  },
+  {
+    "id": "u17_19",
+    "lesson": 17,
+    "kana": "くだもの",
+    "kanji": "果物",
+    "romaji": "kudamono",
+    "transcription": "кудамоно",
+    "translation": "фрукти"
+  },
+  {
+    "id": "u17_20",
+    "lesson": 17,
+    "kana": "やさい",
+    "kanji": "野菜",
+    "romaji": "yasai",
+    "transcription": "ясай",
+    "translation": "овочі"
+  },
+  {
+    "id": "u17_21",
+    "lesson": 17,
+    "kana": "すき",
+    "kanji": "好き",
+    "romaji": "suki",
+    "transcription": "сукі",
+    "translation": "подобатися, любити"
+  },
+  {
+    "id": "u17_22",
+    "lesson": 17,
+    "kana": "きらい",
+    "kanji": "嫌い",
+    "romaji": "kirai",
+    "transcription": "кірай",
+    "translation": "не любити, ненавидіти"
+  },
+  {
+    "id": "u17_23",
+    "lesson": 17,
+    "kana": "あかい",
+    "kanji": "赤い",
+    "romaji": "akai",
+    "transcription": "акай",
+    "translation": "червоний"
+  },
+  {
+    "id": "u17_24",
+    "lesson": 17,
+    "kana": "きれい",
+    "kanji": "綺麗",
+    "romaji": "kirei",
+    "transcription": "кіре:",
+    "translation": "гарний; чистий"
+  },
+  {
+    "id": "u17_25",
+    "lesson": 17,
+    "kana": "ちいさい",
+    "kanji": "小さい",
+    "romaji": "chiisai",
+    "transcription": "чі:сай",
+    "translation": "маленький"
+  },
+  {
+    "id": "u17_26",
+    "lesson": 17,
+    "kana": "おおきい",
+    "kanji": "大きい",
+    "romaji": "ookii",
+    "transcription": "о:кі:",
+    "translation": "великий"
+  },
+  {
+    "id": "u17_27",
+    "lesson": 17,
+    "kana": "おいしい",
+    "kanji": "美味しい",
+    "romaji": "oishii",
+    "transcription": "ойші:",
+    "translation": "смачний"
+  },
+  {
+    "id": "u17_28",
+    "lesson": 17,
+    "kana": "あつい",
+    "kanji": "暑い",
+    "romaji": "atsui",
+    "transcription": "ацуй",
+    "translation": "спекотний"
+  },
+  {
+    "id": "u17_29",
+    "lesson": 17,
+    "kana": "てんき",
+    "kanji": "天気",
+    "romaji": "tenki",
+    "transcription": "тенкі",
+    "translation": "погода"
+  },
+  {
+    "id": "u17_30",
+    "lesson": 17,
+    "kana": "ねこ",
+    "kanji": "猫",
+    "romaji": "neko",
+    "transcription": "неко",
+    "translation": "кіт"
+  },
+  {
+    "id": "u17_31",
+    "lesson": 17,
+    "kana": "すし",
+    "kanji": "寿司",
+    "romaji": "sushi",
+    "transcription": "суші",
+    "translation": "суші"
+  },
+  {
+    "id": "u17_32",
+    "lesson": 17,
+    "kana": "おちゃ",
+    "kanji": "お茶",
+    "romaji": "ocha",
+    "transcription": "оча",
+    "translation": "чай (зелений)"
+  },
+  {
+    "id": "u18_1",
+    "lesson": 18,
+    "kana": "ちち",
+    "kanji": "父",
+    "romaji": "chichi",
+    "transcription": "чічі",
+    "translation": "тато (мій)"
+  },
+  {
+    "id": "u18_2",
+    "lesson": 18,
+    "kana": "はは",
+    "kanji": "母",
+    "romaji": "haha",
+    "transcription": "хаха",
+    "translation": "мама (моя)"
+  },
+  {
+    "id": "u18_3",
+    "lesson": 18,
+    "kana": "あに",
+    "kanji": "兄",
+    "romaji": "ani",
+    "transcription": "ані",
+    "translation": "старший брат"
+  },
+  {
+    "id": "u18_4",
+    "lesson": 18,
+    "kana": "あね",
+    "kanji": "姉",
+    "romaji": "ane",
+    "transcription": "ане",
+    "translation": "старша сестра"
+  },
+  {
+    "id": "u18_5",
+    "lesson": 18,
+    "kana": "おとうと",
+    "kanji": "弟",
+    "romaji": "otouto",
+    "transcription": "ото:то",
+    "translation": "молодший брат"
+  },
+  {
+    "id": "u18_6",
+    "lesson": 18,
+    "kana": "いもうと",
+    "kanji": "妹",
+    "romaji": "imouto",
+    "transcription": "імо:то",
+    "translation": "молодша сестра"
+  },
+  {
+    "id": "u18_7",
+    "lesson": 18,
+    "kana": "むすめ",
+    "kanji": "娘",
+    "romaji": "musume",
+    "transcription": "мусуме",
+    "translation": "донька"
+  },
+  {
+    "id": "u18_8",
+    "lesson": 18,
+    "kana": "むすこ",
+    "kanji": "息子",
+    "romaji": "musuko",
+    "transcription": "мусуко",
+    "translation": "син"
+  },
+  {
+    "id": "u18_9",
+    "lesson": 18,
+    "kana": "おっと",
+    "kanji": "夫",
+    "romaji": "otto",
+    "transcription": "отто",
+    "translation": "чоловік (мій)"
+  },
+  {
+    "id": "u18_10",
+    "lesson": 18,
+    "kana": "つま",
+    "kanji": "妻",
+    "romaji": "tsuma",
+    "transcription": "цума",
+    "translation": "дружина (моя)"
+  },
+  {
+    "id": "u18_11",
+    "lesson": 18,
+    "kana": "こども",
+    "kanji": "子供",
+    "romaji": "kodomo",
+    "transcription": "кодомо",
+    "translation": "дитина"
+  },
+  {
+    "id": "u18_12",
+    "lesson": 18,
+    "kana": "なにじん",
+    "kanji": "何人",
+    "romaji": "nanijin",
+    "transcription": "наніджін",
+    "translation": "якої національності?"
+  },
+  {
+    "id": "u18_13",
+    "lesson": 18,
+    "kana": "おかあさん",
+    "kanji": "お母さん",
+    "romaji": "okaasan",
+    "transcription": "ока:сан",
+    "translation": "мати (ввічливо)"
+  },
+  {
+    "id": "u18_14",
+    "lesson": 18,
+    "kana": "ははのひ",
+    "kanji": "母の日",
+    "romaji": "haha no hi",
+    "transcription": "хаха но хі",
+    "translation": "День матері"
+  },
+  {
+    "id": "u18_15",
+    "lesson": 18,
+    "kana": "おとうさん",
+    "kanji": "お父さん",
+    "romaji": "otousan",
+    "transcription": "ото:сан",
+    "translation": "батько (ввічливо)"
+  },
+  {
+    "id": "u18_16",
+    "lesson": 18,
+    "kana": "ちちのひ",
+    "kanji": "父の日",
+    "romaji": "chichi no hi",
+    "transcription": "чічі но хі",
+    "translation": "День батька"
+  },
+  {
+    "id": "u18_17",
+    "lesson": 18,
+    "kana": "おとこのこ",
+    "kanji": "男の子",
+    "romaji": "otoko no ko",
+    "transcription": "отоко но ко",
+    "translation": "хлопчик"
+  },
+  {
+    "id": "u18_18",
+    "lesson": 18,
+    "kana": "おんなのこ",
+    "kanji": "女の子",
+    "romaji": "onna no ko",
+    "transcription": "онна но ко",
+    "translation": "дівчинка"
+  },
+  {
+    "id": "u18_19",
+    "lesson": 18,
+    "kana": "わたしのかぞく",
+    "kanji": "私の家族",
+    "romaji": "watashi no kazoku",
+    "transcription": "ваташі но кадзоку",
+    "translation": "моя сім’я"
+  },
+  {
+    "id": "u18_20",
+    "lesson": 18,
+    "kana": "かぞく",
+    "kanji": "家族",
+    "romaji": "kazoku",
+    "transcription": "кадзоку",
+    "translation": "сім’я"
+  },
+  {
+    "id": "u18_21",
+    "lesson": 18,
+    "kana": "ふぼ",
+    "kanji": "父母",
+    "romaji": "fubo",
+    "transcription": "фубо",
+    "translation": "батьки (тато і мама)"
+  },
+  {
+    "id": "u18_22",
+    "lesson": 18,
+    "kana": "じょし",
+    "kanji": "女子",
+    "romaji": "joshi",
+    "transcription": "джоші",
+    "translation": "дівчина, дівчинка"
+  },
+  {
+    "id": "u18_23",
+    "lesson": 18,
+    "kana": "います",
+    "kanji": "います",
+    "romaji": "imasu",
+    "transcription": "імас",
+    "translation": "є, знаходиться (про живих істот)"
+  },
+  {
+    "id": "u18_24",
+    "lesson": 18,
+    "kana": "あります",
+    "kanji": "あります",
+    "romaji": "arimasu",
+    "transcription": "арімас",
+    "translation": "є, знаходиться (про неживе)"
+  },
+  {
+    "id": "u18_25",
+    "lesson": 18,
+    "kana": "いぬ",
+    "kanji": "犬",
+    "romaji": "inu",
+    "transcription": "іну",
+    "translation": "собака"
+  },
+  {
+    "id": "u18_26",
+    "lesson": 18,
+    "kana": "ペン",
+    "kanji": "ペン",
+    "romaji": "pen",
+    "transcription": "пен",
+    "translation": "ручка"
+  },
+  {
+    "id": "u18_27",
+    "lesson": 18,
+    "kana": "えんぴつ",
+    "kanji": "鉛筆",
+    "romaji": "enpitsu",
+    "transcription": "емпіцу",
+    "translation": "олівець"
+  },
+  {
+    "id": "u18_28",
+    "lesson": 18,
+    "kana": "おくに",
+    "kanji": "お国",
+    "romaji": "okuni",
+    "transcription": "окуні",
+    "translation": "країна (ввічливо)"
+  },
+  {
+    "id": "u18_29",
+    "lesson": 18,
+    "kana": "アメリカ",
+    "kanji": "アメリカ",
+    "romaji": "amerika",
+    "transcription": "амеріка",
+    "translation": "Америка (США)"
+  },
+  {
+    "id": "u18_30",
+    "lesson": 18,
+    "kana": "カナダ",
+    "kanji": "カナダ",
+    "romaji": "kanada",
+    "transcription": "канада",
+    "translation": "Канада"
+  },
+  {
+    "id": "u18_31",
+    "lesson": 18,
+    "kana": "ポーランド",
+    "kanji": "ポーランド",
+    "romaji": "poorando",
+    "transcription": "по:рандо",
+    "translation": "Польща"
+  },
+  {
+    "id": "u18_32",
+    "lesson": 18,
+    "kana": "スペイン",
+    "kanji": "スペイン",
+    "romaji": "supein",
+    "transcription": "супейн",
+    "translation": "Іспанія"
+  },
+  {
+    "id": "u18_33",
+    "lesson": 18,
+    "kana": "フランス",
+    "kanji": "フランス",
+    "romaji": "furansu",
+    "transcription": "фурансу",
+    "translation": "Франція"
+  },
+  {
+    "id": "u18_34",
+    "lesson": 18,
+    "kana": "イタリア",
+    "kanji": "イタリア",
+    "romaji": "itaria",
+    "transcription": "ітаріа",
+    "translation": "Італія"
+  },
+  {
+    "id": "u19_1",
+    "lesson": 19,
+    "kana": "きのう",
+    "kanji": "昨日",
+    "romaji": "kinou",
+    "transcription": "кіно:",
+    "translation": "вчора"
+  },
+  {
+    "id": "u19_2",
+    "lesson": 19,
+    "kana": "きょう",
+    "kanji": "今日",
+    "romaji": "kyou",
+    "transcription": "кьо:",
+    "translation": "сьогодні"
+  },
+  {
+    "id": "u19_3",
+    "lesson": 19,
+    "kana": "あした",
+    "kanji": "明日",
+    "romaji": "ashita",
+    "transcription": "ашьта",
+    "translation": "завтра"
+  },
+  {
+    "id": "u19_4",
+    "lesson": 19,
+    "kana": "せんげつ",
+    "kanji": "先月",
+    "romaji": "sengetsu",
+    "transcription": "сенґецу",
+    "translation": "минулий місяць"
+  },
+  {
+    "id": "u19_5",
+    "lesson": 19,
+    "kana": "こんげつ",
+    "kanji": "今月",
+    "romaji": "kongetsu",
+    "transcription": "конґецу",
+    "translation": "цей місяць"
+  },
+  {
+    "id": "u19_6",
+    "lesson": 19,
+    "kana": "らいげつ",
+    "kanji": "来月",
+    "romaji": "raigetsu",
+    "transcription": "райґецу",
+    "translation": "наступний місяць"
+  },
+  {
+    "id": "u19_7",
+    "lesson": 19,
+    "kana": "きょねん",
+    "kanji": "去年",
+    "romaji": "kyonen",
+    "transcription": "кьонен",
+    "translation": "минулий рік"
+  },
+  {
+    "id": "u19_8",
+    "lesson": 19,
+    "kana": "ことし",
+    "kanji": "今年",
+    "romaji": "kotoshi",
+    "transcription": "котоші",
+    "translation": "цей рік"
+  },
+  {
+    "id": "u19_9",
+    "lesson": 19,
+    "kana": "らいねん",
+    "kanji": "来年",
+    "romaji": "rainen",
+    "transcription": "райнен",
+    "translation": "наступний рік"
+  },
+  {
+    "id": "u19_10",
+    "lesson": 19,
+    "kana": "せんしゅう",
+    "kanji": "先週",
+    "romaji": "senshuu",
+    "transcription": "сеншю:",
+    "translation": "минулий тиждень"
+  },
+  {
+    "id": "u19_11",
+    "lesson": 19,
+    "kana": "こんしゅう",
+    "kanji": "今週",
+    "romaji": "konshuu",
+    "transcription": "коншю:",
+    "translation": "цей тиждень"
+  },
+  {
+    "id": "u19_12",
+    "lesson": 19,
+    "kana": "らいしゅう",
+    "kanji": "来週",
+    "romaji": "raishuu",
+    "transcription": "райшю:",
+    "translation": "наступний тиждень"
+  },
+  {
+    "id": "u19_13",
+    "lesson": 19,
+    "kana": "どこも",
+    "kanji": "どこも",
+    "romaji": "doko mo",
+    "transcription": "доко мо",
+    "translation": "скрізь; (із запереченням) ніде"
+  },
+  {
+    "id": "u19_14",
+    "lesson": 19,
+    "kana": "どこでも",
+    "kanji": "どこでも",
+    "romaji": "doko demo",
+    "transcription": "доко демо",
+    "translation": "усюди, де завгодно"
+  },
+  {
+    "id": "u19_15",
+    "lesson": 19,
+    "kana": "たのしい",
+    "kanji": "楽しい",
+    "romaji": "tanoshii",
+    "transcription": "таноші:",
+    "translation": "веселий, цікавий"
+  },
+  {
+    "id": "u19_16",
+    "lesson": 19,
+    "kana": "おもしろい",
+    "kanji": "面白い",
+    "romaji": "omoshiroi",
+    "transcription": "омошірой",
+    "translation": "цікавий, кумедний"
+  },
+  {
+    "id": "u19_17",
+    "lesson": 19,
+    "kana": "こうえん",
+    "kanji": "公園",
+    "romaji": "kouen",
+    "transcription": "ко:ен",
+    "translation": "парк"
+  },
+  {
+    "id": "u19_18",
+    "lesson": 19,
+    "kana": "スイス",
+    "kanji": "スイス",
+    "romaji": "suisu",
+    "transcription": "суйсу",
+    "translation": "Швейцарія"
+  },
+  {
+    "id": "u19_19",
+    "lesson": 19,
+    "kana": "ベトナム",
+    "kanji": "ベトナム",
+    "romaji": "betonamu",
+    "transcription": "бетонаму",
+    "translation": "В'єтнам"
   }
 ]
