@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Builds public/data/jlpt-n5.json: the next batch of JLPT N5 kanji (those not yet in jlpt.json),
+ * Adds the next batch of JLPT N5 kanji (those not yet in public/data/kanji.json) to kanji.json,
  * with Ukrainian meanings, example words and reading tips.
  *
  * Sources (downloaded into a temp folder, removed when the script finishes):
@@ -14,7 +14,7 @@
  *   types.<expr>  — On/Kun override where the compound-word guess is wrong (今日, 友達, …)
  *
  * Usage:
- *   node scripts/build-jlpt-n5.mjs                  # 40 kanji, writes public/data/jlpt-n5.json
+ *   node scripts/build-jlpt-n5.mjs                  # 40 kanji, merged into public/data/kanji.json
  *   node scripts/build-jlpt-n5.mjs --count 30
  *   node scripts/build-jlpt-n5.mjs --source-dir DIR # offline: kanji.json, n5.csv, n4.csv in DIR
  */
@@ -27,8 +27,7 @@ import {
 } from './fetch-jlpt-data.mjs';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const JLPT_FILE = path.join(ROOT, 'public/data/jlpt.json');
-const OUT_FILE = path.join(ROOT, 'public/data/jlpt-n5.json');
+const KANJI_FILE = path.join(ROOT, 'public/data/kanji.json');
 const UK_FILE = path.join(ROOT, 'scripts/jlpt-n5-uk.json');
 
 const SOURCES = {
@@ -94,7 +93,7 @@ function buildVocabulary(char, src, entry, pool, uk, missing) {
 }
 
 async function build(dir, opts) {
-  const jlpt = JSON.parse(await readFile(JLPT_FILE, 'utf8'));
+  const jlpt = JSON.parse(await readFile(KANJI_FILE, 'utf8'));
   const uk = JSON.parse(await readFile(UK_FILE, 'utf8'));
   const src = JSON.parse(await readFile(path.join(dir, 'kanji.json'), 'utf8'));
   const pool = await loadWordPool(dir);
@@ -104,7 +103,7 @@ async function build(dir, opts) {
   const known = new Set(jlpt.kanji.map(k => k.kanji));
   const startIndex = Math.max(0, ...curated.map(k => k.index));
 
-  // N5 kanji missing from jlpt.json, most frequent first
+  // N5 kanji missing from kanji.json, most frequent first
   const picked = Object.entries(src)
     .filter(([c, k]) => k.jlpt_new === 5 && !known.has(c))
     .sort(([, a], [, b]) => (a.freq ?? 9999) - (b.freq ?? 9999))
@@ -136,10 +135,13 @@ async function build(dir, opts) {
     };
   });
 
-  const out = { levels: [{ ...level, totalKanji: total }], kanji, words: [] };
-  await writeFile(OUT_FILE, JSON.stringify(out, null, 2) + '\n', 'utf8');
+  level.totalKanji = total;
+  jlpt.kanji.filter(k => k.level === 'N5').forEach(k => { k.totalInLevel = total; });
+  const lastN5 = jlpt.kanji.reduce((at, k, i) => (k.level === 'N5' ? i : at), -1);
+  jlpt.kanji.splice(lastN5 + 1, 0, ...kanji);
+  await writeFile(KANJI_FILE, JSON.stringify(jlpt, null, 2) + '\n', 'utf8');
 
-  console.log(`Записано ${path.relative(ROOT, OUT_FILE)}: ${kanji.length} канджі (№${startIndex + 1}–${startIndex + kanji.length}), ` +
+  console.log(`Додано в ${path.relative(ROOT, KANJI_FILE)}: ${kanji.length} канджі (№${startIndex + 1}–${startIndex + kanji.length}), ` +
     `${kanji.reduce((n, k) => n + k.vocabulary.length, 0)} прикладів слів`);
   console.log(kanji.map(k => k.kanji).join(''));
   if (missing.size) console.log(`Пропущено слів без перекладу (${missing.size}): ${[...missing].join(', ')}`);

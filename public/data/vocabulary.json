@@ -3490,5 +3490,2024 @@
     "romaji": "betonamu",
     "transcription": "бетонаму",
     "translation": "В'єтнам"
+  },
+  {
+    "id": "u20_1",
+    "lesson": 20,
+    "kana": "よみます",
+    "kanji": "読みます",
+    "romaji": "yomimasu",
+    "transcription": "йомімас",
+    "translation": "читати"
+  },
+  {
+    "id": "u20_2",
+    "lesson": 20,
+    "kana": "どくしょ",
+    "kanji": "読書",
+    "romaji": "dokusho",
+    "transcription": "докушьо",
+    "translation": "читання"
+  },
+  {
+    "id": "u20_3",
+    "lesson": 20,
+    "kana": "よみかた",
+    "kanji": "読み方",
+    "romaji": "yomikata",
+    "transcription": "йоміката",
+    "translation": "спосіб читання"
+  },
+  {
+    "id": "u20_4",
+    "lesson": 20,
+    "kana": "としょかん",
+    "kanji": "図書館",
+    "romaji": "toshokan",
+    "transcription": "тошьокан",
+    "translation": "бібліотека"
+  },
+  {
+    "id": "u20_5",
+    "lesson": 20,
+    "kana": "きょうかしょ",
+    "kanji": "教科書",
+    "romaji": "kyoukasho",
+    "transcription": "кьо:кашьо",
+    "translation": "підручник"
+  },
+  {
+    "id": "u20_6",
+    "lesson": 20,
+    "kana": "かきます",
+    "kanji": "書きます",
+    "romaji": "kakimasu",
+    "transcription": "какімас",
+    "translation": "писати"
+  },
+  {
+    "id": "u20_7",
+    "lesson": 20,
+    "kana": "りょこう",
+    "kanji": "旅行",
+    "romaji": "ryokou",
+    "transcription": "рьоко:",
+    "translation": "подорож"
+  },
+  {
+    "id": "u20_8",
+    "lesson": 20,
+    "kana": "ぎんこう",
+    "kanji": "銀行",
+    "romaji": "ginkou",
+    "transcription": "ґінко:",
+    "translation": "банк"
+  },
+  {
+    "id": "u20_9",
+    "lesson": 20,
+    "kana": "いきます",
+    "kanji": "行きます",
+    "romaji": "ikimasu",
+    "transcription": "ікімас",
+    "translation": "іти, їхати"
+  },
+  {
+    "id": "u20_10",
+    "lesson": 20,
+    "kana": "おきます",
+    "kanji": "起きます",
+    "romaji": "okimasu",
+    "transcription": "окімас",
+    "translation": "прокидатись"
+  },
+  {
+    "id": "u20_11",
+    "lesson": 20,
+    "kana": "ねます",
+    "kanji": "寝ます",
+    "romaji": "nemasu",
+    "transcription": "немас",
+    "translation": "спати, лягати спати"
+  },
+  {
+    "id": "u20_12",
+    "lesson": 20,
+    "kana": "しごと",
+    "kanji": "仕事",
+    "romaji": "shigoto",
+    "transcription": "шіґото",
+    "translation": "робота"
+  },
+  {
+    "id": "u20_13",
+    "lesson": 20,
+    "kana": "べんきょうします",
+    "kanji": "勉強します",
+    "romaji": "benkyou shimasu",
+    "transcription": "бенкьо:шімас",
+    "translation": "навчатись"
+  },
+  {
+    "id": "u20_14",
+    "lesson": 20,
+    "kana": "うんどう",
+    "kanji": "運動",
+    "romaji": "undou",
+    "transcription": "ундо:",
+    "translation": "спорт"
+  },
+  {
+    "id": "u20_15",
+    "lesson": 20,
+    "kana": "さんぽ",
+    "kanji": "散歩",
+    "romaji": "sanpo",
+    "transcription": "сампо",
+    "translation": "прогулянка"
+  },
+  {
+    "id": "u20_16",
+    "lesson": 20,
+    "kana": "ききます",
+    "kanji": "聞きます",
+    "romaji": "kikimasu",
+    "transcription": "кікімас",
+    "translation": "слухати"
+  },
+  {
+    "id": "u20_17",
+    "lesson": 20,
+    "kana": "はいります",
+    "kanji": "入ります",
+    "romaji": "hairimasu",
+    "transcription": "хаірімас",
+    "translation": "заходити"
+  },
+  {
+    "id": "u20_18",
+    "lesson": 20,
+    "kana": "みます",
+    "kanji": "見ます",
+    "romaji": "mimasu",
+    "transcription": "мімас",
+    "translation": "дивитися"
+  },
+  {
+    "id": "u20_19",
+    "lesson": 20,
+    "kana": "します",
+    "kanji": "します",
+    "romaji": "shimasu",
+    "transcription": "шімас",
+    "translation": "робити"
+  },
+  {
+    "id": "u20_20",
+    "lesson": 20,
+    "kana": "にっき",
+    "kanji": "日記",
+    "romaji": "nikki",
+    "transcription": "ніккі",
+    "translation": "щоденник"
+  },
+  {
+    "id": "u20_21",
+    "lesson": 20,
+    "kana": "おふろ",
+    "kanji": "お風呂",
+    "romaji": "ofuro",
+    "transcription": "офуро",
+    "translation": "ванна"
+  },
+  {
+    "id": "u20_22",
+    "lesson": 20,
+    "kana": "しゅくだい",
+    "kanji": "宿題",
+    "romaji": "shukudai",
+    "transcription": "шюкудай",
+    "translation": "домашнє завдання"
+  },
+  {
+    "id": "u20_23",
+    "lesson": 20,
+    "kana": "おんがく",
+    "kanji": "音楽",
+    "romaji": "ongaku",
+    "transcription": "онґаку",
+    "translation": "музика"
+  },
+  {
+    "id": "u20_24",
+    "lesson": 20,
+    "kana": "まいにち",
+    "kanji": "毎日",
+    "romaji": "mainichi",
+    "transcription": "майнічі",
+    "translation": "кожен день, щодня"
+  },
+  {
+    "id": "u20_25",
+    "lesson": 20,
+    "kana": "はやい",
+    "kanji": "早い",
+    "romaji": "hayai",
+    "transcription": "хаяй",
+    "translation": "ранній, рано"
+  },
+  {
+    "id": "u20_26",
+    "lesson": 20,
+    "kana": "ええ",
+    "kanji": "ええ",
+    "romaji": "ee",
+    "transcription": "е:",
+    "translation": "так (дружня форма згоди)"
+  },
+  {
+    "id": "u20_27",
+    "lesson": 20,
+    "kana": "いそがしい",
+    "kanji": "忙しい",
+    "romaji": "isogashii",
+    "transcription": "ісоґаші:",
+    "translation": "зайнятий"
+  },
+  {
+    "id": "u20_28",
+    "lesson": 20,
+    "kana": "あさごはん",
+    "kanji": "朝ご飯",
+    "romaji": "asagohan",
+    "transcription": "асаґохан",
+    "translation": "сніданок"
+  },
+  {
+    "id": "u20_29",
+    "lesson": 20,
+    "kana": "ばんごはん",
+    "kanji": "晩ご飯",
+    "romaji": "bangohan",
+    "transcription": "банґохан",
+    "translation": "вечеря"
+  },
+  {
+    "id": "u20_30",
+    "lesson": 20,
+    "kana": "インド",
+    "kanji": "インド",
+    "romaji": "indo",
+    "transcription": "індо",
+    "translation": "Індія"
+  },
+  {
+    "id": "u21_1",
+    "lesson": 21,
+    "kana": "のりもの",
+    "kanji": "乗り物",
+    "romaji": "norimono",
+    "transcription": "норімоно",
+    "translation": "транспорт"
+  },
+  {
+    "id": "u21_2",
+    "lesson": 21,
+    "kana": "バス",
+    "kanji": "バス",
+    "romaji": "basu",
+    "transcription": "басу",
+    "translation": "автобус"
+  },
+  {
+    "id": "u21_3",
+    "lesson": 21,
+    "kana": "タクシー",
+    "kanji": "タクシー",
+    "romaji": "takushii",
+    "transcription": "такуші:",
+    "translation": "таксі"
+  },
+  {
+    "id": "u21_4",
+    "lesson": 21,
+    "kana": "でんしゃ",
+    "kanji": "電車",
+    "romaji": "densha",
+    "transcription": "деншя",
+    "translation": "електропоїзд"
+  },
+  {
+    "id": "u21_5",
+    "lesson": 21,
+    "kana": "ちかてつ",
+    "kanji": "地下鉄",
+    "romaji": "chikatetsu",
+    "transcription": "чікатецу",
+    "translation": "метро"
+  },
+  {
+    "id": "u21_6",
+    "lesson": 21,
+    "kana": "ひこうき",
+    "kanji": "飛行機",
+    "romaji": "hikouki",
+    "transcription": "хіко:кі",
+    "translation": "літак"
+  },
+  {
+    "id": "u21_7",
+    "lesson": 21,
+    "kana": "くうこう",
+    "kanji": "空港",
+    "romaji": "kuukou",
+    "transcription": "ку:ко:",
+    "translation": "аеропорт"
+  },
+  {
+    "id": "u21_8",
+    "lesson": 21,
+    "kana": "えき",
+    "kanji": "駅",
+    "romaji": "eki",
+    "transcription": "екі",
+    "translation": "станція"
+  },
+  {
+    "id": "u21_9",
+    "lesson": 21,
+    "kana": "あるいて",
+    "kanji": "歩いて",
+    "romaji": "aruite",
+    "transcription": "аруйте",
+    "translation": "пішки"
+  },
+  {
+    "id": "u21_10",
+    "lesson": 21,
+    "kana": "じてんしゃ",
+    "kanji": "自転車",
+    "romaji": "jitensha",
+    "transcription": "джітенша",
+    "translation": "велосипед"
+  },
+  {
+    "id": "u21_11",
+    "lesson": 21,
+    "kana": "バスのりば",
+    "kanji": "バス乗り場",
+    "romaji": "basu noriba",
+    "transcription": "басу норіба",
+    "translation": "автобусна зупинка"
+  },
+  {
+    "id": "u21_12",
+    "lesson": 21,
+    "kana": "タクシーのりば",
+    "kanji": "タクシー乗り場",
+    "romaji": "takushii noriba",
+    "transcription": "такуші: норіба",
+    "translation": "зупинка таксі"
+  },
+  {
+    "id": "u21_13",
+    "lesson": 21,
+    "kana": "バイク",
+    "kanji": "バイク",
+    "romaji": "baiku",
+    "transcription": "байку",
+    "translation": "мотоцикл"
+  },
+  {
+    "id": "u21_14",
+    "lesson": 21,
+    "kana": "どうやって",
+    "kanji": "どうやって",
+    "romaji": "douyatte",
+    "transcription": "до:ятте",
+    "translation": "як; яким чином"
+  },
+  {
+    "id": "u21_15",
+    "lesson": 21,
+    "kana": "いりぐち",
+    "kanji": "入口",
+    "romaji": "iriguchi",
+    "transcription": "іріґучі",
+    "translation": "вхід"
+  },
+  {
+    "id": "u21_16",
+    "lesson": 21,
+    "kana": "はいります",
+    "kanji": "入ります",
+    "romaji": "hairimasu",
+    "transcription": "хаірімас",
+    "translation": "входити"
+  },
+  {
+    "id": "u21_17",
+    "lesson": 21,
+    "kana": "にゅうがく",
+    "kanji": "入学",
+    "romaji": "nyuugaku",
+    "transcription": "ню:ґаку",
+    "translation": "вступ до школи/університету"
+  },
+  {
+    "id": "u21_18",
+    "lesson": 21,
+    "kana": "やすみます",
+    "kanji": "休みます",
+    "romaji": "yasumimasu",
+    "transcription": "ясумімас",
+    "translation": "відпочивати"
+  },
+  {
+    "id": "u21_19",
+    "lesson": 21,
+    "kana": "きゅうじつ",
+    "kanji": "休日",
+    "romaji": "kyuujitsu",
+    "transcription": "кю:джіцу",
+    "translation": "вихідний день"
+  },
+  {
+    "id": "u21_20",
+    "lesson": 21,
+    "kana": "やすみ",
+    "kanji": "休み",
+    "romaji": "yasumi",
+    "transcription": "ясумі",
+    "translation": "відпочинок, перерва"
+  },
+  {
+    "id": "u21_21",
+    "lesson": 21,
+    "kana": "ききます",
+    "kanji": "聞きます",
+    "romaji": "kikimasu",
+    "transcription": "кікімас",
+    "translation": "слухати, запитувати"
+  },
+  {
+    "id": "u21_22",
+    "lesson": 21,
+    "kana": "しんぶん",
+    "kanji": "新聞",
+    "romaji": "shinbun",
+    "transcription": "шінбун",
+    "translation": "газета"
+  },
+  {
+    "id": "u21_23",
+    "lesson": 21,
+    "kana": "きこえます",
+    "kanji": "聞こえます",
+    "romaji": "kikoemasu",
+    "transcription": "кікоемас",
+    "translation": "бути почутим, чутно"
+  },
+  {
+    "id": "u21_24",
+    "lesson": 21,
+    "kana": "のります",
+    "kanji": "乗ります",
+    "romaji": "norimasu",
+    "transcription": "норімас",
+    "translation": "сідати на транспорт"
+  },
+  {
+    "id": "u21_25",
+    "lesson": 21,
+    "kana": "おります",
+    "kanji": "降ります",
+    "romaji": "orimasu",
+    "transcription": "орімас",
+    "translation": "сходити з транспорту"
+  },
+  {
+    "id": "u21_26",
+    "lesson": 21,
+    "kana": "バスてい",
+    "kanji": "バス停",
+    "romaji": "basutei",
+    "transcription": "басутей",
+    "translation": "автобусна зупинка"
+  },
+  {
+    "id": "u21_27",
+    "lesson": 21,
+    "kana": "かじ",
+    "kanji": "家事",
+    "romaji": "kaji",
+    "transcription": "каджі",
+    "translation": "домашні справи"
+  },
+  {
+    "id": "u21_28",
+    "lesson": 21,
+    "kana": "そして",
+    "kanji": "そして",
+    "romaji": "soshite",
+    "transcription": "сошьте",
+    "translation": "і, а тоді"
+  },
+  {
+    "id": "u21_29",
+    "lesson": 21,
+    "kana": "それから",
+    "kanji": "それから",
+    "romaji": "sorekara",
+    "transcription": "сорекара",
+    "translation": "а потім"
+  },
+  {
+    "id": "u21_30",
+    "lesson": 21,
+    "kana": "つぎ",
+    "kanji": "次",
+    "romaji": "tsugi",
+    "transcription": "цуґі",
+    "translation": "наступний"
+  },
+  {
+    "id": "u21_31",
+    "lesson": 21,
+    "kana": "ひがしぐち",
+    "kanji": "東口",
+    "romaji": "higashiguchi",
+    "transcription": "хіґашіґучі",
+    "translation": "східний вихід (зі станції)"
+  },
+  {
+    "id": "u21_32",
+    "lesson": 21,
+    "kana": "メール",
+    "kanji": "メール",
+    "romaji": "meeru",
+    "transcription": "ме:ру",
+    "translation": "електронний лист, повідомлення"
+  },
+  {
+    "id": "u21_33",
+    "lesson": 21,
+    "kana": "あいましょう",
+    "kanji": "会いましょう",
+    "romaji": "aimashou",
+    "transcription": "аймашьо:",
+    "translation": "давайте зустрінемося"
+  },
+  {
+    "id": "jlpt_w_n5_食べる",
+    "lesson": "N5",
+    "kana": "たべる",
+    "kanji": "食べる",
+    "romaji": "taberu",
+    "transcription": "таберу",
+    "translation": "їсти"
+  },
+  {
+    "id": "jlpt_w_n5_飲む",
+    "lesson": "N5",
+    "kana": "のむ",
+    "kanji": "飲む",
+    "romaji": "nomu",
+    "transcription": "ному",
+    "translation": "пити"
+  },
+  {
+    "id": "jlpt_w_n5_見る",
+    "lesson": "N5",
+    "kana": "みる",
+    "kanji": "見る",
+    "romaji": "miru",
+    "transcription": "міру",
+    "translation": "дивитися, бачити"
+  },
+  {
+    "id": "jlpt_w_n5_聞く",
+    "lesson": "N5",
+    "kana": "きく",
+    "kanji": "聞く",
+    "romaji": "kiku",
+    "transcription": "кіку",
+    "translation": "слухати, питати"
+  },
+  {
+    "id": "jlpt_w_n5_読む",
+    "lesson": "N5",
+    "kana": "よむ",
+    "kanji": "読む",
+    "romaji": "yomu",
+    "transcription": "йому",
+    "translation": "читати"
+  },
+  {
+    "id": "jlpt_w_n5_書く",
+    "lesson": "N5",
+    "kana": "かく",
+    "kanji": "書く",
+    "romaji": "kaku",
+    "transcription": "каку",
+    "translation": "писати"
+  },
+  {
+    "id": "jlpt_w_n5_話す",
+    "lesson": "N5",
+    "kana": "はなす",
+    "kanji": "話す",
+    "romaji": "hanasu",
+    "transcription": "ханасу",
+    "translation": "розмовляти"
+  },
+  {
+    "id": "jlpt_w_n5_行く",
+    "lesson": "N5",
+    "kana": "いく",
+    "kanji": "行く",
+    "romaji": "iku",
+    "transcription": "іку",
+    "translation": "іти, їхати"
+  },
+  {
+    "id": "jlpt_w_n5_来る",
+    "lesson": "N5",
+    "kana": "くる",
+    "kanji": "来る",
+    "romaji": "kuru",
+    "transcription": "куру",
+    "translation": "приходити"
+  },
+  {
+    "id": "jlpt_w_n5_帰る",
+    "lesson": "N5",
+    "kana": "かえる",
+    "kanji": "帰る",
+    "romaji": "kaeru",
+    "transcription": "каеру",
+    "translation": "повертатися додому"
+  },
+  {
+    "id": "jlpt_w_n5_買う",
+    "lesson": "N5",
+    "kana": "かう",
+    "kanji": "買う",
+    "romaji": "kau",
+    "transcription": "кау",
+    "translation": "купувати"
+  },
+  {
+    "id": "jlpt_w_n5_待つ",
+    "lesson": "N5",
+    "kana": "まつ",
+    "kanji": "待つ",
+    "romaji": "matsu",
+    "transcription": "мацу",
+    "translation": "чекати"
+  },
+  {
+    "id": "jlpt_w_n5_起きる",
+    "lesson": "N5",
+    "kana": "おきる",
+    "kanji": "起きる",
+    "romaji": "okiru",
+    "transcription": "окіру",
+    "translation": "прокидатися, вставати"
+  },
+  {
+    "id": "jlpt_w_n5_寝る",
+    "lesson": "N5",
+    "kana": "ねる",
+    "kanji": "寝る",
+    "romaji": "neru",
+    "transcription": "неру",
+    "translation": "спати, лягати спати"
+  },
+  {
+    "id": "jlpt_w_n5_会う",
+    "lesson": "N5",
+    "kana": "あう",
+    "kanji": "会う",
+    "romaji": "au",
+    "transcription": "ау",
+    "translation": "зустрічатися"
+  },
+  {
+    "id": "jlpt_w_n5_分かる",
+    "lesson": "N5",
+    "kana": "わかる",
+    "kanji": "分かる",
+    "romaji": "wakaru",
+    "transcription": "вакару",
+    "translation": "розуміти"
+  },
+  {
+    "id": "jlpt_w_n5_勉強",
+    "lesson": "N5",
+    "kana": "べんきょう",
+    "kanji": "勉強",
+    "romaji": "benkyou",
+    "transcription": "бенкьо:",
+    "translation": "навчання"
+  },
+  {
+    "id": "jlpt_w_n5_学校",
+    "lesson": "N5",
+    "kana": "がっこう",
+    "kanji": "学校",
+    "romaji": "gakkou",
+    "transcription": "ґакко:",
+    "translation": "школа"
+  },
+  {
+    "id": "jlpt_w_n5_先生",
+    "lesson": "N5",
+    "kana": "せんせい",
+    "kanji": "先生",
+    "romaji": "sensei",
+    "transcription": "сенсей",
+    "translation": "вчитель"
+  },
+  {
+    "id": "jlpt_w_n5_学生",
+    "lesson": "N5",
+    "kana": "がくせい",
+    "kanji": "学生",
+    "romaji": "gakusei",
+    "transcription": "ґакусей",
+    "translation": "студент"
+  },
+  {
+    "id": "jlpt_w_n5_友達",
+    "lesson": "N5",
+    "kana": "ともだち",
+    "kanji": "友達",
+    "romaji": "tomodachi",
+    "transcription": "томодачі",
+    "translation": "друг"
+  },
+  {
+    "id": "jlpt_w_n5_家族",
+    "lesson": "N5",
+    "kana": "かぞく",
+    "kanji": "家族",
+    "romaji": "kazoku",
+    "transcription": "кадзоку",
+    "translation": "сім'я"
+  },
+  {
+    "id": "jlpt_w_n5_父",
+    "lesson": "N5",
+    "kana": "ちち",
+    "kanji": "父",
+    "romaji": "chichi",
+    "transcription": "чічі",
+    "translation": "(мій) батько"
+  },
+  {
+    "id": "jlpt_w_n5_母",
+    "lesson": "N5",
+    "kana": "はは",
+    "kanji": "母",
+    "romaji": "haha",
+    "transcription": "хаха",
+    "translation": "(моя) мати"
+  },
+  {
+    "id": "jlpt_w_n5_家",
+    "lesson": "N5",
+    "kana": "いえ",
+    "kanji": "家",
+    "romaji": "ie",
+    "transcription": "іе",
+    "translation": "дім"
+  },
+  {
+    "id": "jlpt_w_n5_部屋",
+    "lesson": "N5",
+    "kana": "へや",
+    "kanji": "部屋",
+    "romaji": "heya",
+    "transcription": "хея",
+    "translation": "кімната"
+  },
+  {
+    "id": "jlpt_w_n5_水",
+    "lesson": "N5",
+    "kana": "みず",
+    "kanji": "水",
+    "romaji": "mizu",
+    "transcription": "мідзу",
+    "translation": "вода"
+  },
+  {
+    "id": "jlpt_w_n5_ご飯",
+    "lesson": "N5",
+    "kana": "ごはん",
+    "kanji": "ご飯",
+    "romaji": "gohan",
+    "transcription": "ґохан",
+    "translation": "варений рис, їжа"
+  },
+  {
+    "id": "jlpt_w_n5_魚",
+    "lesson": "N5",
+    "kana": "さかな",
+    "kanji": "魚",
+    "romaji": "sakana",
+    "transcription": "сакана",
+    "translation": "риба"
+  },
+  {
+    "id": "jlpt_w_n5_肉",
+    "lesson": "N5",
+    "kana": "にく",
+    "kanji": "肉",
+    "romaji": "niku",
+    "transcription": "ніку",
+    "translation": "м'ясо"
+  },
+  {
+    "id": "jlpt_w_n5_野菜",
+    "lesson": "N5",
+    "kana": "やさい",
+    "kanji": "野菜",
+    "romaji": "yasai",
+    "transcription": "ясай",
+    "translation": "овочі"
+  },
+  {
+    "id": "jlpt_w_n5_天気",
+    "lesson": "N5",
+    "kana": "てんき",
+    "kanji": "天気",
+    "romaji": "tenki",
+    "transcription": "тенкі",
+    "translation": "погода"
+  },
+  {
+    "id": "jlpt_w_n5_雨",
+    "lesson": "N5",
+    "kana": "あめ",
+    "kanji": "雨",
+    "romaji": "ame",
+    "transcription": "аме",
+    "translation": "дощ"
+  },
+  {
+    "id": "jlpt_w_n5_山",
+    "lesson": "N5",
+    "kana": "やま",
+    "kanji": "山",
+    "romaji": "yama",
+    "transcription": "яма",
+    "translation": "гора"
+  },
+  {
+    "id": "jlpt_w_n5_川",
+    "lesson": "N5",
+    "kana": "かわ",
+    "kanji": "川",
+    "romaji": "kawa",
+    "transcription": "кава",
+    "translation": "річка"
+  },
+  {
+    "id": "jlpt_w_n5_道",
+    "lesson": "N5",
+    "kana": "みち",
+    "kanji": "道",
+    "romaji": "michi",
+    "transcription": "мічі",
+    "translation": "дорога"
+  },
+  {
+    "id": "jlpt_w_n5_車",
+    "lesson": "N5",
+    "kana": "くるま",
+    "kanji": "車",
+    "romaji": "kuruma",
+    "transcription": "курума",
+    "translation": "автомобіль"
+  },
+  {
+    "id": "jlpt_w_n5_電車",
+    "lesson": "N5",
+    "kana": "でんしゃ",
+    "kanji": "電車",
+    "romaji": "densha",
+    "transcription": "деншя",
+    "translation": "електропоїзд"
+  },
+  {
+    "id": "jlpt_w_n5_駅",
+    "lesson": "N5",
+    "kana": "えき",
+    "kanji": "駅",
+    "romaji": "eki",
+    "transcription": "екі",
+    "translation": "станція"
+  },
+  {
+    "id": "jlpt_w_n5_店",
+    "lesson": "N5",
+    "kana": "みせ",
+    "kanji": "店",
+    "romaji": "mise",
+    "transcription": "місе",
+    "translation": "магазин"
+  },
+  {
+    "id": "jlpt_w_n5_お金",
+    "lesson": "N5",
+    "kana": "おかね",
+    "kanji": "お金",
+    "romaji": "okane",
+    "transcription": "окане",
+    "translation": "гроші"
+  },
+  {
+    "id": "jlpt_w_n5_仕事",
+    "lesson": "N5",
+    "kana": "しごと",
+    "kanji": "仕事",
+    "romaji": "shigoto",
+    "transcription": "шіґото",
+    "translation": "робота"
+  },
+  {
+    "id": "jlpt_w_n5_名前",
+    "lesson": "N5",
+    "kana": "なまえ",
+    "kanji": "名前",
+    "romaji": "namae",
+    "transcription": "намае",
+    "translation": "ім'я"
+  },
+  {
+    "id": "jlpt_w_n5_言葉",
+    "lesson": "N5",
+    "kana": "ことば",
+    "kanji": "言葉",
+    "romaji": "kotoba",
+    "transcription": "котоба",
+    "translation": "слово, мова"
+  },
+  {
+    "id": "jlpt_w_n5_手紙",
+    "lesson": "N5",
+    "kana": "てがみ",
+    "kanji": "手紙",
+    "romaji": "tegami",
+    "transcription": "теґамі",
+    "translation": "лист"
+  },
+  {
+    "id": "jlpt_w_n5_パン",
+    "lesson": "N5",
+    "kana": "パン",
+    "romaji": "pan",
+    "transcription": "пан",
+    "translation": "хліб"
+  },
+  {
+    "id": "jlpt_w_n5_テレビ",
+    "lesson": "N5",
+    "kana": "テレビ",
+    "romaji": "terebi",
+    "transcription": "теребі",
+    "translation": "телевізор"
+  },
+  {
+    "id": "jlpt_w_n5_大きい",
+    "lesson": "N5",
+    "kana": "おおきい",
+    "kanji": "大きい",
+    "romaji": "ookii",
+    "transcription": "о:кі:",
+    "translation": "великий"
+  },
+  {
+    "id": "jlpt_w_n5_小さい",
+    "lesson": "N5",
+    "kana": "ちいさい",
+    "kanji": "小さい",
+    "romaji": "chiisai",
+    "transcription": "чі:сай",
+    "translation": "маленький"
+  },
+  {
+    "id": "jlpt_w_n5_新しい",
+    "lesson": "N5",
+    "kana": "あたらしい",
+    "kanji": "新しい",
+    "romaji": "atarashii",
+    "transcription": "атараші:",
+    "translation": "новий"
+  },
+  {
+    "id": "jlpt_w_n5_古い",
+    "lesson": "N5",
+    "kana": "ふるい",
+    "kanji": "古い",
+    "romaji": "furui",
+    "transcription": "фуруі",
+    "translation": "старий (про речі)"
+  },
+  {
+    "id": "jlpt_w_n5_高い",
+    "lesson": "N5",
+    "kana": "たかい",
+    "kanji": "高い",
+    "romaji": "takai",
+    "transcription": "такай",
+    "translation": "високий, дорогий"
+  },
+  {
+    "id": "jlpt_w_n5_安い",
+    "lesson": "N5",
+    "kana": "やすい",
+    "kanji": "安い",
+    "romaji": "yasui",
+    "transcription": "ясуі",
+    "translation": "дешевий"
+  },
+  {
+    "id": "jlpt_w_n5_おいしい",
+    "lesson": "N5",
+    "kana": "おいしい",
+    "romaji": "oishii",
+    "transcription": "ойші:",
+    "translation": "смачний"
+  },
+  {
+    "id": "jlpt_w_n5_寒い",
+    "lesson": "N5",
+    "kana": "さむい",
+    "kanji": "寒い",
+    "romaji": "samui",
+    "transcription": "самуі",
+    "translation": "холодний (про погоду)"
+  },
+  {
+    "id": "jlpt_w_n5_暑い",
+    "lesson": "N5",
+    "kana": "あつい",
+    "kanji": "暑い",
+    "romaji": "atsui",
+    "transcription": "ацуі",
+    "translation": "спекотний (про погоду)"
+  },
+  {
+    "id": "jlpt_w_n5_元気",
+    "lesson": "N5",
+    "kana": "げんき",
+    "kanji": "元気",
+    "romaji": "genki",
+    "transcription": "ґенкі",
+    "translation": "здоровий, бадьорий"
+  },
+  {
+    "id": "jlpt_w_n5_静か",
+    "lesson": "N5",
+    "kana": "しずか",
+    "kanji": "静か",
+    "romaji": "shizuka",
+    "transcription": "шідзука",
+    "translation": "тихий"
+  },
+  {
+    "id": "jlpt_w_n5_好き",
+    "lesson": "N5",
+    "kana": "すき",
+    "kanji": "好き",
+    "romaji": "suki",
+    "transcription": "сукі",
+    "translation": "улюблений, подобається"
+  },
+  {
+    "id": "jlpt_w_n5_毎日",
+    "lesson": "N5",
+    "kana": "まいにち",
+    "kanji": "毎日",
+    "romaji": "mainichi",
+    "transcription": "майнічі",
+    "translation": "щодня"
+  },
+  {
+    "id": "jlpt_w_n5_いつも",
+    "lesson": "N5",
+    "kana": "いつも",
+    "romaji": "itsumo",
+    "transcription": "іцумо",
+    "translation": "завжди"
+  },
+  {
+    "id": "jlpt_w_n5_少し",
+    "lesson": "N5",
+    "kana": "すこし",
+    "kanji": "少し",
+    "romaji": "sukoshi",
+    "transcription": "сукоші",
+    "translation": "трохи"
+  },
+  {
+    "id": "jlpt_w_n4_集める",
+    "lesson": "N4",
+    "kana": "あつめる",
+    "kanji": "集める",
+    "romaji": "atsumeru",
+    "transcription": "ацумеру",
+    "translation": "збирати"
+  },
+  {
+    "id": "jlpt_w_n4_動く",
+    "lesson": "N4",
+    "kana": "うごく",
+    "kanji": "動く",
+    "romaji": "ugoku",
+    "transcription": "уґоку",
+    "translation": "рухатися, працювати (про механізм)"
+  },
+  {
+    "id": "jlpt_w_n4_送る",
+    "lesson": "N4",
+    "kana": "おくる",
+    "kanji": "送る",
+    "romaji": "okuru",
+    "transcription": "окуру",
+    "translation": "надсилати, проводжати"
+  },
+  {
+    "id": "jlpt_w_n4_思い出す",
+    "lesson": "N4",
+    "kana": "おもいだす",
+    "kanji": "思い出す",
+    "romaji": "omoidasu",
+    "transcription": "омойдасу",
+    "translation": "згадувати"
+  },
+  {
+    "id": "jlpt_w_n4_考える",
+    "lesson": "N4",
+    "kana": "かんがえる",
+    "kanji": "考える",
+    "romaji": "kangaeru",
+    "transcription": "канґаеру",
+    "translation": "думати, обмірковувати"
+  },
+  {
+    "id": "jlpt_w_n4_決める",
+    "lesson": "N4",
+    "kana": "きめる",
+    "kanji": "決める",
+    "romaji": "kimeru",
+    "transcription": "кімеру",
+    "translation": "вирішувати"
+  },
+  {
+    "id": "jlpt_w_n4_調べる",
+    "lesson": "N4",
+    "kana": "しらべる",
+    "kanji": "調べる",
+    "romaji": "shiraberu",
+    "transcription": "шіраберу",
+    "translation": "досліджувати, перевіряти"
+  },
+  {
+    "id": "jlpt_w_n4_建てる",
+    "lesson": "N4",
+    "kana": "たてる",
+    "kanji": "建てる",
+    "romaji": "tateru",
+    "transcription": "татеру",
+    "translation": "будувати"
+  },
+  {
+    "id": "jlpt_w_n4_伝える",
+    "lesson": "N4",
+    "kana": "つたえる",
+    "kanji": "伝える",
+    "romaji": "tsutaeru",
+    "transcription": "цутаеру",
+    "translation": "передавати (повідомлення)"
+  },
+  {
+    "id": "jlpt_w_n4_直す",
+    "lesson": "N4",
+    "kana": "なおす",
+    "kanji": "直す",
+    "romaji": "naosu",
+    "transcription": "наосу",
+    "translation": "виправляти, ремонтувати"
+  },
+  {
+    "id": "jlpt_w_n4_運ぶ",
+    "lesson": "N4",
+    "kana": "はこぶ",
+    "kanji": "運ぶ",
+    "romaji": "hakobu",
+    "transcription": "хакобу",
+    "translation": "переносити, перевозити"
+  },
+  {
+    "id": "jlpt_w_n4_拾う",
+    "lesson": "N4",
+    "kana": "ひろう",
+    "kanji": "拾う",
+    "romaji": "hirou",
+    "transcription": "хіроу",
+    "translation": "підбирати, піднімати"
+  },
+  {
+    "id": "jlpt_w_n4_間に合う",
+    "lesson": "N4",
+    "kana": "まにあう",
+    "kanji": "間に合う",
+    "romaji": "maniau",
+    "transcription": "маніау",
+    "translation": "встигати"
+  },
+  {
+    "id": "jlpt_w_n4_止める",
+    "lesson": "N4",
+    "kana": "やめる",
+    "kanji": "止める",
+    "romaji": "yameru",
+    "transcription": "ямеру",
+    "translation": "припиняти, кидати"
+  },
+  {
+    "id": "jlpt_w_n4_喜ぶ",
+    "lesson": "N4",
+    "kana": "よろこぶ",
+    "kanji": "喜ぶ",
+    "romaji": "yorokobu",
+    "transcription": "йорокобу",
+    "translation": "радіти"
+  },
+  {
+    "id": "jlpt_w_n4_別れる",
+    "lesson": "N4",
+    "kana": "わかれる",
+    "kanji": "別れる",
+    "romaji": "wakareru",
+    "transcription": "вакареру",
+    "translation": "розлучатися, прощатися"
+  },
+  {
+    "id": "jlpt_w_n4_経験",
+    "lesson": "N4",
+    "kana": "けいけん",
+    "kanji": "経験",
+    "romaji": "keiken",
+    "transcription": "кейкен",
+    "translation": "досвід"
+  },
+  {
+    "id": "jlpt_w_n4_機会",
+    "lesson": "N4",
+    "kana": "きかい",
+    "kanji": "機会",
+    "romaji": "kikai",
+    "transcription": "кікай",
+    "translation": "нагода, можливість"
+  },
+  {
+    "id": "jlpt_w_n4_興味",
+    "lesson": "N4",
+    "kana": "きょうみ",
+    "kanji": "興味",
+    "romaji": "kyoumi",
+    "transcription": "кьо:мі",
+    "translation": "інтерес"
+  },
+  {
+    "id": "jlpt_w_n4_計画",
+    "lesson": "N4",
+    "kana": "けいかく",
+    "kanji": "計画",
+    "romaji": "keikaku",
+    "transcription": "кейкаку",
+    "translation": "план"
+  },
+  {
+    "id": "jlpt_w_n4_準備",
+    "lesson": "N4",
+    "kana": "じゅんび",
+    "kanji": "準備",
+    "romaji": "junbi",
+    "transcription": "джюмбі",
+    "translation": "підготовка"
+  },
+  {
+    "id": "jlpt_w_n4_趣味",
+    "lesson": "N4",
+    "kana": "しゅみ",
+    "kanji": "趣味",
+    "romaji": "shumi",
+    "transcription": "шюмі",
+    "translation": "хобі"
+  },
+  {
+    "id": "jlpt_w_n4_説明",
+    "lesson": "N4",
+    "kana": "せつめい",
+    "kanji": "説明",
+    "romaji": "setsumei",
+    "transcription": "сецумей",
+    "translation": "пояснення"
+  },
+  {
+    "id": "jlpt_w_n4_相談",
+    "lesson": "N4",
+    "kana": "そうだん",
+    "kanji": "相談",
+    "romaji": "soudan",
+    "transcription": "со:дан",
+    "translation": "порада, консультація"
+  },
+  {
+    "id": "jlpt_w_n4_地図",
+    "lesson": "N4",
+    "kana": "ちず",
+    "kanji": "地図",
+    "romaji": "chizu",
+    "transcription": "чідзу",
+    "translation": "мапа"
+  },
+  {
+    "id": "jlpt_w_n4_約束",
+    "lesson": "N4",
+    "kana": "やくそく",
+    "kanji": "約束",
+    "romaji": "yakusoku",
+    "transcription": "якусоку",
+    "translation": "обіцянка, домовленість"
+  },
+  {
+    "id": "jlpt_w_n4_理由",
+    "lesson": "N4",
+    "kana": "りゆう",
+    "kanji": "理由",
+    "romaji": "riyuu",
+    "transcription": "рію:",
+    "translation": "причина"
+  },
+  {
+    "id": "jlpt_w_n4_試合",
+    "lesson": "N4",
+    "kana": "しあい",
+    "kanji": "試合",
+    "romaji": "shiai",
+    "transcription": "шіай",
+    "translation": "матч, змагання"
+  },
+  {
+    "id": "jlpt_w_n4_文化",
+    "lesson": "N4",
+    "kana": "ぶんか",
+    "kanji": "文化",
+    "romaji": "bunka",
+    "transcription": "бунка",
+    "translation": "культура"
+  },
+  {
+    "id": "jlpt_w_n4_世界",
+    "lesson": "N4",
+    "kana": "せかい",
+    "kanji": "世界",
+    "romaji": "sekai",
+    "transcription": "секай",
+    "translation": "світ"
+  },
+  {
+    "id": "jlpt_w_n4_空港",
+    "lesson": "N4",
+    "kana": "くうこう",
+    "kanji": "空港",
+    "romaji": "kuukou",
+    "transcription": "ку:ко:",
+    "translation": "аеропорт"
+  },
+  {
+    "id": "jlpt_w_n4_病院",
+    "lesson": "N4",
+    "kana": "びょういん",
+    "kanji": "病院",
+    "romaji": "byouin",
+    "transcription": "бьо:ін",
+    "translation": "лікарня"
+  },
+  {
+    "id": "jlpt_w_n4_熱",
+    "lesson": "N4",
+    "kana": "ねつ",
+    "kanji": "熱",
+    "romaji": "netsu",
+    "transcription": "нецу",
+    "translation": "жар, температура"
+  },
+  {
+    "id": "jlpt_w_n4_気持ち",
+    "lesson": "N4",
+    "kana": "きもち",
+    "kanji": "気持ち",
+    "romaji": "kimochi",
+    "transcription": "кімочі",
+    "translation": "почуття, настрій"
+  },
+  {
+    "id": "jlpt_w_n4_心",
+    "lesson": "N4",
+    "kana": "こころ",
+    "kanji": "心",
+    "romaji": "kokoro",
+    "transcription": "кокоро",
+    "translation": "серце, душа"
+  },
+  {
+    "id": "jlpt_w_n4_夢",
+    "lesson": "N4",
+    "kana": "ゆめ",
+    "kanji": "夢",
+    "romaji": "yume",
+    "transcription": "юме",
+    "translation": "сон, мрія"
+  },
+  {
+    "id": "jlpt_w_n4_パソコン",
+    "lesson": "N4",
+    "kana": "パソコン",
+    "romaji": "pasokon",
+    "transcription": "пасокон",
+    "translation": "персональний комп'ютер"
+  },
+  {
+    "id": "jlpt_w_n4_アルバイト",
+    "lesson": "N4",
+    "kana": "アルバイト",
+    "romaji": "arubaito",
+    "transcription": "арубайто",
+    "translation": "підробіток"
+  },
+  {
+    "id": "jlpt_w_n4_美しい",
+    "lesson": "N4",
+    "kana": "うつくしい",
+    "kanji": "美しい",
+    "romaji": "utsukushii",
+    "transcription": "уцукуші:",
+    "translation": "прекрасний"
+  },
+  {
+    "id": "jlpt_w_n4_嬉しい",
+    "lesson": "N4",
+    "kana": "うれしい",
+    "kanji": "嬉しい",
+    "romaji": "ureshii",
+    "transcription": "уреші:",
+    "translation": "радісний"
+  },
+  {
+    "id": "jlpt_w_n4_悲しい",
+    "lesson": "N4",
+    "kana": "かなしい",
+    "kanji": "悲しい",
+    "romaji": "kanashii",
+    "transcription": "канаші:",
+    "translation": "сумний"
+  },
+  {
+    "id": "jlpt_w_n4_恥ずかしい",
+    "lesson": "N4",
+    "kana": "はずかしい",
+    "kanji": "恥ずかしい",
+    "romaji": "hazukashii",
+    "transcription": "хадзукаші:",
+    "translation": "соромно, ніяково"
+  },
+  {
+    "id": "jlpt_w_n4_ひどい",
+    "lesson": "N4",
+    "kana": "ひどい",
+    "romaji": "hidoi",
+    "transcription": "хідой",
+    "translation": "жахливий, жорстокий"
+  },
+  {
+    "id": "jlpt_w_n4_安全",
+    "lesson": "N4",
+    "kana": "あんぜん",
+    "kanji": "安全",
+    "romaji": "anzen",
+    "transcription": "андзен",
+    "translation": "безпечний"
+  },
+  {
+    "id": "jlpt_w_n4_大切",
+    "lesson": "N4",
+    "kana": "たいせつ",
+    "kanji": "大切",
+    "romaji": "taisetsu",
+    "transcription": "тайсецу",
+    "translation": "важливий, цінний"
+  },
+  {
+    "id": "jlpt_w_n4_必要",
+    "lesson": "N4",
+    "kana": "ひつよう",
+    "kanji": "必要",
+    "romaji": "hitsuyou",
+    "transcription": "хіцуйо:",
+    "translation": "необхідний"
+  },
+  {
+    "id": "jlpt_w_n4_複雑",
+    "lesson": "N4",
+    "kana": "ふくざつ",
+    "kanji": "複雑",
+    "romaji": "fukuzatsu",
+    "transcription": "фукудзацу",
+    "translation": "складний, заплутаний"
+  },
+  {
+    "id": "jlpt_w_n4_熱心",
+    "lesson": "N4",
+    "kana": "ねっしん",
+    "kanji": "熱心",
+    "romaji": "nesshin",
+    "transcription": "нешшін",
+    "translation": "старанний, завзятий"
+  },
+  {
+    "id": "jlpt_w_n4_必ず",
+    "lesson": "N4",
+    "kana": "かならず",
+    "kanji": "必ず",
+    "romaji": "kanarazu",
+    "transcription": "канарадзу",
+    "translation": "неодмінно"
+  },
+  {
+    "id": "jlpt_w_n4_だんだん",
+    "lesson": "N4",
+    "kana": "だんだん",
+    "romaji": "dandan",
+    "transcription": "дандан",
+    "translation": "поступово"
+  },
+  {
+    "id": "jlpt_w_n4_是非",
+    "lesson": "N4",
+    "kana": "ぜひ",
+    "kanji": "是非",
+    "romaji": "zehi",
+    "transcription": "дзехі",
+    "translation": "обов'язково (прохання, бажання)"
+  },
+  {
+    "id": "jlpt_w_n3_表す",
+    "lesson": "N3",
+    "kana": "あらわす",
+    "kanji": "表す",
+    "romaji": "arawasu",
+    "transcription": "аравасу",
+    "translation": "виражати, позначати"
+  },
+  {
+    "id": "jlpt_w_n3_疑う",
+    "lesson": "N3",
+    "kana": "うたがう",
+    "kanji": "疑う",
+    "romaji": "utagau",
+    "transcription": "утаґау",
+    "translation": "сумніватися, підозрювати"
+  },
+  {
+    "id": "jlpt_w_n3_失う",
+    "lesson": "N3",
+    "kana": "うしなう",
+    "kanji": "失う",
+    "romaji": "ushinau",
+    "transcription": "ушінау",
+    "translation": "втрачати"
+  },
+  {
+    "id": "jlpt_w_n3_比べる",
+    "lesson": "N3",
+    "kana": "くらべる",
+    "kanji": "比べる",
+    "romaji": "kuraberu",
+    "transcription": "кураберу",
+    "translation": "порівнювати"
+  },
+  {
+    "id": "jlpt_w_n3_断る",
+    "lesson": "N3",
+    "kana": "ことわる",
+    "kanji": "断る",
+    "romaji": "kotowaru",
+    "transcription": "котовару",
+    "translation": "відмовляти"
+  },
+  {
+    "id": "jlpt_w_n3_支える",
+    "lesson": "N3",
+    "kana": "ささえる",
+    "kanji": "支える",
+    "romaji": "sasaeru",
+    "transcription": "сасаеру",
+    "translation": "підтримувати"
+  },
+  {
+    "id": "jlpt_w_n3_従う",
+    "lesson": "N3",
+    "kana": "したがう",
+    "kanji": "従う",
+    "romaji": "shitagau",
+    "transcription": "шітаґау",
+    "translation": "слідувати, підкорятися"
+  },
+  {
+    "id": "jlpt_w_n3_勧める",
+    "lesson": "N3",
+    "kana": "すすめる",
+    "kanji": "勧める",
+    "romaji": "susumeru",
+    "transcription": "сусумеру",
+    "translation": "радити, рекомендувати"
+  },
+  {
+    "id": "jlpt_w_n3_貯める",
+    "lesson": "N3",
+    "kana": "ためる",
+    "kanji": "貯める",
+    "romaji": "tameru",
+    "transcription": "тамеру",
+    "translation": "накопичувати, заощаджувати"
+  },
+  {
+    "id": "jlpt_w_n3_守る",
+    "lesson": "N3",
+    "kana": "まもる",
+    "kanji": "守る",
+    "romaji": "mamoru",
+    "transcription": "мамору",
+    "translation": "захищати, дотримуватися"
+  },
+  {
+    "id": "jlpt_w_n3_認める",
+    "lesson": "N3",
+    "kana": "みとめる",
+    "kanji": "認める",
+    "romaji": "mitomeru",
+    "transcription": "мітомеру",
+    "translation": "визнавати"
+  },
+  {
+    "id": "jlpt_w_n3_迎える",
+    "lesson": "N3",
+    "kana": "むかえる",
+    "kanji": "迎える",
+    "romaji": "mukaeru",
+    "transcription": "мукаеру",
+    "translation": "зустрічати (гостя)"
+  },
+  {
+    "id": "jlpt_w_n3_役立つ",
+    "lesson": "N3",
+    "kana": "やくだつ",
+    "kanji": "役立つ",
+    "romaji": "yakudatsu",
+    "transcription": "якудацу",
+    "translation": "бути корисним"
+  },
+  {
+    "id": "jlpt_w_n3_許す",
+    "lesson": "N3",
+    "kana": "ゆるす",
+    "kanji": "許す",
+    "romaji": "yurusu",
+    "transcription": "юрусу",
+    "translation": "прощати, дозволяти"
+  },
+  {
+    "id": "jlpt_w_n3_影響",
+    "lesson": "N3",
+    "kana": "えいきょう",
+    "kanji": "影響",
+    "romaji": "eikyou",
+    "transcription": "ейкьо:",
+    "translation": "вплив"
+  },
+  {
+    "id": "jlpt_w_n3_環境",
+    "lesson": "N3",
+    "kana": "かんきょう",
+    "kanji": "環境",
+    "romaji": "kankyou",
+    "transcription": "канкьо:",
+    "translation": "довкілля, середовище"
+  },
+  {
+    "id": "jlpt_w_n3_可能性",
+    "lesson": "N3",
+    "kana": "かのうせい",
+    "kanji": "可能性",
+    "romaji": "kanousei",
+    "transcription": "кано:сей",
+    "translation": "можливість, імовірність"
+  },
+  {
+    "id": "jlpt_w_n3_記憶",
+    "lesson": "N3",
+    "kana": "きおく",
+    "kanji": "記憶",
+    "romaji": "kioku",
+    "transcription": "кіоку",
+    "translation": "пам'ять, спогад"
+  },
+  {
+    "id": "jlpt_w_n3_結果",
+    "lesson": "N3",
+    "kana": "けっか",
+    "kanji": "結果",
+    "romaji": "kekka",
+    "transcription": "кекка",
+    "translation": "результат"
+  },
+  {
+    "id": "jlpt_w_n3_原因",
+    "lesson": "N3",
+    "kana": "げんいん",
+    "kanji": "原因",
+    "romaji": "gen'in",
+    "transcription": "ґенін",
+    "translation": "причина"
+  },
+  {
+    "id": "jlpt_w_n3_将来",
+    "lesson": "N3",
+    "kana": "しょうらい",
+    "kanji": "将来",
+    "romaji": "shourai",
+    "transcription": "шьо:рай",
+    "translation": "майбутнє"
+  },
+  {
+    "id": "jlpt_w_n3_情報",
+    "lesson": "N3",
+    "kana": "じょうほう",
+    "kanji": "情報",
+    "romaji": "jouhou",
+    "transcription": "джьо:хо:",
+    "translation": "інформація"
+  },
+  {
+    "id": "jlpt_w_n3_信頼",
+    "lesson": "N3",
+    "kana": "しんらい",
+    "kanji": "信頼",
+    "romaji": "shinrai",
+    "transcription": "шінрай",
+    "translation": "довіра"
+  },
+  {
+    "id": "jlpt_w_n3_責任",
+    "lesson": "N3",
+    "kana": "せきにん",
+    "kanji": "責任",
+    "romaji": "sekinin",
+    "transcription": "секінін",
+    "translation": "відповідальність"
+  },
+  {
+    "id": "jlpt_w_n3_知識",
+    "lesson": "N3",
+    "kana": "ちしき",
+    "kanji": "知識",
+    "romaji": "chishiki",
+    "transcription": "чішікі",
+    "translation": "знання"
+  },
+  {
+    "id": "jlpt_w_n3_努力",
+    "lesson": "N3",
+    "kana": "どりょく",
+    "kanji": "努力",
+    "romaji": "doryoku",
+    "transcription": "дорьоку",
+    "translation": "зусилля"
+  },
+  {
+    "id": "jlpt_w_n3_反対",
+    "lesson": "N3",
+    "kana": "はんたい",
+    "kanji": "反対",
+    "romaji": "hantai",
+    "transcription": "хантай",
+    "translation": "протилежність, заперечення"
+  },
+  {
+    "id": "jlpt_w_n3_表現",
+    "lesson": "N3",
+    "kana": "ひょうげん",
+    "kanji": "表現",
+    "romaji": "hyougen",
+    "transcription": "хьо:ґен",
+    "translation": "вираз, вираження"
+  },
+  {
+    "id": "jlpt_w_n3_目的",
+    "lesson": "N3",
+    "kana": "もくてき",
+    "kanji": "目的",
+    "romaji": "mokuteki",
+    "transcription": "мокутекі",
+    "translation": "мета"
+  },
+  {
+    "id": "jlpt_w_n3_利益",
+    "lesson": "N3",
+    "kana": "りえき",
+    "kanji": "利益",
+    "romaji": "rieki",
+    "transcription": "ріекі",
+    "translation": "прибуток, вигода"
+  },
+  {
+    "id": "jlpt_w_n3_感謝",
+    "lesson": "N3",
+    "kana": "かんしゃ",
+    "kanji": "感謝",
+    "romaji": "kansha",
+    "transcription": "каншя",
+    "translation": "вдячність"
+  },
+  {
+    "id": "jlpt_w_n3_習慣",
+    "lesson": "N3",
+    "kana": "しゅうかん",
+    "kanji": "習慣",
+    "romaji": "shuukan",
+    "transcription": "шю:кан",
+    "translation": "звичка, звичай"
+  },
+  {
+    "id": "jlpt_w_n3_調子",
+    "lesson": "N3",
+    "kana": "ちょうし",
+    "kanji": "調子",
+    "romaji": "choushi",
+    "transcription": "чьо:ші",
+    "translation": "стан, самопочуття"
+  },
+  {
+    "id": "jlpt_w_n3_チャンス",
+    "lesson": "N3",
+    "kana": "チャンス",
+    "romaji": "chansu",
+    "transcription": "чянсу",
+    "translation": "шанс"
+  },
+  {
+    "id": "jlpt_w_n3_ストレス",
+    "lesson": "N3",
+    "kana": "ストレス",
+    "romaji": "sutoresu",
+    "transcription": "суторесу",
+    "translation": "стрес"
+  },
+  {
+    "id": "jlpt_w_n3_怪しい",
+    "lesson": "N3",
+    "kana": "あやしい",
+    "kanji": "怪しい",
+    "romaji": "ayashii",
+    "transcription": "аяші:",
+    "translation": "підозрілий"
+  },
+  {
+    "id": "jlpt_w_n3_詳しい",
+    "lesson": "N3",
+    "kana": "くわしい",
+    "kanji": "詳しい",
+    "romaji": "kuwashii",
+    "transcription": "куваші:",
+    "translation": "детальний, обізнаний"
+  },
+  {
+    "id": "jlpt_w_n3_鋭い",
+    "lesson": "N3",
+    "kana": "するどい",
+    "kanji": "鋭い",
+    "romaji": "surudoi",
+    "transcription": "сурудой",
+    "translation": "гострий, проникливий"
+  },
+  {
+    "id": "jlpt_w_n3_貧しい",
+    "lesson": "N3",
+    "kana": "まずしい",
+    "kanji": "貧しい",
+    "romaji": "mazushii",
+    "transcription": "мадзуші:",
+    "translation": "бідний"
+  },
+  {
+    "id": "jlpt_w_n3_もったいない",
+    "lesson": "N3",
+    "kana": "もったいない",
+    "romaji": "mottainai",
+    "transcription": "моттайнай",
+    "translation": "шкода (марнувати)"
+  },
+  {
+    "id": "jlpt_w_n3_曖昧",
+    "lesson": "N3",
+    "kana": "あいまい",
+    "kanji": "曖昧",
+    "romaji": "aimai",
+    "transcription": "аймай",
+    "translation": "нечіткий, двозначний"
+  },
+  {
+    "id": "jlpt_w_n3_完全",
+    "lesson": "N3",
+    "kana": "かんぜん",
+    "kanji": "完全",
+    "romaji": "kanzen",
+    "transcription": "кандзен",
+    "translation": "повний, досконалий"
+  },
+  {
+    "id": "jlpt_w_n3_正直",
+    "lesson": "N3",
+    "kana": "しょうじき",
+    "kanji": "正直",
+    "romaji": "shoujiki",
+    "transcription": "шьо:джікі",
+    "translation": "чесний"
+  },
+  {
+    "id": "jlpt_w_n3_適当",
+    "lesson": "N3",
+    "kana": "てきとう",
+    "kanji": "適当",
+    "romaji": "tekitou",
+    "transcription": "текіто:",
+    "translation": "відповідний; абиякий"
+  },
+  {
+    "id": "jlpt_w_n3_豊か",
+    "lesson": "N3",
+    "kana": "ゆたか",
+    "kanji": "豊か",
+    "romaji": "yutaka",
+    "transcription": "ютака",
+    "translation": "багатий, рясний"
+  },
+  {
+    "id": "jlpt_w_n3_ようやく",
+    "lesson": "N3",
+    "kana": "ようやく",
+    "romaji": "youyaku",
+    "transcription": "йо:яку",
+    "translation": "нарешті, насилу"
+  },
+  {
+    "id": "jlpt_w_n3_確か",
+    "lesson": "N3",
+    "kana": "たしか",
+    "kanji": "確か",
+    "romaji": "tashika",
+    "transcription": "ташіка",
+    "translation": "здається, якщо не помиляюся"
+  },
+  {
+    "id": "jlpt_w_n3_まさか",
+    "lesson": "N3",
+    "kana": "まさか",
+    "romaji": "masaka",
+    "transcription": "масака",
+    "translation": "не може бути, невже"
+  },
+  {
+    "id": "jlpt_w_n3_とうとう",
+    "lesson": "N3",
+    "kana": "とうとう",
+    "romaji": "toutou",
+    "transcription": "то:то:",
+    "translation": "зрештою, врешті-решт"
+  },
+  {
+    "id": "jlpt_w_n3_ついに",
+    "lesson": "N3",
+    "kana": "ついに",
+    "romaji": "tsuini",
+    "transcription": "цуіні",
+    "translation": "нарешті"
   }
 ]

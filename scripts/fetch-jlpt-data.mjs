@@ -1,22 +1,24 @@
 #!/usr/bin/env node
 /**
- * Pulls an extended JLPT kanji + word base from open GitHub sources and merges it
- * into public/data/jlpt.json in the project's format.
+ * Pulls an extended JLPT kanji + word base from open GitHub sources and merges it into the app data:
+ *   kanji → public/data/kanji.json (Kanji section)
+ *   words → public/data/vocabulary.json, with lesson = level id ("N5", "N4", …)
  *
  * Sources:
  *   kanji  — davidluzgouveia/kanji-data (kanji.json: strokes, jlpt_new, readings, meanings)
  *   words  — jamsinclair/open-anki-jlpt-decks (src/n5.csv … n1.csv: expression, reading, meaning)
  *
  * Merge rules:
- *   - Entries already in jlpt.json (matched by id) are never touched — curated cards win.
+ *   - Entries already present (matched by id) are never touched — curated cards win.
  *   - Kanji/words already present at any level are skipped (no duplicates across levels).
  *   - The sources only have English meanings. Imported entries get the English text in
  *     meaningUk / translation plus "needsTranslation": true, unless --uk provides a translation.
- *   - Grammar is not imported: there is no open source in a usable format; it stays hand-written.
+ *   - Grammar is not imported: there is no open source in a usable format; it stays hand-written
+ *     in public/data/grammar.json (categories jlpt-n5 / jlpt-n4 / jlpt-n3).
  *
  * Usage:
  *   node scripts/fetch-jlpt-data.mjs                      # dry run: download, convert, print stats
- *   node scripts/fetch-jlpt-data.mjs --write              # merge into public/data/jlpt.json
+ *   node scripts/fetch-jlpt-data.mjs --write              # merge into kanji.json + vocabulary.json
  *   node scripts/fetch-jlpt-data.mjs --write --levels N5,N4 --max-kanji 100 --max-words 300
  *   node scripts/fetch-jlpt-data.mjs --write --uk scripts/uk-translations.json
  *   node scripts/fetch-jlpt-data.mjs --source-dir ./downloads   # offline: kanji.json, n5.csv, … in that dir
@@ -28,7 +30,7 @@
  *   --kanji-only / --words-only
  *   --uk FILE           JSON map { "男": "чоловік", "会う": "зустрічатися", … } — Ukrainian overrides
  *                       keyed by kanji / word expression
- *   --out FILE          output path (default: the input file, public/data/jlpt.json)
+ *   --out FILE          kanji output path (default: public/data/kanji.json; words always go to vocabulary.json)
  *   --write             actually write the result (otherwise dry run)
  */
 import { readFile, writeFile } from 'node:fs/promises';
@@ -36,7 +38,9 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const DATA_FILE = path.join(ROOT, 'public/data/jlpt.json');
+const DATA_FILE = path.join(ROOT, 'public/data/kanji.json');
+const VOCAB_FILE = path.join(ROOT, 'public/data/vocabulary.json');
+const isLevelLesson = lesson => /^N[1-5]$/.test(String(lesson));
 
 const KANJI_URL = 'https://raw.githubusercontent.com/davidluzgouveia/kanji-data/master/kanji.json';
 const WORDS_URL = lvl => `https://raw.githubusercontent.com/jamsinclair/open-anki-jlpt-decks/main/src/${lvl}.csv`;
@@ -236,12 +240,6 @@ function shortMeaning(en, max = 3) {
   return en.split(/[,;]\s*/).map(s => s.trim()).filter(Boolean).slice(0, max).join(', ');
 }
 
-function inferPos(expr, meaning) {
-  if (/^to\s/i.test(meaning)) return 'verb';
-  if (kanjiChars(expr).length && /[一-鿿]い$/.test(expr)) return 'i-adj';
-  return undefined;
-}
-
 /** On/Kun guess for a compound word: kanji alone or with okurigana → kun, kanji compound → on */
 export function guessType(word, reading, onReadings) {
   if (kanjiChars(word).length > 1) return 'On';
@@ -298,18 +296,15 @@ function buildKanji(char, src, level, index, total, wordPool, uk) {
 function buildWord(w, level, uk) {
   const expr = w.expr, kana = w.reading;
   const translation = uk[expr];
-  const pos = inferPos(expr, w.meaning);
   return {
     id: `jlpt_w_${level.toLowerCase()}_${expr}`,
-    level,
+    lesson: level,
     kana,
     ...(expr !== kana ? { kanji: expr } : {}),
     romaji: toRomaji(kana),
     transcription: toUkrainian(kana),
     translation: translation || shortMeaning(w.meaning),
-    ...(pos ? { pos } : {}),
     ...(translation ? {} : { needsTranslation: true }),
-    source: 'open-anki-jlpt-decks',
   };
 }
 
@@ -325,6 +320,8 @@ async function main() {
   }
 
   const data = JSON.parse(await readFile(DATA_FILE, 'utf8'));
+  const vocab = JSON.parse(await readFile(VOCAB_FILE, 'utf8'));
+  const levelWords = vocab.filter(w => isLevelLesson(w.lesson));
   const uk = opts.uk ? JSON.parse(await readFile(path.resolve(opts.uk), 'utf8')) : {};
   const levelNum = l => Number(l.slice(1));
 
@@ -343,9 +340,9 @@ async function main() {
   // Pool for kanji example words: easiest levels first
   const wordPool = Object.values(wordsByLevel).flat();
 
-  const existingIds = new Set([...data.kanji, ...data.words].map(i => i.id));
+  const existingIds = new Set([...data.kanji, ...vocab].map(i => i.id));
   const existingKanji = new Set(data.kanji.map(k => k.kanji));
-  const existingWords = new Set(data.words.map(w => w.kanji || w.kana));
+  const existingWords = new Set(levelWords.map(w => w.kanji || w.kana));
   const stats = {};
 
   if (opts.kanji) {
@@ -384,7 +381,8 @@ async function main() {
       for (const w of fresh) {
         const item = buildWord(w, level, uk);
         if (existingIds.has(item.id)) continue;
-        data.words.push(item);
+        vocab.push(item);
+        levelWords.push(item);
         existingIds.add(item.id);
         existingWords.add(w.expr);
         added++;
@@ -396,11 +394,10 @@ async function main() {
   // Keep levels grouped and kanji ordered by index within a level
   const order = l => levelNum(l) * -1;
   data.kanji.sort((a, b) => order(a.level) - order(b.level) || a.index - b.index);
-  data.words.sort((a, b) => order(a.level) - order(b.level));
 
   console.table(stats);
-  const untranslated = [...data.kanji, ...data.words].filter(i => i.needsTranslation).length;
-  console.log(`Разом: ${data.kanji.length} канджі, ${data.words.length} слів; без українського перекладу: ${untranslated}`);
+  const untranslated = [...data.kanji, ...levelWords].filter(i => i.needsTranslation).length;
+  console.log(`Разом: ${data.kanji.length} канджі, ${levelWords.length} слів JLPT; без українського перекладу: ${untranslated}`);
 
   if (!opts.write) {
     console.log('Dry run — нічого не записано. Додайте --write, щоб зберегти.');
@@ -409,6 +406,10 @@ async function main() {
   const out = path.resolve(opts.out || DATA_FILE);
   await writeFile(out, JSON.stringify(data, null, 2) + '\n', 'utf8');
   console.log(`Записано: ${path.relative(ROOT, out)}`);
+  if (opts.words) {
+    await writeFile(VOCAB_FILE, JSON.stringify(vocab, null, 2) + '\n', 'utf8');
+    console.log(`Записано: ${path.relative(ROOT, VOCAB_FILE)}`);
+  }
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {

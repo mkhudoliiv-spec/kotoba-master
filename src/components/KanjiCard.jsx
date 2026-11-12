@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { createPortal } from 'react-dom';
 import { speakJapanese } from '../utils/helpers';
-import { readingKana } from '../hooks/useJlpt';
+import { readingKana } from '../hooks/useKanji';
 import { Rich } from './Grammar';
 
 const MAX_DIFFICULTY = 7;
@@ -24,7 +24,7 @@ function Readings({ label, list }) {
   );
 }
 
-export default function JlptKanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleMastered, onToggleStar, onPrint }) {
+export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleMastered, onToggleStar, onPrint }) {
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'Escape') onClose();
@@ -47,7 +47,7 @@ export default function JlptKanjiCard({ kanji: k, onClose, onPrev, onNext, onTog
     <div className="jk-overlay jlpt-theme" onClick={onClose}>
       <article className="jk-card" onClick={e => e.stopPropagation()} role="dialog" aria-label={`Канджі ${k.kanji}`}>
         <header className="jk-card__head">
-          <span className="jk-card__title">Картка канджі · JLPT {k.level}</span>
+          <span className="jk-card__title">Картка канджі</span>
           <div className="jk-card__head-btns">
             <button className="jk-icon-btn" onClick={() => speakJapanese(firstReading)} title="Прослухати">🔊</button>
             <button className={`jk-icon-btn ${k.starred ? 'jk-icon-btn--starred' : ''}`}
@@ -120,7 +120,7 @@ export default function JlptKanjiCard({ kanji: k, onClose, onPrev, onNext, onTog
         </section>
 
         <footer className="jk-card__foot">
-          <span className="jk-card__pos">JLPT {k.level} - {k.index}/{k.totalInLevel}</span>
+          <span className="jk-card__pos">№ {k.index} / {k.total}</span>
           <div className="jk-card__foot-right">
             <span className="jk-card__difficulty" title={`${k.difficulty} з ${MAX_DIFFICULTY}`}>
               Складність: <span className="jk-stars">{stars}</span>

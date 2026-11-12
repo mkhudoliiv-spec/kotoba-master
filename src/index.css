@@ -1116,37 +1116,19 @@ body {
 .jlpt-hero__sub { color: var(--color-text-secondary); font-size: 0.875rem; margin-top: 0.375rem; max-width: 32rem; }
 .jlpt-hero__train { flex-shrink: 0; padding: 0.75rem 1.25rem; font-size: 0.875rem; box-shadow: 0 8px 20px rgba(225,29,72,.35); }
 
-.jlpt-levels {
-  position: relative; display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.5rem;
-  margin-top: 1.25rem;
+.jlpt-hero__stats {
+  position: relative; display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1.25rem;
+  margin-top: 1.25rem; font-size: 0.75rem; color: var(--color-text-secondary);
 }
-.jlpt-level {
-  display: flex; flex-direction: column; align-items: flex-start; gap: 0.125rem; text-align: left;
-  padding: 0.75rem 0.875rem; border-radius: var(--radius-xl); cursor: pointer;
-  background: var(--color-surface); border: 1px solid var(--color-border);
-  color: var(--color-text-secondary); font-family: var(--font-sans); transition: all var(--transition);
-}
-.jlpt-level:hover { border-color: var(--color-text-muted); color: var(--color-text); }
-.jlpt-level--active {
-  background: var(--color-accent-light); border-color: var(--color-accent); color: var(--color-accent-hover);
-  box-shadow: 0 0 0 3px rgba(225,29,72,.12);
-}
-.jlpt-level__id { font-size: 0.9375rem; font-weight: 800; letter-spacing: 0.02em; }
-.jlpt-level__title { font-size: 0.6875rem; color: var(--color-text-secondary); }
-.jlpt-level__bar {
-  width: 100%; height: 0.25rem; border-radius: var(--radius-full); margin-top: 0.375rem;
+.jlpt-hero__stats strong { color: var(--color-text); }
+.jlpt-progress {
+  flex: 1 1 10rem; height: 0.375rem; border-radius: var(--radius-full);
   background: var(--color-border); overflow: hidden;
 }
-.jlpt-level__bar > span {
+.jlpt-progress > span {
   display: block; height: 100%; border-radius: inherit;
   background: linear-gradient(90deg, var(--color-accent), #f59e0b); transition: width 400ms ease;
 }
-.jlpt-hero__stats {
-  position: relative; display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem;
-  margin-top: 1rem; font-size: 0.75rem; color: var(--color-text-secondary);
-}
-.jlpt-hero__stats strong { color: var(--color-text); }
-.jlpt-hero__muted { color: var(--color-text-muted); }
 
 /* Tabs */
 .jlpt-tabs {
@@ -1494,12 +1476,20 @@ body {
 .kpw-on { font-style: italic; font-weight: 700; letter-spacing: 0.03em; margin-right: 2.5mm; }
 .kpw-kun { margin-right: 2.5mm; }
 .kpw-meaning { font-weight: 600; }
-.kpw-examples { width: 100%; border-collapse: collapse; table-layout: fixed; }
-.kpw-examples td { padding: 0.2mm 1.5mm 0.2mm 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; vertical-align: baseline; }
-.kpw-examples td:nth-child(1) { width: 22%; }
-.kpw-examples td:nth-child(2) { width: 36%; }
-.kpw-examples td i { color: #475569; }
-.kpw-examples__word { font-size: 9pt; font-weight: 700; }
+/* Examples: 2 columns × up to 3 rows. Each row is ≤ 2 lines (≈6.2mm), so 3 rows + the readings line
+   stay inside the 27mm theory cell instead of running under the first practice row. */
+.kpw-examples {
+  list-style: none; margin: 0; padding: 0;
+  display: grid; grid-template-columns: 1fr 1fr; column-gap: 3mm; row-gap: 0.6mm;
+}
+.kpw-example { display: flex; align-items: baseline; gap: 1.2mm; min-width: 0; line-height: 1.2; }
+.kpw-example__word { flex: none; max-width: 17mm; font-size: 9pt; font-weight: 700; white-space: nowrap; overflow: hidden; }
+.kpw-example__reading { flex: none; max-width: 30mm; font-size: 6.5pt; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.kpw-example__reading i { color: #475569; }
+.kpw-example__meaning {
+  flex: 1; min-width: 0; font-size: 7pt;
+  display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden;
+}
 
 .kpw-block__sample { grid-area: sample; position: relative; display: flex; align-items: center; justify-content: center; }
 .kpw-sample-glyph { font-family: 'Klee One', var(--font-jp); font-weight: 600; font-size: 62pt; line-height: 1; }

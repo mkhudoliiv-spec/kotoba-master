@@ -1,14 +1,15 @@
 import { useState, useEffect, useCallback } from 'react';
 import { reviewSrs } from '../utils/srs';
 
-// Only user state is stored ({ id, mastered, starred, srs }); the content itself comes from jlpt.json
-const STORAGE_KEY = 'kotoba_jlpt_progress';
+// Only user state is stored ({ id, mastered, starred, srs }); the content itself comes from kanji.json.
+// The key predates the Kanji section (it used to be the JLPT section) — kept so progress survives.
+export const KANJI_PROGRESS_KEY = 'kotoba_jlpt_progress';
 
-async function fetchJlptData() {
+async function fetchKanjiData() {
   const candidatePaths = [
-    '/kotoba-master/data/jlpt.json',
-    './data/jlpt.json',
-    '/data/jlpt.json'
+    '/kotoba-master/data/kanji.json',
+    './data/kanji.json',
+    '/data/kanji.json'
   ];
   for (const path of candidatePaths) {
     try {
@@ -20,12 +21,12 @@ async function fetchJlptData() {
       // try next candidate path
     }
   }
-  throw new Error('Failed to load jlpt.json');
+  throw new Error('Failed to load kanji.json');
 }
 
 function readStoredState() {
   try {
-    const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
+    const stored = JSON.parse(localStorage.getItem(KANJI_PROGRESS_KEY) || '[]');
     return new Map(stored.map(s => [s.id, s]));
   } catch {
     return new Map();
@@ -56,49 +57,50 @@ export function kanjiToTrainerItem(k) {
     kana: readings.map(readingKana).join(' / '),
     transcription: readings.map(readingRomaji).join(' · '),
     translation: k.meaningUk.toLowerCase(),
-    badge: `JLPT ${k.level} · Канджі`,
+    badge: 'Канджі',
     mastered: k.mastered,
     starred: k.starred,
     srs: k.srs,
   };
 }
 
-export function useJlpt() {
+export function useKanji() {
   const [data, setData] = useState(null);
-  const [items, setItems] = useState({ kanji: [], words: [] });
+  const [kanji, setKanji] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   // Load content: merge JSON with localStorage state
   useEffect(() => {
-    fetchJlptData()
+    fetchKanjiData()
       .then(json => {
         const stateMap = readStoredState();
-        setData({ levels: json.levels, grammar: json.grammar, rules: json.rules });
-        setItems({
-          kanji: json.kanji.map(k => withState(k, stateMap)),
-          words: json.words.map(w => ({ ...withState(w, stateMap), badge: `JLPT ${w.level} · Слово` })),
-        });
+        // One flat list: numbered by position, no JLPT level split in the UI
+        setData({ rules: json.rules });
+        const total = json.kanji.length;
+        setKanji(json.kanji.map((k, i) => withState({ ...k, index: i + 1, total }, stateMap)));
       })
       .catch(err => {
-        console.error('Failed to load JLPT data:', err);
+        console.error('Failed to load kanji data:', err);
         setError(err);
       })
       .finally(() => setLoading(false));
   }, []);
 
-  // Persist user state on every change
+  // Persist user state on every change. Entries that aren't kanji (old JLPT word progress,
+  // migrated into the vocabulary by useVocabulary) are kept untouched.
   useEffect(() => {
     if (loading || error) return;
-    const state = [...items.kanji, ...items.words]
+    const ids = new Set(kanji.map(k => k.id));
+    const others = [...readStoredState().values()].filter(s => !ids.has(s.id));
+    const state = kanji
       .filter(i => i.mastered || i.starred || i.srs)
       .map(({ id, mastered, starred, srs }) => ({ id, mastered, starred, srs }));
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
-  }, [items, loading, error]);
+    localStorage.setItem(KANJI_PROGRESS_KEY, JSON.stringify([...state, ...others]));
+  }, [kanji, loading, error]);
 
   const update = useCallback((id, fn) => {
-    const apply = list => list.map(i => (i.id === id ? fn(i) : i));
-    setItems(prev => ({ kanji: apply(prev.kanji), words: apply(prev.words) }));
+    setKanji(prev => prev.map(i => (i.id === id ? fn(i) : i)));
   }, []);
 
   const toggleStar = useCallback((id) => {
@@ -116,11 +118,8 @@ export function useJlpt() {
   }, [update]);
 
   return {
-    levels: data?.levels || [],
-    grammar: data?.grammar || [],
     rules: data?.rules || [],
-    kanji: items.kanji,
-    words: items.words,
+    kanji,
     loading, error,
     toggleStar, toggleMastered, reviewItem,
   };

@@ -104,17 +104,24 @@ export const LESSON_LABELS = {
   '17': 'Фрукти, овочі & すき・きらい',
   '18': 'Сім’я & います・あります',
   '19': 'Відносний час & いつ',
+  '20': 'Розпорядок дня & を',
+  '21': 'Транспорт & どうやって',
   'custom': 'Власні слова',
 };
+
+// JLPT level word lists are stored with lesson = level id ("N5", "N4", "N3")
+export const isJlptLesson = (key) => /^N[1-5]$/.test(String(key));
 
 export function getLessonLabel(lesson) {
   const key = String(lesson);
   if (key === 'custom') return 'Власні слова';
+  if (isJlptLesson(key)) return `JLPT ${key} · слова`;
   const label = LESSON_LABELS[key];
   return label ? `Урок ${key}: ${label}` : `Урок ${key}`;
 }
 
 export function getLessonShortLabel(lesson) {
   const key = String(lesson);
+  if (isJlptLesson(key)) return `JLPT ${key}`;
   return key === 'custom' ? 'Власне' : `Урок ${key}`;
 }

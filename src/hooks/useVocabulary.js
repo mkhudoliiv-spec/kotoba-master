@@ -22,6 +22,20 @@ async function fetchVocabularyData() {
   throw new Error('Failed to load vocabulary.json');
 }
 
+// JLPT level words used to live in a separate section with progress under this key.
+// They are now vocabulary entries (lesson "N5"/"N4"/"N3") with the same ids, so their
+// progress is picked up from there until the word gets saved with the vocabulary.
+const LEGACY_JLPT_KEY = 'kotoba_jlpt_progress';
+
+function readLegacyJlptProgress() {
+  try {
+    const stored = JSON.parse(localStorage.getItem(LEGACY_JLPT_KEY) || '[]');
+    return new Map(stored.filter(s => String(s.id).startsWith('jlpt_w_')).map(s => [s.id, s]));
+  } catch {
+    return new Map();
+  }
+}
+
 export function useVocabulary() {
   const [words, setWords] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -39,11 +53,12 @@ export function useVocabulary() {
         }
 
         const storedMap = new Map(storedWords.map(w => [w.id, w]));
+        const legacyJlpt = readLegacyJlptProgress();
 
         const mergedWords = data.map(w => {
-          if (storedMap.has(w.id)) {
-            const storedWord = storedMap.get(w.id);
-            return { ...w, mastered: storedWord.mastered, starred: storedWord.starred, srs: storedWord.srs };
+          const storedWord = storedMap.get(w.id) || legacyJlpt.get(w.id);
+          if (storedWord) {
+            return { ...w, mastered: !!storedWord.mastered, starred: !!storedWord.starred, srs: storedWord.srs };
           }
           return { ...w, mastered: false, starred: false };
         });

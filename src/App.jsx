@@ -1,14 +1,14 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import { useTranslation, setLanguage } from './utils/i18n';
 import { useVocabulary } from './hooks/useVocabulary';
-import { getLessonLabel } from './utils/helpers';
+import { getLessonLabel, isJlptLesson } from './utils/helpers';
 import Flashcards from './components/Flashcards';
 import Quiz from './components/Quiz';
 import WriteMode from './components/WriteMode';
 import MatchGame from './components/MatchGame';
 import Dictionary from './components/Dictionary';
 import Grammar from './components/Grammar';
-import JlptSection from './components/JlptSection';
+import KanjiSection from './components/KanjiSection';
 import AddWordModal from './components/AddWordModal';
 import Toast from './components/Toast';
 
@@ -19,11 +19,11 @@ const MODES = [
   { id: 'match', label: { uk: 'Пари', en: 'Match' }, icon: '🧩' },
   { id: 'list', label: { uk: 'Словник', en: 'Dictionary' }, icon: '📖' },
   { id: 'grammar', label: { uk: 'Граматика', en: 'Grammar' }, icon: '📚' },
-  { id: 'jlpt', label: { uk: 'JLPT', en: 'JLPT' }, icon: '🎌' },
+  { id: 'kanji', label: { uk: 'Канджі', en: 'Kanji' }, icon: '漢' },
 ];
 
 // Sections with their own navigation: the lesson filter bar is hidden there
-const STANDALONE_MODES = ['grammar', 'jlpt'];
+const STANDALONE_MODES = ['grammar', 'kanji'];
 
 export default function App() {
   const { words, loading, addWord, deleteWord, toggleStar, reviewWord, importWords } = useVocabulary();
@@ -109,6 +109,8 @@ export default function App() {
     if (!isNaN(numA) && !isNaN(numB)) return numA - numB;
     if (isNaN(numA) && !isNaN(numB)) return 1;
     if (!isNaN(numA) && isNaN(numB)) return -1;
+    // JLPT word lists: easiest level first (N5, N4, N3)
+    if (isJlptLesson(a) && isJlptLesson(b)) return b.localeCompare(a);
     return a.localeCompare(b);
   });
 
@@ -252,7 +254,7 @@ export default function App() {
           {mode === 'write' && <WriteMode words={filtered} allWords={words} />}
           {mode === 'match' && <MatchGame words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
           {mode === 'grammar' && <Grammar key={grammarKey} />}
-          {mode === 'jlpt' && <JlptSection isKanjiMode={isKanjiMode} showToast={showToast} />}
+          {mode === 'kanji' && <KanjiSection isKanjiMode={isKanjiMode} showToast={showToast} />}
           {mode === 'list' && <Dictionary words={filtered} isKanjiMode={isKanjiMode} onToggleStar={toggleStar} onDelete={handleDelete} onOpenAdd={() => setModalOpen(true)} showToast={showToast} />}
         </div>
       </main>

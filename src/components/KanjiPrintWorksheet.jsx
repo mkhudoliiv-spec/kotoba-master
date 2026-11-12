@@ -1,12 +1,12 @@
 import { useState, useMemo, useEffect } from 'react';
 import { createPortal } from 'react-dom';
-import { readingRomaji } from '../hooks/useJlpt';
+import { readingRomaji } from '../hooks/useKanji';
 
 // A4 worksheet (прописи): 4 kanji blocks per page, printed with window.print().
 // While mounted, body gets `kpw-printing`, and @media print hides everything except `.kpw-print`.
 
 const BLOCKS_PER_PAGE = 4;
-const MAX_EXAMPLES = 5;
+const MAX_EXAMPLES = 6;   // 2 columns × 3 rows inside the theory cell
 const TRACE_CELLS = 3;   // pale outlines to trace over at the start of the first row
 const FIRST_ROW_CELLS = 11; // first row sits to the right of the big sample
 const FULL_ROW_CELLS = 14;
@@ -29,7 +29,7 @@ function WorksheetBlock({ k }) {
   return (
     <section className="kpw-block">
       <div className="kpw-block__meta">
-        <div className="kpw-block__num">№ {k.index} <small>JLPT {k.level}</small></div>
+        <div className="kpw-block__num">№ {k.index}</div>
         <ul className="kpw-block__radicals">
           {k.radicals.map(r => (
             <li key={r.char + r.nameUk}><span className="kpw-jp">{r.char}</span> {r.nameUk} <small>({r.strokes})</small></li>
@@ -43,17 +43,15 @@ function WorksheetBlock({ k }) {
           {kun.length > 0 && <span className="kpw-kun">{kun.join(', ')}</span>}
           <span className="kpw-meaning">— {k.meaningUk.toLowerCase()}</span>
         </p>
-        <table className="kpw-examples">
-          <tbody>
-            {examples.map(v => (
-              <tr key={v.word + v.kana}>
-                <td className="kpw-jp kpw-examples__word">{v.word}</td>
-                <td><span className="kpw-jp">{v.kana}</span> <i>{v.romaji}</i></td>
-                <td>{v.meaningUk}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <ul className="kpw-examples">
+          {examples.map(v => (
+            <li key={v.word + v.kana} className="kpw-example">
+              <span className="kpw-jp kpw-example__word">{v.word}</span>
+              <span className="kpw-example__reading"><span className="kpw-jp">{v.kana}</span> <i>{v.romaji}</i></span>
+              <span className="kpw-example__meaning">{v.meaningUk}</span>
+            </li>
+          ))}
+        </ul>
       </div>
 
       <div className="kpw-block__sample">
@@ -68,7 +66,7 @@ function WorksheetBlock({ k }) {
   );
 }
 
-export default function KanjiPrintWorksheet({ level, kanji, visible, initialIds, onClose }) {
+export default function KanjiPrintWorksheet({ kanji, visible, initialIds, onClose }) {
   const [selected, setSelected] = useState(() => new Set(initialIds));
 
   useEffect(() => {
@@ -83,7 +81,7 @@ export default function KanjiPrintWorksheet({ level, kanji, visible, initialIds,
     };
   }, [onClose]);
 
-  // Keep level order regardless of click order
+  // Keep list order regardless of click order
   const toPrint = useMemo(() => kanji.filter(k => selected.has(k.id)), [kanji, selected]);
   const pages = useMemo(() => {
     const out = [];
@@ -100,7 +98,7 @@ export default function KanjiPrintWorksheet({ level, kanji, visible, initialIds,
 
   const quick = [
     { label: `Показані (${visible.length})`, list: visible },
-    { label: `Весь рівень ${level} (${kanji.length})`, list: kanji },
+    { label: `Усі канджі (${kanji.length})`, list: kanji },
     { label: 'Не вивчені', list: kanji.filter(k => !k.mastered) },
     { label: '★ Обрані', list: kanji.filter(k => k.starred) },
   ];
@@ -122,7 +120,7 @@ export default function KanjiPrintWorksheet({ level, kanji, visible, initialIds,
         <div className="jk-overlay jlpt-theme" onClick={onClose}>
           <article className="jk-card kpw-dialog" onClick={e => e.stopPropagation()} role="dialog" aria-label="Друк прописів канджі">
             <header className="jk-card__head">
-              <span className="jk-card__title">🖨️ Друкувати прописи Канджі · JLPT {level}</span>
+              <span className="jk-card__title">🖨️ Друкувати прописи Канджі</span>
               <button className="jk-icon-btn" onClick={onClose} title="Закрити (Esc)">✕</button>
             </header>
 
