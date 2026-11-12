@@ -1436,9 +1436,22 @@ body {
   font-size: 0.8125rem; color: var(--color-text-secondary);
 }
 .kpw-dialog__foot strong { color: var(--color-text); }
+.kpw-rows {
+  display: flex; align-items: center; gap: 0.5rem 0.75rem; flex-wrap: wrap;
+  margin-top: 0.875rem; font-size: 0.8125rem; color: var(--color-text-secondary);
+}
+.kpw-rows__label { font-weight: 600; color: var(--color-text); }
+.kpw-rows__stepper { display: inline-flex; align-items: center; gap: 0.25rem; }
+.kpw-rows__select {
+  min-width: 3.5rem; padding: 0.25rem 0.5rem; border-radius: var(--radius-md);
+  border: 1px solid var(--color-border); background: var(--color-bg); color: var(--color-text);
+  font: inherit; text-align: center;
+}
+.kpw-rows__hint { color: var(--color-text-muted); }
 
 /* Print sheet — hidden on screen, the only visible element when printing.
-   Block: 182mm wide (3 + 11 cells of 13mm), 66mm tall → 4 blocks + gaps fit an A4 page. */
+   Block: 182mm wide (3 + 11 cells of 13mm), 27mm + 13mm per practice row tall.
+   Rows are chosen in the dialog; blocks per page are computed in KanjiPrintWorksheet.jsx. */
 .kpw-print { display: none; }
 
 @media print {
@@ -1457,8 +1470,9 @@ body {
 .kpw-block {
   display: grid; width: 182mm; margin: 0 auto 4mm;
   grid-template-columns: 39mm 143mm;
-  grid-template-rows: 12mm 15mm 13mm 13mm 13mm;
-  grid-template-areas: "meta theory" "sample theory" "sample first" "row2 row2" "row3 row3";
+  grid-template-rows: 12mm 15mm 13mm;
+  grid-auto-rows: 13mm;
+  grid-template-areas: "meta theory" "sample theory" "sample first";
   border-top: 0.35mm solid #475569; border-left: 0.35mm solid #475569;
   break-inside: avoid; page-break-inside: avoid;
 }
@@ -1497,9 +1511,7 @@ body {
 
 .kpw-row { display: grid; border: none !important; }
 .kpw-row--first { grid-area: first; grid-template-columns: repeat(11, 13mm); }
-.kpw-row--full { grid-template-columns: repeat(14, 13mm); }
-.kpw-row--2 { grid-area: row2; }
-.kpw-row--3 { grid-area: row3; }
+.kpw-row--full { grid-column: 1 / -1; grid-template-columns: repeat(14, 13mm); }
 .kpw-cell {
   position: relative; height: 13mm; display: flex; align-items: center; justify-content: center;
   border-right: 0.2mm solid #94a3b8; border-bottom: 0.35mm solid #475569;
