@@ -1450,7 +1450,7 @@ body {
 .kpw-rows__hint { color: var(--color-text-muted); }
 
 /* Print sheet — hidden on screen, the only visible element when printing.
-   Block: 182mm wide (3 + 11 cells of 13mm), 27mm + 13mm per practice row tall.
+   Block: 182mm wide (3 + 11 cells of 13mm), 27mm + 13mm per row (1–2 stroke-order rows + practice rows).
    Rows are chosen in the dialog; blocks per page are computed in KanjiPrintWorksheet.jsx. */
 .kpw-print { display: none; }
 
@@ -1521,3 +1521,16 @@ body {
 .kpw-cell::before { left: 50%; top: 0; bottom: 0; border-left: 0.2mm dashed #cbd5e1; }
 .kpw-cell::after { top: 50%; left: 0; right: 0; border-top: 0.2mm dashed #cbd5e1; }
 .kpw-cell__trace { position: relative; z-index: 1; font-family: 'Klee One', var(--font-jp); font-weight: 600; font-size: 29pt; line-height: 1; color: #000; opacity: 0.16; }
+
+/* Stroke-order steps (KanjiVG paths, 109×109 viewBox) */
+.kpw-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+.kpw-defs marker path { fill: #dc2626; }
+.kpw-stroke { position: relative; z-index: 1; width: 11.6mm; height: 11.6mm; overflow: visible; }
+.kpw-stroke path { fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.kpw-stroke__done { stroke: #a3a3a3; stroke-width: 5; }
+.kpw-stroke__new { stroke: #000; stroke-width: 6; }
+.kpw-stroke__num {
+  font-family: var(--font-sans); font-size: 15px; font-weight: 700; fill: #dc2626;
+  stroke: #fff; stroke-width: 3.5px; paint-order: stroke; stroke-linejoin: round;
+}
+.kpw-credit { margin: 1mm 0 0; text-align: right; font-size: 5.5pt; color: #94a3b8; }

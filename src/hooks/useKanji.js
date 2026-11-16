@@ -5,11 +5,11 @@ import { reviewSrs } from '../utils/srs';
 // The key predates the Kanji section (it used to be the JLPT section) — kept so progress survives.
 export const KANJI_PROGRESS_KEY = 'kotoba_jlpt_progress';
 
-async function fetchKanjiData() {
+async function fetchDataFile(name) {
   const candidatePaths = [
-    '/kotoba-master/data/kanji.json',
-    './data/kanji.json',
-    '/data/kanji.json'
+    `/kotoba-master/data/${name}`,
+    `./data/${name}`,
+    `/data/${name}`
   ];
   for (const path of candidatePaths) {
     try {
@@ -21,7 +21,18 @@ async function fetchKanjiData() {
       // try next candidate path
     }
   }
-  throw new Error('Failed to load kanji.json');
+  throw new Error(`Failed to load ${name}`);
+}
+
+const fetchKanjiData = () => fetchDataFile('kanji.json');
+
+/** Stroke order from KanjiVG: { "日": { s: [path d, …], n: [[x, y], …] } } in a 109×109 viewBox. */
+let strokesPromise;
+export function fetchKanjiStrokes() {
+  strokesPromise ??= fetchDataFile('kanji-strokes.json')
+    .then(d => d.kanji)
+    .catch(() => { strokesPromise = undefined; return {}; });
+  return strokesPromise;
 }
 
 function readStoredState() {
