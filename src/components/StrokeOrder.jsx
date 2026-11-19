@@ -1,15 +1,8 @@
 import { useId, useState } from 'react';
 import { useStrokes } from '../utils/strokeData';
+import StrokeGlyph from './StrokeGlyph';
 
-// Animated stroke order. Each AnimCJK stroke is a filled outline; the animation sweeps a thick
-// brush along the stroke's median, clipped to the outline, so it looks written by hand.
-
-const KVG_SCALE = 1024 / 109; // KanjiVG fallback data uses a 109×109 viewBox
-
-const medianPath = pts => 'M' + pts.map(p => p.join(' ')).join('L');
-const polyLength = pts => pts.reduce((sum, p, i) => i ? sum + Math.hypot(p[0] - pts[i - 1][0], p[1] - pts[i - 1][1]) : 0, 0);
-// Long strokes take longer, but never drag or flash by
-const durationFor = pts => Math.min(1.1, Math.max(0.3, polyLength(pts) / 900));
+// Animated stroke order with play / step controls (kanji card, kana card).
 
 function Player({ char, data, autoPlay, size, stack, credit }) {
   const uid = useId().replace(/[^a-zA-Z0-9_-]/g, '');
@@ -43,38 +36,7 @@ function Player({ char, data, autoPlay, size, stack, credit }) {
     <div className={`so so--${size} ${stack ? 'so--stack' : ''}`}>
       <svg className="so__canvas" viewBox="0 0 1024 1024" role="img"
         aria-label={`Порядок рисок ${char}: ${total}`}>
-        {kvg ? (
-          <g transform={`scale(${KVG_SCALE})`} className="so__kvg">
-            {data.s.map((d, i) => (
-              <path key={i} d={d}
-                className={i < shown ? 'so__kvg-ink' : i === anim ? 'so__kvg-ink so__brush-anim' : 'so__kvg-ghost'}
-                pathLength={i === anim ? 1 : undefined}
-                style={i === anim ? { animationDuration: '0.6s' } : undefined}
-                onAnimationEnd={i === anim ? () => onEnd(i) : undefined} />
-            ))}
-          </g>
-        ) : (
-          <>
-            {data.s.map((d, i) => (
-              <path key={i} d={d} className={i < shown ? 'so__ink' : 'so__ghost'} />
-            ))}
-            {anim >= 0 && (
-              <g key={anim}>
-                <clipPath id={`${uid}c${anim}`}><path d={data.s[anim]} /></clipPath>
-                <path className="so__brush so__brush-anim" d={medianPath(data.m[anim])} pathLength={1}
-                  clipPath={`url(#${uid}c${anim})`}
-                  style={{ animationDuration: `${durationFor(data.m[anim])}s` }}
-                  onAnimationEnd={() => onEnd(anim)} />
-              </g>
-            )}
-            {numbers && data.m.map((pts, i) => (i < shown || i === anim) && (
-              <g key={`n${i}`} className="so__num">
-                <circle cx={pts[0][0]} cy={pts[0][1]} r="42" />
-                <text x={pts[0][0]} y={pts[0][1]} dy="0.35em">{i + 1}</text>
-              </g>
-            ))}
-          </>
-        )}
+        <StrokeGlyph data={data} uid={uid} shown={shown} anim={anim} onAnimEnd={onEnd} numbers={numbers && !kvg} />
       </svg>
 
       <div className="so__side">

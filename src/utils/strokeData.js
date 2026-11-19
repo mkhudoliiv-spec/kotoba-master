@@ -25,6 +25,17 @@ export async function fetchStrokes(char) {
   return set[char] || null;
 }
 
+/** React hook: stroke entries for every character of `text` (null entries if missing), or null while loading. */
+export function useStrokeSet(text) {
+  const [state, setState] = useState({ text: null, list: null });
+  useEffect(() => {
+    let alive = true;
+    Promise.all([...text].map(fetchStrokes)).then(list => { if (alive) setState({ text, list }); });
+    return () => { alive = false; };
+  }, [text]);
+  return state.text === text ? state.list : null;
+}
+
 /** React hook: { data, loading } for one character. */
 export function useStrokes(char) {
   const [state, setState] = useState({ char: null, data: null });

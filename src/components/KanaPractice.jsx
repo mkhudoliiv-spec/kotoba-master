@@ -1,15 +1,14 @@
 import { useEffect, useState } from 'react';
 import { speakJapanese } from '../utils/helpers';
-import StrokeOrder from './StrokeOrder';
+import WritingPad from './WritingPad';
 import GlyphCompare from './GlyphCompare';
 
-// Writing practice for one kana or a whole row: the characters go one by one, each with the
-// brush stroke-order animation. The drawing canvas (next stage) plugs into .kana-practice__main.
+// Writing practice for one kana or a whole row: the characters go one by one, each in the
+// 4-cell copybook pad (trace → faint hint → from memory) with the stroke-order animation.
 
 export default function KanaPractice({ items, startIndex = 0, title, onBack }) {
   const [index, setIndex] = useState(startIndex);
   const item = items[index];
-  const chars = [...item.char];
   const go = (delta) => setIndex(i => Math.min(items.length - 1, Math.max(0, i + delta)));
 
   useEffect(() => {
@@ -40,24 +39,21 @@ export default function KanaPractice({ items, startIndex = 0, title, onBack }) {
         </nav>
       )}
 
-      <div className="kana-practice__main">
-        <div className="kana-practice__strokes">
-          {chars.length === 1
-            ? <StrokeOrder key={item.id} char={item.char} autoPlay size="lg" stack />
-            : chars.map((c, i) => <StrokeOrder key={item.id + c} char={c} autoPlay stack credit={i === chars.length - 1} />)}
-        </div>
-
-        <div className="kana-practice__info">
-          <button className="kana-card__speak" onClick={() => speakJapanese(item.char)} title="Прослухати">
-            <span className="kana-practice__glyph font-jp jp-glyph" lang="ja">{item.char}</span>
-            <span className="kana-card__romaji">{item.r}</span>
-            <span className="kana-card__uk">[{item.uk}]</span>
-            <span aria-hidden="true">🔊</span>
-          </button>
-          {item.hint && <p className="kana-card__hint">🗣 {item.hint}</p>}
-          <GlyphCompare char={item.char} always />
-        </div>
+      <div className="kana-practice__info">
+        <button className="kana-card__speak" onClick={() => speakJapanese(item.char)} title="Прослухати">
+          <span className="kana-practice__glyph font-jp jp-glyph" lang="ja">{item.char}</span>
+          <span className="kana-card__romaji">{item.r}</span>
+          <span className="kana-card__uk">[{item.uk}]</span>
+          <span aria-hidden="true">🔊</span>
+        </button>
+        {item.hint && <p className="kana-card__hint">🗣 {item.hint}</p>}
       </div>
+
+      <div className="kana-practice__pad">
+        <WritingPad key={item.id} text={item.char} />
+      </div>
+
+      <GlyphCompare char={item.char} always />
 
       <footer className="kana-practice__nav">
         <button className="btn btn--ghost" onClick={() => go(-1)} disabled={index === 0}>‹ Попередній</button>

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { createPortal } from 'react-dom';
 import { speakJapanese } from '../utils/helpers';
 import { readingKana } from '../hooks/useKanji';
@@ -6,6 +6,7 @@ import { Rich } from './Grammar';
 import GlyphStyleSwitch from './GlyphStyleSwitch';
 import GlyphCompare from './GlyphCompare';
 import StrokeOrder from './StrokeOrder';
+import WritingPad from './WritingPad';
 import { getGlyphNote } from '../utils/glyphNotes';
 
 const MAX_DIFFICULTY = 7;
@@ -29,6 +30,8 @@ function Readings({ label, list }) {
 }
 
 export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleMastered, onToggleStar, onPrint }) {
+  // 'card' — info; 'write' — copybook trainer. Kept while paging with ‹ ›.
+  const [view, setView] = useState('card');
   useEffect(() => {
     const onKey = (e) => {
       if (e.key === 'Escape') onClose();
@@ -51,7 +54,7 @@ export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleM
   // Portal: animated (transformed) ancestors would otherwise trap the fixed overlay inside them
   return createPortal(
     <div className="jk-overlay jlpt-theme" onClick={onClose}>
-      <article className="jk-card" onClick={e => e.stopPropagation()} role="dialog" aria-label={`Канджі ${k.kanji}`}>
+      <article className={`jk-card ${view === 'write' ? 'jk-card--wide' : ''}`} onClick={e => e.stopPropagation()} role="dialog" aria-label={`Канджі ${k.kanji}`}>
         <header className="jk-card__head">
           <span className="jk-card__title">Картка канджі</span>
           <div className="jk-card__head-btns">
@@ -63,6 +66,28 @@ export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleM
           </div>
         </header>
 
+        <div className="jk-card__view-tabs" role="tablist">
+          <button role="tab" aria-selected={view === 'card'} className={`jk-card__view-tab ${view === 'card' ? 'jk-card__view-tab--active' : ''}`}
+            onClick={() => setView('card')}>📖 Картка</button>
+          <button role="tab" aria-selected={view === 'write'} className={`jk-card__view-tab ${view === 'write' ? 'jk-card__view-tab--active' : ''}`}
+            onClick={() => setView('write')}>✍ Пропис</button>
+        </div>
+
+        {view === 'write' ? (
+          <section className="jk-write">
+            <div className="jk-write-head">
+              {onPrev && <button className="jk-nav" onClick={onPrev} title="Попередній (←)">‹</button>}
+              <span className="jk-write-head__glyph font-jp jp-glyph" lang="ja">{k.kanji}</span>
+              <span className="jk-write-head__meta">
+                <strong>{k.meaningUk}</strong>
+                <span className="font-jp">{[k.kunYomi[0], k.onYomi[0]].filter(Boolean).map(readingKana).join(' · ')}</span>
+                <span>Рисок: {k.strokes}</span>
+              </span>
+              {onNext && <button className="jk-nav" onClick={onNext} title="Наступний (→)">›</button>}
+            </div>
+            <WritingPad key={k.kanji} text={k.kanji} speakText={firstReading} />
+          </section>
+        ) : (<>
         <div className="jk-card__glyph-wrap">
           {onPrev && <button className="jk-nav jk-nav--prev" onClick={onPrev} title="Попередній (←)">‹</button>}
           <div className="jk-card__glyph font-jp jp-glyph" lang="ja">{k.kanji}</div>
@@ -128,6 +153,7 @@ export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleM
             ))}
           </ul>
         </section>
+        </>)}
 
         <footer className="jk-card__foot">
           <span className="jk-card__pos">№ {k.index} / {k.total}</span>
