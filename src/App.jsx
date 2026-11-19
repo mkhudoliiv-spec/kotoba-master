@@ -3,9 +3,7 @@ import { useTranslation, setLanguage } from './utils/i18n';
 import { useVocabulary } from './hooks/useVocabulary';
 import { getLessonLabel, isJlptLesson } from './utils/helpers';
 import Flashcards from './components/Flashcards';
-import Quiz from './components/Quiz';
-import WriteMode from './components/WriteMode';
-import MatchGame from './components/MatchGame';
+import Practice from './components/Practice';
 import Dictionary from './components/Dictionary';
 import Grammar from './components/Grammar';
 import KanjiSection from './components/KanjiSection';
@@ -15,9 +13,8 @@ import Toast from './components/Toast';
 
 const MODES = [
   { id: 'cards', label: { uk: 'Картки', en: 'Cards' }, icon: '📇' },
-  { id: 'quiz', label: { uk: 'Тест', en: 'Quiz' }, icon: '✅' },
-  { id: 'write', label: { uk: 'Письмо', en: 'Write' }, icon: '✏️' },
-  { id: 'match', label: { uk: 'Пари', en: 'Match' }, icon: '🧩' },
+  // Тест / Письмо / Пари live inside "Вправи" (Practice.jsx)
+  { id: 'practice', label: { uk: 'Вправи', en: 'Practice' }, icon: '🎯' },
   { id: 'list', label: { uk: 'Словник', en: 'Dictionary' }, icon: '📖' },
   { id: 'grammar', label: { uk: 'Граматика', en: 'Grammar' }, icon: '📚' },
   { id: 'kana', label: { uk: 'Абетки', en: 'Kana' }, icon: 'あ' },
@@ -252,9 +249,7 @@ export default function App() {
 
         <div className="mode-container">
           {mode === 'cards' && <Flashcards words={filtered} isKanjiMode={isKanjiMode} onToggleStar={toggleStar} onReview={reviewWord} showToast={showToast} />}
-          {mode === 'quiz' && <Quiz words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
-          {mode === 'write' && <WriteMode words={filtered} allWords={words} />}
-          {mode === 'match' && <MatchGame words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
+          {mode === 'practice' && <Practice words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
           {mode === 'grammar' && <Grammar key={grammarKey} />}
           {mode === 'kana' && <KanaSection words={words} />}
           {mode === 'kanji' && <KanjiSection isKanjiMode={isKanjiMode} showToast={showToast} />}
