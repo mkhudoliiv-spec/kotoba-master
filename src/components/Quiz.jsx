@@ -94,7 +94,7 @@ export default function Quiz({ words, allWords, isKanjiMode, onAnswer }) {
       <div className="quiz-question-card">
         <span className="flashcard__badge">{t('chooseTranslation')}</span>
         <div className="quiz-question-card__body">
-          <div className="quiz-question-card__text font-jp">{displayJp}</div>
+          <div className="quiz-question-card__text font-jp jp-glyph">{displayJp}</div>
           <div className="quiz-question-card__sub">{q.transcription}</div>
         </div>
         <button onClick={() => speakJapanese(q.kana)} className="btn btn--ghost btn--sm">

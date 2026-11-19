@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap');
+/* Web fonts (Inter, Noto Sans JP, Klee One, Yuji Syuku, Zen Kurenaido) are linked in index.html */
 
 /* ── Design Tokens ── */
 :root {
@@ -26,6 +26,14 @@
   --color-dark-border: #334155;
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
   --font-jp: 'Noto Sans JP', sans-serif;
+  /* Japanese glyph styles: print (Gothic), school handwriting (教科書体), brush, pen */
+  --font-jp-print: 'Noto Sans JP', sans-serif;
+  --font-jp-school: 'UD Digi Kyokasho N-R', 'UD デジタル 教科書体 N-R', 'YuKyokasho', 'Yu Kyokasho', 'Klee One', var(--font-jp-print);
+  --font-jp-brush: 'Yuji Syuku', var(--font-jp-school);
+  --font-jp-pen: 'Zen Kurenaido', var(--font-jp-school);
+  /* Showcase glyphs follow <html data-jp-style> (see useGlyphStyle) */
+  --font-jp-display: var(--font-jp-brush);
+  --jp-display-weight: 400;
   --radius-sm: 0.5rem;
   --radius-md: 0.75rem;
   --radius-lg: 1rem;
@@ -59,6 +67,14 @@ body {
 ::selection { background: #fecdd3; }
 
 .font-jp { font-family: var(--font-jp); }
+
+/* Big showcase glyphs (kanji cards, flashcards, quiz). Handwritten fonts have a single
+   weight — keep them at 400 so the browser doesn't fake a smeared bold. */
+:root[data-jp-style="brush"] { --font-jp-display: var(--font-jp-brush); --jp-display-weight: 400; }
+:root[data-jp-style="school"] { --font-jp-display: var(--font-jp-school); --jp-display-weight: 400; }
+:root[data-jp-style="pen"] { --font-jp-display: var(--font-jp-pen); --jp-display-weight: 400; }
+:root[data-jp-style="print"] { --font-jp-display: var(--font-jp-print); --jp-display-weight: 700; }
+:root .jp-glyph { font-family: var(--font-jp-display); font-weight: var(--jp-display-weight); }
 
 .show-mobile { display: inline; }
 .show-desktop { display: none; }
@@ -1534,3 +1550,63 @@ body {
   stroke: #fff; stroke-width: 3.5px; paint-order: stroke; stroke-linejoin: round;
 }
 .kpw-credit { margin: 1mm 0 0; text-align: right; font-size: 5.5pt; color: #94a3b8; }
+
+/* ── Glyph style switch (筆 / 教 / ✎ / 印) ── */
+.glyph-switch {
+  display: inline-flex; gap: 0.125rem; padding: 0.1875rem;
+  background: var(--color-border-light); border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+}
+.glyph-switch__btn {
+  display: inline-flex; align-items: center; gap: 0.3125rem;
+  padding: 0.25rem 0.625rem; border: none; border-radius: var(--radius-full);
+  background: none; cursor: pointer; color: var(--color-text-secondary);
+  font-family: var(--font-sans); font-size: 0.75rem; font-weight: 600;
+  transition: all var(--transition);
+}
+.glyph-switch__btn:hover { color: var(--color-text); }
+.glyph-switch__btn--active { background: var(--color-surface); color: var(--color-accent); box-shadow: var(--shadow-sm); }
+.glyph-switch__btn:focus-visible { outline: 2px solid var(--color-accent); outline-offset: 1px; }
+.glyph-switch__icon { font-size: 1rem; line-height: 1; }
+.glyph-switch__icon--brush { font-family: var(--font-jp-brush); font-weight: 400; }
+.glyph-switch__icon--school { font-family: var(--font-jp-school); font-weight: 400; }
+.glyph-switch__icon--pen { font-family: var(--font-sans); }
+.glyph-switch__icon--print { font-family: var(--font-jp-print); font-weight: 700; }
+.glyph-switch--compact .glyph-switch__btn { padding: 0.25rem 0.5rem; }
+@media (max-width: 479px) { .glyph-switch__label { display: none; } }
+
+.flashcards__glyph-row { display: flex; justify-content: center; margin-bottom: 0.75rem; }
+.jlpt-hero__actions { display: flex; flex-direction: column; align-items: stretch; gap: 0.625rem; flex-shrink: 0; }
+@media (min-width: 768px) { .jlpt-hero__actions { align-items: flex-end; } }
+.jk-card__glyph-switch { display: flex; justify-content: center; margin-bottom: 0.75rem; }
+
+/* ── Print vs handwritten comparison ── */
+.glyph-compare {
+  margin-bottom: 1rem; padding: 0.75rem 1rem;
+  border: 1px dashed var(--color-warn-border); border-radius: var(--radius-xl);
+  background: var(--color-warn-light);
+}
+.glyph-compare__pair { display: flex; align-items: center; justify-content: center; gap: 1rem; }
+.glyph-compare__cell { display: flex; flex-direction: column; align-items: center; gap: 0.125rem; }
+.glyph-compare__cell figcaption {
+  font-size: 0.625rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+}
+.glyph-compare__cell--hand figcaption { color: var(--color-success); }
+.glyph-compare__glyph {
+  width: 4.5rem; height: 4.5rem; display: flex; align-items: center; justify-content: center;
+  font-size: 3.25rem; line-height: 1; color: var(--color-text);
+  background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-md);
+}
+/* Handwriting cell gets the 田 practice-grid look */
+.glyph-compare__cell--hand .glyph-compare__glyph {
+  background:
+    linear-gradient(to right, transparent calc(50% - 0.5px), rgba(220,38,38,.18) calc(50% - 0.5px), rgba(220,38,38,.18) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), rgba(220,38,38,.18) calc(50% - 0.5px), rgba(220,38,38,.18) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    var(--color-surface);
+}
+.glyph-compare__glyph--print { font-family: var(--font-jp-print); font-weight: 400; }
+.glyph-compare__glyph--school { font-family: var(--font-jp-school); font-weight: 400; }
+.glyph-compare__arrow { color: var(--color-text-muted); font-size: 1.25rem; }
+.glyph-compare__note { margin-top: 0.625rem; font-size: 0.8125rem; line-height: 1.55; color: var(--color-text); }
+.glyph-compare__note strong { color: var(--color-warn); }

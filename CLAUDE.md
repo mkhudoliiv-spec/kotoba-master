@@ -30,7 +30,8 @@ There is no test suite.
 - **`src/utils/helpers.js`** has TTS (`speakJapanese`, browser `ja-JP` speech synthesis), the strict answer check for write mode (`checkJapaneseAnswer`: the answer must be Japanese script; it accepts `/`-separated alternatives and optional `(...)` parts from `kana`/`kanji`), and `LESSON_LABELS`.
 - **`src/utils/i18n.js`** is a `{ key: { uk, en } }` dictionary. Values can be strings or functions that take arguments. `t()` currently always returns `uk`. Some components still hardcode Ukrainian strings.
 - Importing from the Dictionary goes through a `window` `CustomEvent('kotoba-import')`, which App listens for.
-- Styling is a single hand-written design system in `src/index.css` (no CSS framework).
+- Styling is a single hand-written design system in `src/index.css` (no CSS framework). Web fonts are linked in `index.html`.
+- **Glyph style**: big showcase Japanese glyphs (kanji card/tiles, flashcards, quiz question) use the `jp-glyph` class, whose font follows `<html data-jp-style>` (`brush` Yuji Syuku, `school` 教科書体/Klee One, `pen` Zen Kurenaido, `print` Noto Sans JP). `src/hooks/useGlyphStyle.js` holds it (`localStorage['kotoba_glyph_style']`), `GlyphStyleSwitch.jsx` changes it. Ordinary Japanese text stays on `.font-jp` (Noto Sans JP); print worksheets stay on Klee One. `GlyphCompare.jsx` shows print vs handwritten form with notes from `src/utils/glyphNotes.js`.
 
 ## Content data
 

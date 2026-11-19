@@ -3,6 +3,9 @@ import { createPortal } from 'react-dom';
 import { speakJapanese } from '../utils/helpers';
 import { readingKana } from '../hooks/useKanji';
 import { Rich } from './Grammar';
+import GlyphStyleSwitch from './GlyphStyleSwitch';
+import GlyphCompare from './GlyphCompare';
+import { getGlyphNote } from '../utils/glyphNotes';
 
 const MAX_DIFFICULTY = 7;
 
@@ -40,6 +43,8 @@ export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleM
   }, [onClose, onPrev, onNext]);
 
   const stars = '★'.repeat(k.difficulty) + '☆'.repeat(MAX_DIFFICULTY - k.difficulty);
+  // Own note, or a note for a radical whose handwritten form differs (e.g. 辶)
+  const glyphNote = getGlyphNote(k.kanji) || k.radicals.map(r => getGlyphNote(r.char)).find(Boolean);
   const firstReading = readingKana(k.kunYomi[0] || k.onYomi[0] || '').replace(/[()]/g, '');
 
   // Portal: animated (transformed) ancestors would otherwise trap the fixed overlay inside them
@@ -59,7 +64,7 @@ export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleM
 
         <div className="jk-card__glyph-wrap">
           {onPrev && <button className="jk-nav jk-nav--prev" onClick={onPrev} title="Попередній (←)">‹</button>}
-          <div className="jk-card__glyph font-jp">{k.kanji}</div>
+          <div className="jk-card__glyph font-jp jp-glyph" lang="ja">{k.kanji}</div>
           {onNext && <button className="jk-nav jk-nav--next" onClick={onNext} title="Наступний (→)">›</button>}
         </div>
         <div className="jk-card__radicals">
@@ -71,6 +76,9 @@ export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleM
             </span>
           ))}
         </div>
+
+        <div className="jk-card__glyph-switch"><GlyphStyleSwitch /></div>
+        <GlyphCompare char={k.kanji} note={glyphNote} />
 
         <section className="jk-split">
           <div className="jk-split__meaning">

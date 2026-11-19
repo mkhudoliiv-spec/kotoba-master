@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import { speakJapanese, getDisplayJp, hasKanjiDistinction, shuffle } from '../utils/helpers';
 import { buildDeck, getSrsCounts } from '../utils/srs';
 import { useTranslation } from '../utils/i18n';
+import GlyphStyleSwitch from './GlyphStyleSwitch';
 
 const DIRECTIONS = ['jp', 'uk', 'mix'];
 
@@ -178,6 +179,8 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onReview,
         </div>
       </div>
 
+      <div className="flashcards__glyph-row"><GlyphStyleSwitch /></div>
+
       {/* Progress */}
       <div className="progress-bar">
         <div className="progress-bar__fill" style={{ width: `${pct}%` }} />
@@ -204,7 +207,7 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onReview,
               </div>
             </div>
             <div className="flashcard-face__center">
-              <div className="flashcard__main-text font-jp">
+              <div className={`flashcard__main-text font-jp ${frontIsJp ? 'jp-glyph' : ''}`}>
                 {frontIsJp ? displayJp : item.translation}
               </div>
               <div className="flashcard__sub-text">
@@ -227,7 +230,7 @@ export default function Flashcards({ words, isKanjiMode, onToggleStar, onReview,
                 className="icon-btn icon-btn--light">🔊</button>
             </div>
             <div className="flashcard-face__center">
-              <div className="flashcard__back-main">
+              <div className={`flashcard__back-main ${frontIsJp ? '' : 'font-jp jp-glyph'}`}>
                 {frontIsJp ? item.translation : displayJp}
               </div>
               <div className="flashcard__back-detail font-jp">

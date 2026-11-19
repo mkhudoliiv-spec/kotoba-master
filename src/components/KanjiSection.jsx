@@ -7,6 +7,7 @@ import Flashcards from './Flashcards';
 import Quiz from './Quiz';
 import WriteMode from './WriteMode';
 import MatchGame from './MatchGame';
+import GlyphStyleSwitch from './GlyphStyleSwitch';
 
 // Key predates the Kanji section (it used to be the JLPT section) — kept so the choice survives
 const TAB_KEY = 'kotoba_jlpt_tab';
@@ -101,7 +102,7 @@ function KanjiTab({ kanji, onToggleMastered, onToggleStar }) {
               <span className="jlpt-kanji-tile__num">{k.index}</span>
               {k.starred && <span className="jlpt-kanji-tile__star">★</span>}
               {k.mastered && <span className="jlpt-kanji-tile__check">✓</span>}
-              <span className="jlpt-kanji-tile__glyph font-jp">{k.kanji}</span>
+              <span className="jlpt-kanji-tile__glyph font-jp jp-glyph" lang="ja">{k.kanji}</span>
               <span className="jlpt-kanji-tile__meaning">{k.meaningUk}</span>
               <span className="jlpt-kanji-tile__reading font-jp">
                 {[k.kunYomi[0], k.onYomi[0]].filter(Boolean).map(readingKana).join(' · ')}
@@ -280,9 +281,12 @@ export default function KanjiSection({ isKanjiMode, showToast }) {
             <h2 className="jlpt-hero__title">Канджі</h2>
             <p className="jlpt-hero__sub">Усі базові канджі в одному місці: значення, читання on/kun, слова-приклади, тренування та прописи.</p>
           </div>
-          <button className="btn btn--primary jlpt-hero__train" onClick={() => { setPickerOpen(o => !o); setTraining(null); }}>
-            🔥 Тренувати канджі
-          </button>
+          <div className="jlpt-hero__actions">
+            <button className="btn btn--primary jlpt-hero__train" onClick={() => { setPickerOpen(o => !o); setTraining(null); }}>
+              🔥 Тренувати канджі
+            </button>
+            <GlyphStyleSwitch />
+          </div>
         </div>
 
         <div className="jlpt-hero__stats">
