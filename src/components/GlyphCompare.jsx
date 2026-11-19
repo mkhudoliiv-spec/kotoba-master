@@ -7,7 +7,7 @@ export default function GlyphCompare({ char, note, always = false }) {
   const text = note ?? getGlyphNote(char);
   if (!text && !always) return null;
   return (
-    <section className="glyph-compare">
+    <section className={`glyph-compare ${[...char].length > 1 ? 'glyph-compare--multi' : ''}`}>
       <div className="glyph-compare__pair">
         <figure className="glyph-compare__cell">
           <span className="glyph-compare__glyph glyph-compare__glyph--print" lang="ja">{char}</span>

@@ -9,6 +9,7 @@ import MatchGame from './components/MatchGame';
 import Dictionary from './components/Dictionary';
 import Grammar from './components/Grammar';
 import KanjiSection from './components/KanjiSection';
+import KanaSection from './components/KanaSection';
 import AddWordModal from './components/AddWordModal';
 import Toast from './components/Toast';
 
@@ -19,11 +20,12 @@ const MODES = [
   { id: 'match', label: { uk: 'Пари', en: 'Match' }, icon: '🧩' },
   { id: 'list', label: { uk: 'Словник', en: 'Dictionary' }, icon: '📖' },
   { id: 'grammar', label: { uk: 'Граматика', en: 'Grammar' }, icon: '📚' },
+  { id: 'kana', label: { uk: 'Абетки', en: 'Kana' }, icon: 'あ' },
   { id: 'kanji', label: { uk: 'Канджі', en: 'Kanji' }, icon: '漢' },
 ];
 
 // Sections with their own navigation: the lesson filter bar is hidden there
-const STANDALONE_MODES = ['grammar', 'kanji'];
+const STANDALONE_MODES = ['grammar', 'kana', 'kanji'];
 
 export default function App() {
   const { words, loading, addWord, deleteWord, toggleStar, reviewWord, importWords } = useVocabulary();
@@ -165,9 +167,9 @@ export default function App() {
             {MODES.map(m => (
               <button key={m.id}
                 className={`header__nav-btn ${mode === m.id ? 'header__nav-btn--active' : ''}`}
-                onClick={() => selectMode(m.id)}>
+                onClick={() => selectMode(m.id)} title={m.label.uk}>
                 <span className="header__nav-icon">{m.icon}</span>
-                {m.label[localStorage.getItem('kotoba_lang') || 'uk'] || m.label['uk']}
+                <span className="header__nav-label">{m.label[localStorage.getItem('kotoba_lang') || 'uk'] || m.label['uk']}</span>
                 {m.id === 'list' && <span className="header__nav-badge">({words.length})</span>}
               </button>
             ))}
@@ -254,6 +256,7 @@ export default function App() {
           {mode === 'write' && <WriteMode words={filtered} allWords={words} />}
           {mode === 'match' && <MatchGame words={filtered} allWords={words} isKanjiMode={isKanjiMode} />}
           {mode === 'grammar' && <Grammar key={grammarKey} />}
+          {mode === 'kana' && <KanaSection words={words} />}
           {mode === 'kanji' && <KanjiSection isKanjiMode={isKanjiMode} showToast={showToast} />}
           {mode === 'list' && <Dictionary words={filtered} isKanjiMode={isKanjiMode} onToggleStar={toggleStar} onDelete={handleDelete} onOpenAdd={() => setModalOpen(true)} showToast={showToast} />}
         </div>

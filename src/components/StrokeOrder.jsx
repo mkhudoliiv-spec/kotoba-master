@@ -11,7 +11,7 @@ const polyLength = pts => pts.reduce((sum, p, i) => i ? sum + Math.hypot(p[0] - 
 // Long strokes take longer, but never drag or flash by
 const durationFor = pts => Math.min(1.1, Math.max(0.3, polyLength(pts) / 900));
 
-function Player({ char, data, autoPlay }) {
+function Player({ char, data, autoPlay, size, stack, credit }) {
   const uid = useId().replace(/[^a-zA-Z0-9_-]/g, '');
   const total = data.s.length;
   const kvg = data.f === 'kanjivg';
@@ -40,7 +40,7 @@ function Player({ char, data, autoPlay }) {
   const label = anim >= 0 ? anim + 1 : shown;
 
   return (
-    <div className="so">
+    <div className={`so so--${size} ${stack ? 'so--stack' : ''}`}>
       <svg className="so__canvas" viewBox="0 0 1024 1024" role="img"
         aria-label={`Порядок рисок ${char}: ${total}`}>
         {kvg ? (
@@ -87,18 +87,19 @@ function Player({ char, data, autoPlay }) {
               aria-pressed={numbers} onClick={() => setNumbers(n => !n)}>№ Номери</button>
           )}
         </div>
-        <p className="so__credit">
+        {credit && <p className="so__credit">
           {kvg ? 'Штрихи: KanjiVG, CC BY-SA 3.0' : <>Штрихи: <a href="https://github.com/parsimonhi/animCJK" target="_blank" rel="noreferrer">AnimCJK</a> (японський стандарт)</>}
-        </p>
+        </p>}
       </div>
     </div>
   );
 }
 
-export default function StrokeOrder({ char, autoPlay = false }) {
+// size: 'md' | 'lg'; stack: controls under the grid; credit: show the data source line
+export default function StrokeOrder({ char, autoPlay = false, size = 'md', stack = false, credit = true }) {
   const { data, loading } = useStrokes(char);
 
-  if (loading) return <div className="so so--loading"><div className="so__canvas" /></div>;
+  if (loading) return <div className={`so so--${size} ${stack ? 'so--stack' : ''} so--loading`}><div className="so__canvas" /></div>;
   if (!data) return null;
-  return <Player key={char} char={char} data={data} autoPlay={autoPlay} />;
+  return <Player key={char} char={char} data={data} autoPlay={autoPlay} size={size} stack={stack} credit={credit} />;
 }
