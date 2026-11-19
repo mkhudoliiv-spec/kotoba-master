@@ -5,6 +5,7 @@ import { readingKana } from '../hooks/useKanji';
 import { Rich } from './Grammar';
 import GlyphStyleSwitch from './GlyphStyleSwitch';
 import GlyphCompare from './GlyphCompare';
+import StrokeOrder from './StrokeOrder';
 import { getGlyphNote } from '../utils/glyphNotes';
 
 const MAX_DIFFICULTY = 7;
@@ -78,6 +79,7 @@ export default function KanjiCard({ kanji: k, onClose, onPrev, onNext, onToggleM
         </div>
 
         <div className="jk-card__glyph-switch"><GlyphStyleSwitch /></div>
+        <StrokeOrder char={k.kanji} autoPlay />
         <GlyphCompare char={k.kanji} note={glyphNote} />
 
         <section className="jk-split">

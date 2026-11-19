@@ -1610,3 +1610,45 @@ body {
 .glyph-compare__arrow { color: var(--color-text-muted); font-size: 1.25rem; }
 .glyph-compare__note { margin-top: 0.625rem; font-size: 0.8125rem; line-height: 1.55; color: var(--color-text); }
 .glyph-compare__note strong { color: var(--color-warn); }
+
+/* ── Stroke order animation (AnimCJK) ── */
+.so {
+  display: flex; align-items: center; gap: 1rem; margin-bottom: 1rem;
+  padding: 0.75rem; border: 1px solid var(--color-border); border-radius: var(--radius-xl);
+  background: var(--color-bg);
+}
+.so__canvas {
+  width: 8.5rem; height: 8.5rem; flex-shrink: 0; border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  /* 田 practice grid */
+  background:
+    linear-gradient(to right, transparent calc(50% - 0.5px), rgba(220,38,38,.16) calc(50% - 0.5px), rgba(220,38,38,.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    linear-gradient(to bottom, transparent calc(50% - 0.5px), rgba(220,38,38,.16) calc(50% - 0.5px), rgba(220,38,38,.16) calc(50% + 0.5px), transparent calc(50% + 0.5px)),
+    var(--color-surface);
+}
+@media (min-width: 640px) { .so__canvas { width: 10rem; height: 10rem; } }
+.so__ghost { fill: #e2e8f0; }
+.so__ink { fill: var(--color-text); }
+.so__brush {
+  fill: none; stroke: var(--color-accent); stroke-width: 128;
+  stroke-linecap: round; stroke-linejoin: round;
+}
+.so__brush-anim { stroke-dasharray: 1 2; stroke-dashoffset: 1.01; animation: so-draw linear forwards; }
+@keyframes so-draw { to { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) { .so__brush-anim { animation-duration: 1ms !important; } }
+.so__kvg path { fill: none; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+.so__kvg .so__kvg-ghost { stroke: #e2e8f0; }
+.so__kvg .so__kvg-ink { stroke: var(--color-text); }
+.so__num circle { fill: var(--color-surface); stroke: var(--color-accent); stroke-width: 8; opacity: 0.92; }
+.so__num text {
+  fill: var(--color-accent); font-family: var(--font-sans); font-size: 52px; font-weight: 700;
+  text-anchor: middle;
+}
+.so__side { display: flex; flex-direction: column; gap: 0.5rem; min-width: 0; }
+.so__count { font-size: 0.8125rem; color: var(--color-text-secondary); }
+.so__count strong { color: var(--color-text); }
+.so__btns { display: flex; flex-wrap: wrap; gap: 0.375rem; }
+.so__toggle--on { border-color: var(--color-accent); color: var(--color-accent); }
+.so__credit { font-size: 0.6875rem; color: var(--color-text-muted); }
+.so__credit a { color: inherit; }
+.so--loading .so__canvas { opacity: 0.5; }

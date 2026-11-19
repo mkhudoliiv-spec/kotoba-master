@@ -9,6 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "fetch:jlpt": "node scripts/fetch-jlpt-data.mjs",
+    "fetch:strokes": "node scripts/fetch-animcjk.mjs",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },

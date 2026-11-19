@@ -51,6 +51,10 @@ Text fields support `**highlight**` markup; use `
 ### `public/data/kanji.json`
 `{ levels: [{id, title, description, totalKanji}], kanji: [...], rules: [...] }`. Kanji ids are `jlpt_k_<codepoint hex>`. `scripts/fetch-jlpt-data.mjs` and `scripts/build-jlpt-n5.mjs` generate/extend it (and JLPT words into `vocabulary.json`).
 
+### Stroke data
+- `public/data/strokes-kanji.json` / `strokes-kana.json` — brush-shaped stroke order (Japanese standard) from AnimCJK, built by `npm run fetch:strokes` (`scripts/fetch-animcjk.mjs`, pinned to one AnimCJK commit). Entries are `{ s: [outline d], m: [median points] }` in a 1024×1024 viewBox (already converted from AnimCJK's flipped-y format); `{ f: 'kanjivg', s }` marks a KanjiVG fallback. Re-run the script after adding kanji to `kanji.json`. Loaded lazily via `src/utils/strokeData.js`, animated by `StrokeOrder.jsx`. Licences (Arphic PL for kanji, LGPL-3 for kana) ship in `public/licenses/animcjk/` — keep them.
+- `public/data/kanji-strokes.json` — KanjiVG centrelines (`scripts/fetch-kanjivg.mjs`), still used by the print worksheets.
+
 ### Adding a new lesson
 Recent commits follow this pattern:
 1. Append words to `vocabulary.json`.

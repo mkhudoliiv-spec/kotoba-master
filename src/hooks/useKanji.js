@@ -1,28 +1,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import { reviewSrs } from '../utils/srs';
+import { fetchDataFile } from '../utils/dataFile';
 
 // Only user state is stored ({ id, mastered, starred, srs }); the content itself comes from kanji.json.
 // The key predates the Kanji section (it used to be the JLPT section) — kept so progress survives.
 export const KANJI_PROGRESS_KEY = 'kotoba_jlpt_progress';
-
-async function fetchDataFile(name) {
-  const candidatePaths = [
-    `/kotoba-master/data/${name}`,
-    `./data/${name}`,
-    `/data/${name}`
-  ];
-  for (const path of candidatePaths) {
-    try {
-      const res = await fetch(path);
-      if (res.ok) {
-        return await res.json();
-      }
-    } catch {
-      // try next candidate path
-    }
-  }
-  throw new Error(`Failed to load ${name}`);
-}
 
 const fetchKanjiData = () => fetchDataFile('kanji.json');
 
